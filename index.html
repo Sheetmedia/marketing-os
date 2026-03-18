@@ -2321,7 +2321,10 @@ async function loadKPIs() {
 // ── Campaigns list ──
 async function loadCampaignsList() {
   const { data, error } = await dbFetch('campaigns', {}, { order: 'created_at', limit: 20 });
-  if (error || !data?.length) return; // Keep demo data if empty
+  if (error || !data?.length) {
+    console.log('Campaigns: using demo data', error);
+    return; // Keep demo data if empty
+  }
 
   const tbody = document.getElementById('campaigns-body');
   if (!tbody) return;
@@ -2793,8 +2796,35 @@ function safeStyle(id, prop, val) {
   if (el) el.style[prop] = val;
 }
 
-function loadCampaignDetail(id) {
-  const c = CAMPAIGNS[id] || CAMPAIGNS['email-q1'];
+async function loadCampaignDetail(id) {
+  // If UUID (from Supabase), fetch real data
+  let c = CAMPAIGNS[id];
+  if (!c && id && id.includes('-') && id.length > 20) {
+    const { data } = await supa.from('campaigns').select('*').eq('id', id).single();
+    if (data) {
+      c = {
+        id: data.id,
+        name: data.name,
+        channel: data.channel,
+        status: data.status,
+        goal: data.goal || '',
+        budget: data.budget || 0,
+        spent: data.spent || 0,
+        startDate: data.start_date || '—',
+        endDate: data.end_date || '—',
+        reach: data.reach || 0,
+        leads: data.leads_count || 0,
+        conversions: data.conversions || 0,
+        cpl: data.leads_count ? Math.round((data.spent||0) / data.leads_count) : 0,
+        roi: data.roi || 0,
+        description: data.description || '',
+        weekly: [0,0,0,0,0,0,data.leads_count||0],
+        openRate: null, ctr: null, unsubRate: null,
+        activities: []
+      };
+    }
+  }
+  if (!c) c = CAMPAIGNS['email-q1'];
   safeSet('cd-name','textContent', c.name);
   safeSet('cd-channel','textContent', c.channel);
   safeSet('cd-status','className', 'tag ' + c.status);
@@ -2884,8 +2914,29 @@ const LEADS = {
   }
 };
 
-function loadLeadDetail(id) {
-  const l = LEADS[id] || LEADS['tran-thi-mai'];
+async function loadLeadDetail(id) {
+  let l = LEADS[id];
+  if (!l && id && id.includes('-') && id.length > 20) {
+    const { data } = await supa.from('leads').select('*').eq('id', id).single();
+    if (data) {
+      l = {
+        id: data.id,
+        name: data.full_name,
+        title: (data.job_title||'') + (data.company ? ' tại ' + data.company : ''),
+        company: data.company || '',
+        email: data.email || '',
+        phone: data.phone || '',
+        source: data.source || '',
+        score: data.ai_score || 0,
+        status: data.status || 'cold',
+        stage: data.stage || 'new',
+        value: data.pipeline_value || 0,
+        notes: data.notes || '',
+        activities: []
+      };
+    }
+  }
+  if (!l) l = LEADS['tran-thi-mai'];
   safeSet('ld-name','textContent', l.name);
   safeSet('ld-title','textContent', l.title + ' tại ' + l.company);
   safeSet('ld-score','textContent', l.score);
@@ -2957,10 +3008,29 @@ const DEALS = {
   }
 };
 
-function loadDealDetail(id) {
-  const d = DEALS[id] || DEALS['tiki-corp'];
-  safeSet('dd-name','textContent', d.name);
-  safeSet('dd-company','textContent', d.company);
+async function loadDealDetail(id) {
+  let d = DEALS[id];
+  if (!d && id && id.includes('-') && id.length > 20) {
+    const { data } = await supa.from('deals').select('*').eq('id', id).single();
+    if (data) {
+      d = {
+        id: data.id,
+        name: data.name,
+        company: data.company || '',
+        value: data.value || 0,
+        stage: data.stage || 'prospect',
+        prob: data.ai_win_prob || 0,
+        closeDate: data.close_date || '—',
+        contact: '',
+        description: data.description || '',
+        nextStep: data.next_step || '',
+        activities: []
+      };
+    }
+  }
+  if (!d) d = DEALS['tiki-corp'];
+  safeSet('dd-name','textContent', d.name || '');
+  safeSet('dd-company','textContent', d.company || '');
   safeSet('dd-value','textContent', '₫' + (d.value/1e9).toFixed(2) + 'B');
   safeSet('dd-prob','textContent', d.aiWinProb + '%');
   safeStyle('dd-prob-bar','width', d.aiWinProb + '%');
