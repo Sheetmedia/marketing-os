@@ -1262,7 +1262,7 @@ tbody tr:hover td{background:var(--bg3)}
       <div class="sec-sub">Quản lý thông tin cá nhân và tuỳ chọn</div>
     </div>
     <div class="sec-actions">
-      <button class="btn btn-ghost" onclick="showToast('Đã đăng xuất!')">🚪 Đăng xuất</button>
+      <button class="btn btn-ghost" onclick="handleLogout()">🚪 Đăng xuất</button>
       <button class="btn btn-primary" onclick="showToast('Đã lưu thông tin!')">💾 Lưu thay đổi</button>
     </div>
   </div>
@@ -2190,10 +2190,22 @@ async function signUp(email, password, meta = {}) {
 }
 
 async function signOut() {
-  await supa.auth.signOut();
+  try {
+    if (supa) await supa.auth.signOut({ scope: 'local' });
+  } catch(e) { console.warn('signOut error:', e); }
   currentUser = null;
   currentWorkspaceId = null;
-  showAuthModal();
+  // Clear all Supabase tokens from localStorage
+  Object.keys(localStorage).forEach(k => {
+    if (k.startsWith('sb-') || k.includes('supabase')) localStorage.removeItem(k);
+  });
+  // Reload page to ensure clean state
+  window.location.reload();
+}
+
+async function handleLogout() {
+  showToast('Đang đăng xuất…');
+  setTimeout(async () => { await signOut(); }, 500);
 }
 
 async function loadUserContext(user) {
@@ -2222,8 +2234,13 @@ async function initSupabase() {
   const { data: { session } } = await supa.auth.getSession();
   if (session?.user) {
     await loadUserContext(session.user);
+    closeAuthModal();
     await loadDashboardData();
   } else {
+    // No session — clear any stale tokens and show login
+    Object.keys(localStorage).forEach(k => {
+      if (k.startsWith('sb-') || k.includes('supabase')) localStorage.removeItem(k);
+    });
     showAuthModal();
   }
 
