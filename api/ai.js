@@ -1,7 +1,6 @@
 export const config = { runtime: 'edge' };
 
 export default async function handler(req) {
-  // CORS preflight
   if (req.method === 'OPTIONS') {
     return new Response(null, {
       status: 204,
@@ -17,38 +16,40 @@ export default async function handler(req) {
     return new Response('Method not allowed', { status: 405 });
   }
 
-  try {
-    const body = await req.json();
-
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': process.env.ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify(body),
-    });
-
-    const data = await response.json();
-
-    return new Response(JSON.stringify(data), {
-      status: response.status,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
-    });
-  } catch (error) {
+  const GEMINI_KEY = process.env.GEMINI_API_KEY;
+  if (!GEMINI_KEY) {
     return new Response(
-      JSON.stringify({ error: { message: error.message } }),
+      JSON.stringify({ error: 'GEMINI_API_KEY not configured in Vercel' }),
+      { status: 500, headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } }
+    );
+  }
+
+  try {
+    const { system, prompt, maxTokens } = await req.json();
+
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`,
       {
-        status: 500,
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-        },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: (system || '') + '\n\n' + (prompt || '') }] }],
+          generationConfig: { maxOutputTokens: maxTokens || 1000, temperature: 0.7 },
+        }),
       }
+    );
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error?.message || 'Gemini error');
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+
+    return new Response(JSON.stringify({ text }), {
+      headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
+    });
+  } catch (err) {
+    return new Response(
+      JSON.stringify({ error: err.message }),
+      { status: 500, headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } }
     );
   }
 }
