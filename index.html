@@ -691,7 +691,7 @@ tbody tr:hover td{background:var(--bg3)}
     <div class="sec-actions">
       <button class="btn btn-ghost">📥 Import</button>
       <button class="btn btn-ai" onclick="askAI('Phân tích toàn bộ sales pipeline, dự báo deals nào có khả năng close nhất trong tháng này và đề xuất action cụ thể')">✦ AI Dự báo</button>
-      <button class="btn btn-primary">+ Deal mới</button>
+      <button class="btn btn-primary" onclick="openNewDealModal()">+ Deal mới</button>
     </div>
   </div>
   <div class="g4 mb18">
@@ -702,7 +702,7 @@ tbody tr:hover td{background:var(--bg3)}
   </div>
   <!-- Pipeline Kanban -->
   <div style="overflow-x:auto;margin-bottom:14px;max-width:100%">
-    <div style="display:flex;gap:12px;min-width:900px">
+    <div class="pipeline-wrap" style="display:flex;gap:12px;min-width:900px">
       <div class="pipeline-stage">
         <div class="pipeline-stage-head"><span style="color:var(--blue)">🔵 Prospect</span><span class="k-count">8</span></div>
         <div class="deal-card"><div class="deal-name">FPT Software</div><div class="deal-co">CTO · Enterprise</div><div class="deal-val">₫180M</div><div class="deal-stage-bar"><div style="width:15%;height:2px;background:var(--blue);border-radius:1px"></div></div></div>
@@ -743,7 +743,7 @@ tbody tr:hover td{background:var(--bg3)}
     <div><div class="sec-title">Lead Management</div><div class="sec-sub">248 leads · AI đang score & qualify tự động</div></div>
     <div class="sec-actions">
       <button class="btn btn-ai" onclick="askAI('Phân tích 3 hot leads chưa được follow up, đề xuất approach tốt nhất cho từng lead')">✦ AI Phân tích Leads</button>
-      <button class="btn btn-primary">+ Lead mới</button>
+      <button class="btn btn-primary" onclick="openNewLeadModal()">+ Lead mới</button>
     </div>
   </div>
   <div class="g4 mb18">
@@ -752,25 +752,25 @@ tbody tr:hover td{background:var(--bg3)}
     <div class="stat c-amber"><div class="stat-ico">🔥</div><div class="stat-lbl">Hot Leads</div><div class="stat-val">3</div><div class="delta down">▼ Cần xử lý</div></div>
     <div class="stat c-blue"><div class="stat-ico">💰</div><div class="stat-lbl">Pipeline Value</div><div class="stat-val">₫4.2B</div><div class="delta up">▲ 11%</div></div>
   </div>
-  <div class="kanban">
-    <div class="k-col"><div class="k-col-head"><span class="k-col-name" style="color:var(--blue)">🔵 Mới</span><span class="k-count">5</span></div>
+  <div class="kanban" id="leads-kanban">
+    <div class="k-col" id="kanban-col-new"><div class="k-col-head"><span class="k-col-name" style="color:var(--blue)">🔵 Mới</span><span class="k-count" id="kcount-new">5</span></div><div class="kanban-cards">
       <div class="lead-card"><div class="lead-name">Nguyễn Văn Hùng</div><div class="lead-co">FPT Software · CTO</div><div style="margin-bottom:6px"><span class="tag warm">Warm</span></div><div class="lead-foot"><span class="lead-val">₫180M</span><span class="ai-badge" style="font-size:9px">AI: 62</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:62%;background:var(--amber)"></div></div></div>
       <div class="lead-card"><div class="lead-name">Trần Thị Mai</div><div class="lead-co">Vingroup · CMO</div><div style="margin-bottom:6px"><span class="tag hot">Hot 🔥</span></div><div class="lead-foot"><span class="lead-val">₫450M</span><span class="ai-badge" style="font-size:9px">AI: 91</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:91%;background:var(--red)"></div></div></div>
       <div class="lead-card"><div class="lead-name">Lê Quang Dũng</div><div class="lead-co">Momo · Head Growth</div><div style="margin-bottom:6px"><span class="tag cold">Cold</span></div><div class="lead-foot"><span class="lead-val">₫80M</span><span class="ai-badge" style="font-size:9px">AI: 34</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:34%;background:var(--blue)"></div></div></div>
     </div>
-    <div class="k-col"><div class="k-col-head"><span class="k-col-name" style="color:var(--amber)">📞 Liên hệ</span><span class="k-count">4</span></div>
+    <div class="k-col" id="kanban-col-contacted"><div class="k-col-head"><span class="k-col-name" style="color:var(--amber)">📞 Liên hệ</span><span class="k-count" id="kcount-contacted">4</span></div><div class="kanban-cards">
       <div class="lead-card"><div class="lead-name">Phạm Minh Tuấn</div><div class="lead-co">Shopee Vietnam · Director</div><div style="margin-bottom:6px"><span class="tag hot">Hot 🔥</span></div><div class="lead-foot"><span class="lead-val">₫720M</span><span class="ai-badge" style="font-size:9px">AI: 88</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:88%;background:var(--red)"></div></div></div>
       <div class="lead-card"><div class="lead-name">Hoàng Thu Hương</div><div class="lead-co">VNPay · VP Marketing</div><div style="margin-bottom:6px"><span class="tag warm">Warm</span></div><div class="lead-foot"><span class="lead-val">₫230M</span><span class="ai-badge" style="font-size:9px">AI: 74</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:74%;background:var(--amber)"></div></div></div>
     </div>
-    <div class="k-col"><div class="k-col-head"><span class="k-col-name" style="color:var(--purple)">✅ Qualified</span><span class="k-count">6</span></div>
+    <div class="k-col" id="kanban-col-qualified"><div class="k-col-head"><span class="k-col-name" style="color:var(--purple)">✅ Qualified</span><span class="k-count" id="kcount-qualified">6</span></div><div class="kanban-cards">
       <div class="lead-card"><div class="lead-name">Đỗ Thị Lan Anh</div><div class="lead-co">MB Bank · CMO</div><div style="margin-bottom:6px"><span class="tag qualified">Qualified</span></div><div class="lead-foot"><span class="lead-val">₫340M</span><span class="ai-badge" style="font-size:9px">AI: 82</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:82%;background:var(--purple)"></div></div></div>
       <div class="lead-card"><div class="lead-name">Bùi Văn Khoa</div><div class="lead-co">Grab Vietnam · GM</div><div style="margin-bottom:6px"><span class="tag qualified">Qualified</span></div><div class="lead-foot"><span class="lead-val">₫580M</span><span class="ai-badge" style="font-size:9px">AI: 79</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:79%;background:var(--purple)"></div></div></div>
     </div>
-    <div class="k-col"><div class="k-col-head"><span class="k-col-name" style="color:var(--ai)">◎ Proposal</span><span class="k-count">4</span></div>
+    <div class="k-col" id="kanban-col-proposal"><div class="k-col-head"><span class="k-col-name" style="color:var(--ai)">◎ Proposal</span><span class="k-count" id="kcount-proposal">4</span></div><div class="kanban-cards">
       <div class="lead-card" style="border-color:var(--ai-border)"><div class="lead-name">Vũ Thành Long</div><div class="lead-co">Tiki Corp · CEO</div><div style="margin-bottom:6px"><span class="tag ai">Priority</span></div><div class="lead-foot"><span class="lead-val">₫1.2B</span><span class="ai-badge" style="font-size:9px">AI: 92</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:92%;background:var(--ai)"></div></div></div>
       <div class="lead-card"><div class="lead-name">Ngô Thanh Tú</div><div class="lead-co">Techcombank · Head</div><div style="margin-bottom:6px"><span class="tag qualified">Qualified</span></div><div class="lead-foot"><span class="lead-val">₫260M</span><span class="ai-badge" style="font-size:9px">AI: 77</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:77%;background:var(--ai)"></div></div></div>
     </div>
-    <div class="k-col"><div class="k-col-head"><span class="k-col-name" style="color:var(--green)">✅ Won</span><span class="k-count">3</span></div>
+    <div class="k-col" id="kanban-col-won"><div class="k-col-head"><span class="k-col-name" style="color:var(--green)">✅ Won</span><span class="k-count" id="kcount-won">3</span></div><div class="kanban-cards">
       <div class="lead-card" style="border-color:rgba(34,217,122,.2)"><div class="lead-name">Cao Thị Bích</div><div class="lead-co">VinFast · Marketing</div><div style="margin-bottom:6px"><span class="tag won">Won ✓</span></div><div class="lead-foot"><span class="lead-val">₫480M</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:100%;background:var(--green)"></div></div></div>
       <div class="lead-card" style="border-color:rgba(34,217,122,.2)"><div class="lead-name">Đinh Quốc Huy</div><div class="lead-co">Sun Group · COO</div><div style="margin-bottom:6px"><span class="tag won">Won ✓</span></div><div class="lead-foot"><span class="lead-val">₫890M</span></div><div class="progress" style="margin-top:7px"><div class="progress-fill" style="width:100%;background:var(--green)"></div></div></div>
     </div>
@@ -2133,6 +2133,34 @@ const SUPA_URL = 'https://xerfiivjnpoavodfgnep.supabase.co';
 const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhlcmZpaXZqbnBvYXZvZGZnbmVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MDkwNjYsImV4cCI6MjA4OTM4NTA2Nn0.pR9-bHHznNRZJFBGz859ZZ0xwPZG20DhqEMh5GQoHwY';
 const supa = window.supabase?.createClient(SUPA_URL, SUPA_KEY);
 
+// ══════════════════════════════════════════════
+// GEMINI AI — Free API (replaces Anthropic)
+// ══════════════════════════════════════════════
+const GEMINI_KEY = 'AIzaSyBIbg4F_yjfaDoqJRStFSP4I43wqbcdUA4';
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_KEY}`;
+
+async function callAI(systemPrompt, userPrompt, maxTokens = 1000) {
+  const res = await fetch(GEMINI_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{
+        parts: [{
+          text: systemPrompt + '\n\n' + userPrompt
+        }]
+      }],
+      generationConfig: {
+        maxOutputTokens: maxTokens,
+        temperature: 0.7,
+      }
+    })
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error?.message || 'Gemini API error');
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+}
+
+
 // Current workspace id (set after login)
 let currentWorkspaceId = null;
 let currentUser = null;
@@ -2321,24 +2349,39 @@ async function loadCampaignsList() {
 
 // ── Leads kanban ──
 async function loadLeadsList() {
-  const { data, error } = await dbFetch('leads', {}, { order: 'ai_score', limit: 50 });
+  const { data, error } = await dbFetch('leads', {}, { order: 'ai_score', limit: 100 });
   if (error || !data?.length) return;
 
-  const stages = { new:'🔵 Mới', contacted:'📞 Liên hệ', qualified:'✅ Qualified', proposal:'◎ Proposal', won:'✅ Won' };
-  const cols = Object.keys(stages);
+  const stages = ['new','contacted','qualified','proposal','won'];
 
-  cols.forEach(stage => {
-    const col = document.getElementById(`kanban-col-${stage}`);
+  // Update KPI stats
+  const hotCount = data.filter(l => l.status === 'hot').length;
+  const totalPipeline = data.reduce((s,l) => s + (l.pipeline_value||0), 0);
+  safeSet('kpi-leads', 'textContent', data.length.toLocaleString('vi'));
+
+  // Update KPI cards if they have IDs
+  const hotEl = document.querySelector('#panel-leads .stat.c-amber .stat-val');
+  if (hotEl) hotEl.textContent = hotCount;
+  const pipeEl = document.querySelector('#panel-leads .stat.c-blue .stat-val');
+  if (pipeEl) pipeEl.textContent = formatCurrency(totalPipeline);
+
+  stages.forEach(stage => {
+    const col = document.getElementById('kanban-col-' + stage);
     if (!col) return;
-    const stageleads = data.filter(l => l.stage === stage);
-    col.querySelector('.k-count').textContent = stageleads.length;
+    const stageLeads = data.filter(l => l.stage === stage);
+
+    // Update count badge
+    const countEl = document.getElementById('kcount-' + stage);
+    if (countEl) countEl.textContent = stageLeads.length;
+
+    // Render cards
     const cardsEl = col.querySelector('.kanban-cards');
     if (!cardsEl) return;
-    cardsEl.innerHTML = stageleads.slice(0,3).map(l => `
-      <div class="lead-card" onclick="openLeadDetail('${l.id}')">
+    cardsEl.innerHTML = stageLeads.map(l => `
+      <div class="lead-card" data-lead-id="${l.id}" style="cursor:pointer">
         <div class="lead-name">${l.full_name}</div>
-        <div class="lead-co">${l.company || ''} ${l.job_title ? '· '+l.job_title : ''}</div>
-        <div style="margin-bottom:6px"><span class="tag ${l.status}">${l.status}</span></div>
+        <div class="lead-co">${l.company || ''}${l.job_title ? ' · '+l.job_title : ''}</div>
+        <div style="margin-bottom:6px"><span class="tag ${l.status}">${l.status === 'hot' ? '🔥 Hot' : l.status}</span></div>
         <div class="lead-foot">
           <span class="lead-val">${formatCurrency(l.pipeline_value||0)}</span>
           <span class="ai-badge" style="font-size:9px">AI: ${l.ai_score}</span>
@@ -2352,11 +2395,46 @@ async function loadLeadsList() {
 
 // ── Deals pipeline ──
 async function loadDealsList() {
-  const { data, error } = await dbFetch('deals', {}, { order: 'value', limit: 30 });
+  const { data, error } = await dbFetch('deals', {}, { order: 'value', limit: 50 });
   if (error || !data?.length) return;
-  // Update pipeline value KPI
+
+  // Update KPI
   const total = data.reduce((s, d) => s + (d.value || 0), 0);
   safeSet('kpi-pipeline', 'textContent', formatCurrency(total));
+
+  // Render CRM pipeline stages
+  const stageMap = {
+    prospect:    { label:'🔵 Prospect',   color:'var(--blue)' },
+    qualified:   { label:'🟡 Qualified',  color:'var(--amber)' },
+    proposal:    { label:'🟣 Proposal',   color:'var(--purple)' },
+    negotiation: { label:'◎ Negotiation', color:'var(--ai)' },
+    won:         { label:'✅ Closed Won', color:'var(--green)' },
+  };
+
+  const pipelineEl = document.querySelector('#panel-crm .pipeline-wrap');
+  if (!pipelineEl) return;
+
+  pipelineEl.innerHTML = Object.entries(stageMap).map(([stage, info]) => {
+    const stageDeals = data.filter(d => d.stage === stage);
+    const stageTotal = stageDeals.reduce((s,d) => s+(d.value||0), 0);
+    return `
+      <div class="pipeline-stage">
+        <div class="pipeline-stage-head">
+          <span style="color:${info.color}">${info.label}</span>
+          <span class="k-count">${stageDeals.length}</span>
+        </div>
+        ${stageDeals.slice(0,3).map(d => `
+          <div class="deal-card" data-deal-id="${d.id}" style="cursor:pointer">
+            <div class="deal-name">${d.name}</div>
+            <div class="deal-co">${d.company||''}</div>
+            <div class="deal-val">${formatCurrency(d.value||0)}</div>
+            <div class="deal-stage-bar"><div style="width:${d.probability||0}%;height:2px;background:${info.color};border-radius:1px"></div></div>
+            ${d.ai_win_prob ? `<div style="margin-top:5px"><span class="ai-badge" style="font-size:9px">AI: ${d.ai_win_prob}% win</span></div>` : ''}
+          </div>`).join('')}
+        ${stageDeals.length > 3 ? `<div style="text-align:center;font-size:10px;color:var(--text3);padding:6px">+${stageDeals.length-3} deals nữa</div>` : ''}
+        <div style="text-align:right;font-size:10px;color:var(--text3);padding:4px 0;border-top:1px solid var(--border);margin-top:4px">${formatCurrency(stageTotal)}</div>
+      </div>`;
+  }).join('');
 }
 
 // ── Activities ──
@@ -2600,9 +2678,7 @@ async function sendAIMessage() {
   const text = input.value.trim();
   if (!text) return;
 
-  // Hide quick buttons after first message
   document.getElementById('ai-quick').style.display = 'none';
-
   appendMsg('user', text);
   input.value = '';
   input.style.height = 'auto';
@@ -2611,26 +2687,16 @@ async function sendAIMessage() {
   const thinking = appendMsg('bot thinking', '✦ Đang suy nghĩ…');
 
   try {
-    const res = await fetch('/api/ai', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
-        system: `Bạn là AI Assistant của Marketing OS — một nền tảng quản trị marketing tích hợp AI cho doanh nghiệp Việt Nam. 
-Bạn hỗ trợ: viết content (blog, email, social), SEO, phân tích chiến lược, CRM, lead scoring, campaign planning.
-Trả lời bằng tiếng Việt, ngắn gọn nhưng đầy đủ, có cấu trúc rõ ràng. Dùng emoji phù hợp. Khi cần, chia thành bullet points.
-Context: Đang là Q1 2026, công ty đang chạy 12 campaigns, có 248 leads, pipeline ₫4.2B.`,
-        messages: [{ role: 'user', content: text }]
-      })
-    });
-    const data = await res.json();
-    const reply = data.content?.[0]?.text || 'Xin lỗi, có lỗi xảy ra. Vui lòng thử lại.';
+    const system = `Bạn là AI Assistant của Marketing OS — nền tảng quản trị marketing AI cho doanh nghiệp Việt Nam.
+Hỗ trợ: viết content, SEO, phân tích chiến lược, CRM, lead scoring, campaign planning.
+Trả lời tiếng Việt, ngắn gọn, có cấu trúc rõ ràng. Dùng emoji phù hợp, dùng bullet points khi cần.
+Context: Q1 2026, 12 campaigns đang chạy, 248 leads, pipeline ₫4.2B.`;
+    const reply = await callAI(system, text, 1000);
     thinking.className = 'ai-msg bot';
-    thinking.innerHTML = reply.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<b>$1</b>').replace(/\*(.*?)\*/g, '<i>$1</i>');
-  } catch (e) {
+    thinking.innerHTML = reply.replace(/\n/g,'<br>').replace(/\*\*(.*?)\*\*/g,'<b>$1</b>').replace(/\*(.*?)\*/g,'<i>$1</i>');
+  } catch(e) {
     thinking.className = 'ai-msg bot';
-    thinking.innerHTML = '⚠️ Không thể kết nối API. Vui lòng kiểm tra kết nối và thử lại.<br><small style="color:var(--text3)">Error: ' + e.message + '</small>';
+    thinking.innerHTML = '⚠️ Lỗi AI: ' + e.message;
   }
   sendBtn.disabled = false;
   document.getElementById('ai-messages').scrollTop = 999999;
@@ -2645,18 +2711,11 @@ async function runSEOContent() {
   res.innerHTML = '<span style="color:var(--ai)">✦ AI đang tạo nội dung SEO…</span>';
 
   try {
-    const r = await fetch('/api/ai', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
-        system: 'Bạn là SEO Content Expert chuyên về thị trường Việt Nam. Tạo nội dung chuẩn SEO, ngắn gọn, thực tế.',
-        messages: [{ role: 'user', content: `Tạo SEO content package cho từ khóa: "${kw}"\n\n1. **Title H1** (60 ký tự, có từ khóa)\n2. **Meta description** (155 ký tự)\n3. **3 Title H2** cho các section\n4. **Intro paragraph** (100 từ, có từ khóa tự nhiên)\n5. **5 LSI keywords** liên quan\n\nTập trung thị trường Việt Nam 2026.` }]
-      })
-    });
-    const data = await r.json();
-    const txt = data.content?.[0]?.text || 'Lỗi xảy ra';
+    const txt = await callAI(
+      'Bạn là SEO Content Expert chuyên về thị trường Việt Nam. Tạo nội dung chuẩn SEO, ngắn gọn, thực tế.',
+      `Tạo SEO content package cho từ khóa: "${kw}"\n\n1. **Title H1** (60 ký tự, có từ khóa)\n2. **Meta description** (155 ký tự)\n3. **3 Title H2** cho các section\n4. **Intro paragraph** (100 từ, có từ khóa tự nhiên)\n5. **5 LSI keywords** liên quan\n\nTập trung thị trường Việt Nam 2026.`,
+      1000
+    );
     res.innerHTML = txt.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<b style="color:var(--ai)">$1</b>');
   } catch (e) {
     res.innerHTML = '<span style="color:var(--red)">Lỗi kết nối API: ' + e.message + '</span>';
@@ -2975,18 +3034,11 @@ async function aiWriteContent() {
   btn.textContent = '✦ Đang viết…';
   btn.disabled = true;
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514',
-        max_tokens:1500,
-        system:'Bạn là chuyên gia content marketing Việt Nam. Viết bài blog SEO-optimized, thực tế, có ví dụ cụ thể.',
-        messages:[{role:'user',content:`Viết bài blog marketing khoảng 500-600 từ với tiêu đề: "${title}"\nTừ khóa target: "${kw}"\n\nYêu cầu:\n- Có H1 (tiêu đề), H2 (mục chính), H3 (mục phụ)\n- Mở đầu hấp dẫn nêu pain point\n- 4-5 mục chính với nội dung thực tế, có số liệu\n- Call to action cuối bài\n- Tone: chuyên nghiệp nhưng thân thiện, phù hợp doanh nghiệp Việt`}]
-      })
-    });
-    const data = await r.json();
-    const txt = data.content?.[0]?.text || 'Lỗi API';
+    const txt = await callAI(
+      'Bạn là chuyên gia content marketing Việt Nam. Viết bài blog SEO-optimized, thực tế, có ví dụ cụ thể.',
+      `Viết bài blog marketing khoảng 500-600 từ với tiêu đề: "${title}"\nTừ khóa target: "${kw}"\n\nYêu cầu:\n- Có H1 (tiêu đề), H2 (mục chính), H3 (mục phụ)\n- Mở đầu hấp dẫn nêu pain point\n- 4-5 mục chính với nội dung thực tế, có số liệu\n- Call to action cuối bài\n- Tone: chuyên nghiệp nhưng thân thiện, phù hợp doanh nghiệp Việt`,
+      1500
+    );
     document.getElementById('ce-body').value = txt;
     const wc = txt.split(/\s+/).length;
     safeSet('ce-wordcount','textContent', wc);
@@ -3004,16 +3056,11 @@ async function aiWriteContent() {
 async function aiSuggestTitle() {
   const kw = document.getElementById('ce-keyword').value || 'marketing';
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514', max_tokens:400,
-        system:'SEO expert Việt Nam. Chỉ trả về danh sách tiêu đề, không giải thích.',
-        messages:[{role:'user',content:`Gợi ý 5 tiêu đề blog SEO hấp dẫn cho từ khóa "${kw}", thị trường Việt Nam 2026. Format: danh sách có số thứ tự.`}]
-      })
-    });
-    const data = await r.json();
-    const txt = data.content?.[0]?.text || '';
+    const txt = await callAI(
+      'SEO expert Việt Nam. Chỉ trả về danh sách tiêu đề, không giải thích.',
+      `Gợi ý 5 tiêu đề blog SEO hấp dẫn cho từ khóa "${kw}", thị trường Việt Nam 2026. Format: danh sách có số thứ tự.`,
+      400
+    );
     alert('💡 Gợi ý tiêu đề AI:\n\n' + txt);
   } catch(e) { alert('Lỗi: ' + e.message); }
 }
@@ -3022,16 +3069,12 @@ async function aiSuggestMeta() {
   const title = document.getElementById('ce-title').value;
   const kw = document.getElementById('ce-keyword').value;
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514', max_tokens:200,
-        system:'SEO expert. Chỉ trả về meta description, không giải thích.',
-        messages:[{role:'user',content:`Viết meta description 150-155 ký tự cho bài blog:\nTiêu đề: ${title}\nTừ khóa: ${kw}\nCần có từ khóa, compelling, có CTA.`}]
-      })
-    });
-    const data = await r.json();
-    document.getElementById('ce-meta').value = data.content?.[0]?.text || '';
+    const metaTxt = await callAI(
+      'SEO expert. Chỉ trả về meta description, không giải thích.',
+      `Viết meta description 150-155 ký tự cho bài blog:\nTiêu đề: ${title}\nTừ khóa: ${kw}\nCần có từ khóa, compelling, có CTA.`,
+      200
+    );
+    document.getElementById('ce-meta').value = metaTxt;
   } catch(e) { alert('Lỗi: ' + e.message); }
 }
 
@@ -3212,39 +3255,17 @@ async function runAICampaign() {
   res.innerHTML = '<span style="color:var(--ai)">✦ AI đang lên kế hoạch campaign…</span>';
 
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1200,
-        system: 'Bạn là chuyên gia Marketing Strategy cho doanh nghiệp Việt Nam. Tạo kế hoạch campaign chi tiết, thực tế, có số liệu KPI cụ thể.',
-        messages: [{role:'user', content:
-          `Lên kế hoạch campaign marketing chi tiết với thông tin sau:
-- Mục tiêu: ${goal}
-- Kênh: ${channel}
-- Ngân sách: ${budget || 'chưa xác định'}
-
-Trả về kế hoạch bao gồm:
-1. **Tên Campaign** (gợi ý 2-3 tên hay)
-2. **Target Audience** (mô tả chi tiết)
-3. **KPIs** (3-4 chỉ số đo lường cụ thể)
-4. **Timeline** (các phase theo tuần)
-5. **Nội dung chính** (3-4 loại content cần tạo)
-6. **Budget Allocation** (phân bổ theo kênh/hoạt động)
-7. **Rủi ro & Mitigation**
-
-Ngắn gọn, thực tế, phù hợp thị trường Việt Nam Q2 2026.`
-        }]
-      })
-    });
-    const data = await r.json();
-    const txt = data.content?.[0]?.text || 'Không thể tạo kế hoạch. Vui lòng thử lại.';
+    const txt = await callAI(
+      'Bạn là chuyên gia Marketing Strategy cho doanh nghiệp Việt Nam. Tạo kế hoạch campaign chi tiết, thực tế, có số liệu KPI cụ thể.',
+      `Lên kế hoạch campaign marketing chi tiết:\n- Mục tiêu: ${goal}\n- Kênh: ${channel}\n- Ngân sách: ${budget || 'chưa xác định'}\n\nBao gồm: Tên Campaign, Target Audience, KPIs, Timeline, Nội dung chính, Budget Allocation, Rủi ro. Ngắn gọn, thực tế, Q2 2026 Việt Nam.`,
+      1200
+    );
     res.innerHTML = txt
       .replace(/\n/g,'<br>')
       .replace(/\*\*(.*?)\*\*/g,'<b style="color:var(--ai)">$1</b>')
       .replace(/\*(.*?)\*/g,'<i>$1</i>');
   } catch(e) {
-    res.innerHTML = '<span style="color:var(--red)">⚠ Lỗi kết nối API: ' + e.message + '</span>';
+    res.innerHTML = '<span style="color:var(--red)">⚠ Lỗi AI: ' + e.message + '</span>';
   }
   btn.textContent = '✦ Tạo lại'; btn.disabled = false;
 }
@@ -3401,14 +3422,11 @@ async function ebAIGenerate() {
   output.style.display = 'block';
   output.innerHTML = '<span style="color:var(--ai)">✦ AI đang tạo email…</span>';
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:800,
-        system:'Bạn là email marketing expert Việt Nam. Viết email ngắn gọn, compelling.',
-        messages:[{role:'user',content:'Viết nội dung cho text block của 1 email marketing B2B giới thiệu Marketing OS — nền tảng quản trị marketing AI cho doanh nghiệp Việt Nam. 150 từ, có personalization {{first_name}}, tone chuyên nghiệp nhưng thân thiện.'}]})
-    });
-    const data = await r.json();
-    const txt = data.content?.[0]?.text || '';
+    const txt = await callAI(
+      'Bạn là email marketing expert Việt Nam. Viết email ngắn gọn, compelling.',
+      'Viết nội dung cho text block của 1 email marketing B2B giới thiệu Marketing OS — nền tảng quản trị marketing AI cho doanh nghiệp Việt Nam. 150 từ, có personalization {{first_name}}, tone chuyên nghiệp nhưng thân thiện.',
+      800
+    );
     output.innerHTML = txt.replace(/\n/g,'<br>');
     if (ebBlocks.find(b => b.type === 'text')) {
       ebBlocks.find(b => b.type === 'text').data.content = txt;
@@ -3421,14 +3439,12 @@ async function ebAIBlock(i) {
   const b = ebBlocks[i];
   if (!b) return;
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:400,
-        system:'Email copywriter. Viết ngắn, compelling, tiếng Việt.',
-        messages:[{role:'user',content:'Viết lại đoạn text email này hay hơn:\n' + (b.data.content||'') + '\n\nGiữ nguyên ý chính, tone professional, có personalization {{first_name}}.'}]})
-    });
-    const data = await r.json();
-    ebBlocks[i].data.content = data.content?.[0]?.text || b.data.content;
+    const newContent = await callAI(
+      'Email copywriter. Viết ngắn, compelling, tiếng Việt.',
+      'Viết lại đoạn text email này hay hơn:\n' + (b.data.content||'') + '\n\nGiữ nguyên ý chính, tone professional, có personalization {{first_name}}.',
+      400
+    );
+    ebBlocks[i].data.content = newContent || b.data.content;
     ebRender(); ebSelectBlock(i);
   } catch(e) { showToast('Lỗi AI: ' + e.message); }
 }
@@ -3439,14 +3455,12 @@ async function ebAISubject() {
   out.innerHTML='<span style="color:var(--ai)">✦ Đang tối ưu subject line…</span>';
   const subj = document.getElementById('eb-subject')?.value || '';
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:300,
-        system:'Email subject line expert. Chỉ trả về danh sách subject lines, không giải thích.',
-        messages:[{role:'user',content:`Tối ưu subject line này thành 5 biến thể A/B test tốt hơn:\n"${subj}"\n\nYêu cầu: dưới 50 ký tự, có emoji, tạo curiosity/urgency, phù hợp B2B Việt Nam.`}]})
-    });
-    const data = await r.json();
-    out.innerHTML = (data.content?.[0]?.text||'').replace(/\n/g,'<br>');
+    const subjTxt = await callAI(
+      'Email subject line expert. Chỉ trả về danh sách subject lines, không giải thích.',
+      `Tối ưu subject line này thành 5 biến thể A/B test tốt hơn:\n"${subj}"\n\nYêu cầu: dưới 50 ký tự, có emoji, tạo curiosity/urgency, phù hợp B2B Việt Nam.`,
+      300
+    );
+    out.innerHTML = subjTxt.replace(/\n/g,'<br>');
   } catch(e) { out.innerHTML = '<span style="color:var(--red)">'+e.message+'</span>'; }
 }
 
@@ -3454,14 +3468,12 @@ async function ebAICTA() {
   const out = document.getElementById('eb-ai-output');
   out.style.display='block'; out.innerHTML='<span style="color:var(--ai)">✦ Đang tạo CTA…</span>';
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:200,
-        system:'CTA copywriter. Chỉ trả về danh sách, không giải thích.',
-        messages:[{role:'user',content:'Gợi ý 5 CTA button text mạnh cho email marketing B2B SaaS, tiếng Việt, tạo urgency và action rõ ràng.'}]})
-    });
-    const data = await r.json();
-    out.innerHTML = (data.content?.[0]?.text||'').replace(/\n/g,'<br>');
+    const ctaTxt = await callAI(
+      'CTA copywriter. Chỉ trả về danh sách, không giải thích.',
+      'Gợi ý 5 CTA button text mạnh cho email marketing B2B SaaS, tiếng Việt, tạo urgency và action rõ ràng.',
+      200
+    );
+    out.innerHTML = ctaTxt.replace(/\n/g,'<br>');
   } catch(e) { out.innerHTML = '<span style="color:var(--red)">'+e.message+'</span>'; }
 }
 
@@ -3572,14 +3584,12 @@ async function wfAIRun() {
   res.style.display = 'block';
   res.innerHTML = '<span style="color:var(--ai)">✦ AI đang phân tích và thiết kế workflow…</span>';
   try {
-    const r = await fetch('/api/ai', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({model:'claude-sonnet-4-20250514', max_tokens:800,
-        system:'Bạn là Marketing Automation expert. Thiết kế workflow chi tiết, thực tế cho doanh nghiệp B2B Việt Nam.',
-        messages:[{role:'user',content:`Thiết kế automation workflow cho yêu cầu sau:\n"${input}"\n\nTrả về:\n1. **Tên workflow**\n2. **Trigger** (điều kiện bắt đầu)\n3. **Các bước theo thứ tự** (với timing cụ thể)\n4. **Conditions** (if/else nếu có)\n5. **Expected results** (KPI dự kiến)\n\nNgắn gọn, thực tế, có thể implement ngay.`}]})
-    });
-    const data = await r.json();
-    res.innerHTML = (data.content?.[0]?.text||'').replace(/\n/g,'<br>').replace(/\*\*(.*?)\*\*/g,'<b style="color:var(--ai)">$1</b>');
+    const wfTxt = await callAI(
+      'Bạn là Marketing Automation expert. Thiết kế workflow chi tiết, thực tế cho doanh nghiệp B2B Việt Nam.',
+      `Thiết kế automation workflow cho yêu cầu sau:\n"${input}"\n\nTrả về:\n1. **Tên workflow**\n2. **Trigger** (điều kiện bắt đầu)\n3. **Các bước theo thứ tự** (với timing cụ thể)\n4. **Conditions** (if/else nếu có)\n5. **Expected results** (KPI dự kiến)\n\nNgắn gọn, thực tế, có thể implement ngay.`,
+      800
+    );
+    res.innerHTML = wfTxt.replace(/\n/g,'<br>').replace(/\*\*(.*?)\*\*/g,'<b style="color:var(--ai)">$1</b>');
   } catch(e) { res.innerHTML = '<span style="color:var(--red)">'+e.message+'</span>'; }
   btn.textContent = '✦ Thiết kế lại'; btn.disabled = false;
 }
@@ -3913,6 +3923,213 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+
+
+// ══════════════════════════════════════════════
+// CRUD MODALS
+// ══════════════════════════════════════════════
+
+function openNewLeadModal() {
+  // Reset form
+  ['nl-name','nl-company','nl-email','nl-phone','nl-title','nl-value'].forEach(id => {
+    const el = document.getElementById(id); if(el) el.value = '';
+  });
+  document.getElementById('new-lead-modal').style.display = 'flex';
+  setTimeout(() => document.getElementById('nl-name')?.focus(), 100);
+}
+
+function openNewDealModal() {
+  ['nd-name','nd-company','nd-value','nd-desc'].forEach(id => {
+    const el = document.getElementById(id); if(el) el.value = '';
+  });
+  document.getElementById('new-deal-modal').style.display = 'flex';
+  setTimeout(() => document.getElementById('nd-name')?.focus(), 100);
+}
+
+async function submitNewLead() {
+  const name = document.getElementById('nl-name')?.value?.trim();
+  if (!name) { showToast('⚠ Vui lòng nhập họ tên'); return; }
+  if (!currentWorkspaceId) { showToast('⚠ Chưa đăng nhập'); return; }
+
+  const btn = document.getElementById('nl-submit');
+  btn.textContent = 'Đang lưu…'; btn.disabled = true;
+
+  const val = parseInt((document.getElementById('nl-value')?.value||'0').replace(/\D/g,'')) || 0;
+  const result = await dbInsert('leads', {
+    workspace_id:   currentWorkspaceId,
+    full_name:      name,
+    company:        document.getElementById('nl-company')?.value?.trim() || null,
+    email:          document.getElementById('nl-email')?.value?.trim() || null,
+    phone:          document.getElementById('nl-phone')?.value?.trim() || null,
+    job_title:      document.getElementById('nl-title')?.value?.trim() || null,
+    source:         document.getElementById('nl-source')?.value || 'organic',
+    status:         document.getElementById('nl-status')?.value || 'cold',
+    stage:          'new',
+    ai_score:       Math.floor(Math.random() * 40) + 30,
+    pipeline_value: val,
+    assigned_to:    currentUser?.id || null,
+  });
+
+  if (result) {
+    showToast('✓ Đã thêm lead: ' + name);
+    document.getElementById('new-lead-modal').style.display = 'none';
+    await loadLeadsList();
+    await logActivity('lead', result.id, 'created', 'Lead mới: ' + name);
+  } else {
+    showToast('⚠ Lỗi lưu lead');
+  }
+  btn.textContent = '💾 Lưu Lead'; btn.disabled = false;
+}
+
+async function submitNewDeal() {
+  const name = document.getElementById('nd-name')?.value?.trim();
+  if (!name) { showToast('⚠ Vui lòng nhập tên deal'); return; }
+  if (!currentWorkspaceId) { showToast('⚠ Chưa đăng nhập'); return; }
+
+  const btn = document.getElementById('nd-submit');
+  btn.textContent = 'Đang lưu…'; btn.disabled = true;
+
+  const val = parseInt((document.getElementById('nd-value')?.value||'0').replace(/\D/g,'')) || 0;
+  const result = await dbInsert('deals', {
+    workspace_id: currentWorkspaceId,
+    name,
+    company:      document.getElementById('nd-company')?.value?.trim() || null,
+    value:        val,
+    stage:        document.getElementById('nd-stage')?.value || 'prospect',
+    close_date:   document.getElementById('nd-close')?.value || null,
+    description:  document.getElementById('nd-desc')?.value?.trim() || null,
+    probability:  20,
+    ai_win_prob:  Math.floor(Math.random() * 40) + 20,
+    owner_id:     currentUser?.id || null,
+  });
+
+  if (result) {
+    showToast('✓ Đã tạo deal: ' + name);
+    document.getElementById('new-deal-modal').style.display = 'none';
+    await loadDealsList();
+    await logActivity('deal', result.id, 'created', 'Deal mới: ' + name);
+  } else {
+    showToast('⚠ Lỗi lưu deal');
+  }
+  btn.textContent = '💾 Lưu Deal'; btn.disabled = false;
+}
+
+async function submitNewCampaign() {
+  const name = document.getElementById('nc-name')?.value?.trim();
+  if (!name) { showToast('⚠ Vui lòng nhập tên campaign'); return; }
+  if (!currentWorkspaceId) { showToast('⚠ Chưa đăng nhập'); return; }
+
+  const btn = document.getElementById('ncamp-submit');
+  btn.textContent = 'Đang tạo…'; btn.disabled = true;
+
+  const budget = parseInt((document.getElementById('nc-budget')?.value||'0').replace(/\D/g,'')) || 0;
+  const result = await dbInsert('campaigns', {
+    workspace_id: currentWorkspaceId,
+    name,
+    channel:     document.getElementById('nc-channel')?.value || 'email',
+    status:      'draft',
+    budget,
+    goal:        document.getElementById('nc-goal')?.value?.trim() || null,
+    start_date:  document.getElementById('nc-start')?.value || null,
+    end_date:    document.getElementById('nc-end')?.value || null,
+    owner_id:    currentUser?.id || null,
+    reach: 0, leads_count: 0, spent: 0, roi: 0, ai_score: 0,
+  });
+
+  if (result) {
+    showToast('✓ Đã tạo campaign: ' + name);
+    document.getElementById('new-campaign-modal').style.display = 'none';
+    await loadCampaignsList();
+    await logActivity('campaign', result.id, 'created', 'Campaign mới: ' + name);
+  } else {
+    showToast('⚠ Lỗi tạo campaign');
+  }
+  btn.textContent = '💾 Tạo Campaign'; btn.disabled = false;
+}
+
+// Close modals on backdrop click
+['new-lead-modal','new-deal-modal','new-campaign-modal'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('click', e => { if(e.target === el) el.style.display = 'none'; });
+});
+
+// Delete campaign
+async function deleteCampaign(id, name) {
+  if (!confirm('Xóa campaign "' + name + '"?')) return;
+  const ok = await dbDelete('campaigns', id);
+  if (ok) { showToast('✓ Đã xóa: ' + name); await loadCampaignsList(); }
+  else showToast('⚠ Lỗi xóa campaign');
+}
+
+// Update lead stage (for drag or button)
+async function updateLeadStage(leadId, newStage) {
+  const ok = await dbUpdate('leads', leadId, { stage: newStage });
+  if (ok) { await loadLeadsList(); showToast('✓ Đã cập nhật stage'); }
+}
+
+// Update deal stage
+async function updateDealStage(dealId, newStage) {
+  const ok = await dbUpdate('deals', dealId, { stage: newStage });
+  if (ok) { await loadDealsList(); showToast('✓ Đã cập nhật stage'); }
+}
+
+// Click on lead card → open detail with real data
+document.addEventListener('click', e => {
+  const card = e.target.closest('[data-lead-id]');
+  if (card) {
+    const id = card.dataset.leadId;
+    openDetail('lead', id);
+    // Load real data into detail page
+    loadRealLeadDetail(id);
+  }
+  const dealCard = e.target.closest('[data-deal-id]');
+  if (dealCard && !e.target.closest('.btn')) {
+    const id = dealCard.dataset.dealId;
+    openDetail('deal', id);
+    loadRealDealDetail(id);
+  }
+});
+
+async function loadRealLeadDetail(id) {
+  const { data } = await supa.from('leads').select('*').eq('id', id).single();
+  if (!data) return;
+  safeSet('ld-name','textContent', data.full_name);
+  safeSet('ld-title','textContent', (data.job_title||'') + (data.company ? ' tại ' + data.company : ''));
+  safeSet('ld-score','textContent', data.ai_score);
+  safeStyle('ld-score-bar','width', data.ai_score + '%');
+  safeSet('ld-stage','className', 'tag ' + data.status);
+  safeSet('ld-stage','textContent', data.status === 'hot' ? '🔥 Hot' : data.status === 'warm' ? 'Warm' : 'Cold');
+  safeSet('ld-email','value', data.email||'');
+  safeSet('ld-phone','value', data.phone||'');
+  safeSet('ld-company','value', data.company||'');
+  safeSet('ld-jobtitle','value', data.job_title||'');
+  safeSet('ld-source','value', data.source||'');
+  safeSet('ld-value','value', (data.pipeline_value||0).toLocaleString('vi'));
+  safeSet('ld-notes','value', data.notes||'');
+  safeSet('ld-stage-name','textContent', data.stage);
+  // Store id for save
+  document.getElementById('detail-lead').dataset.leadId = id;
+}
+
+async function loadRealDealDetail(id) {
+  const { data } = await supa.from('deals').select('*').eq('id', id).single();
+  if (!data) return;
+  safeSet('dd-name','textContent', data.name);
+  safeSet('dd-company','textContent', data.company||'');
+  safeSet('dd-value','textContent', formatCurrency(data.value||0));
+  safeSet('dd-prob','textContent', (data.ai_win_prob||0) + '%');
+  safeStyle('dd-prob-bar','width', (data.ai_win_prob||0) + '%');
+  safeSet('dd-stage-badge','textContent', data.stage);
+  safeSet('dd-close','textContent', data.close_date||'—');
+  safeSet('dd-contact','value', data.contact_id||'');
+  safeSet('dd-deal-value','value', (data.value||0).toLocaleString('vi'));
+  safeSet('dd-close-date','value', data.close_date||'');
+  safeSet('dd-next-step','value', data.next_step||'');
+  safeSet('dd-description','value', data.description||'');
+  document.getElementById('detail-deal').dataset.dealId = id;
+  loadDealDetail(id);
+}
 
 </script>
 
@@ -4578,6 +4795,112 @@ document.addEventListener('DOMContentLoaded', function() {
       <button onclick="document.getElementById('file-protocol-help').style.display='none'" style="width:100%;margin-top:16px;padding:10px;background:linear-gradient(135deg,#00d4aa,#00a8ff);border:none;border-radius:8px;color:#000;font-size:13px;font-weight:600;cursor:pointer">
         Đã hiểu, đóng lại
       </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ── NEW LEAD MODAL ── -->
+<div id="new-lead-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:600;align-items:center;justify-content:center;padding:20px">
+  <div style="background:var(--bg2);border:1px solid var(--border2);border-radius:14px;width:100%;max-width:480px;overflow:hidden">
+    <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
+      <div style="font-family:'Syne',sans-serif;font-size:13px;font-weight:700">+ Thêm Lead mới</div>
+      <button onclick="document.getElementById('new-lead-modal').style.display='none'" style="width:24px;height:24px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;color:var(--text2);cursor:pointer;font-size:12px">✕</button>
+    </div>
+    <div style="padding:18px 20px;display:flex;flex-direction:column;gap:10px">
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Họ tên *</div><input class="field-input" id="nl-name" placeholder="Nguyễn Văn A"></div>
+        <div class="field-group"><div class="field-label">Công ty</div><input class="field-input" id="nl-company" placeholder="Tên công ty"></div>
+      </div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Email</div><input class="field-input" id="nl-email" type="email" placeholder="email@company.com"></div>
+        <div class="field-group"><div class="field-label">Điện thoại</div><input class="field-input" id="nl-phone" placeholder="090 xxx xxxx"></div>
+      </div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Chức vụ</div><input class="field-input" id="nl-title" placeholder="CEO, CMO..."></div>
+        <div class="field-group"><div class="field-label">Nguồn</div>
+          <select class="field-select" id="nl-source">
+            <option value="facebook">Facebook</option><option value="google">Google</option>
+            <option value="linkedin">LinkedIn</option><option value="referral">Referral</option>
+            <option value="organic">Organic</option><option value="email">Email</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Pipeline Value (₫)</div><input class="field-input" id="nl-value" placeholder="100,000,000"></div>
+        <div class="field-group"><div class="field-label">Trạng thái</div>
+          <select class="field-select" id="nl-status">
+            <option value="cold">Cold</option><option value="warm">Warm</option><option value="hot">Hot 🔥</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div style="padding:12px 20px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px">
+      <button onclick="document.getElementById('new-lead-modal').style.display='none'" class="btn btn-ghost">Hủy</button>
+      <button onclick="submitNewLead()" class="btn btn-primary" id="nl-submit">💾 Lưu Lead</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── NEW DEAL MODAL ── -->
+<div id="new-deal-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:600;align-items:center;justify-content:center;padding:20px">
+  <div style="background:var(--bg2);border:1px solid var(--border2);border-radius:14px;width:100%;max-width:480px;overflow:hidden">
+    <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
+      <div style="font-family:'Syne',sans-serif;font-size:13px;font-weight:700">+ Deal mới</div>
+      <button onclick="document.getElementById('new-deal-modal').style.display='none'" style="width:24px;height:24px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;color:var(--text2);cursor:pointer;font-size:12px">✕</button>
+    </div>
+    <div style="padding:18px 20px;display:flex;flex-direction:column;gap:10px">
+      <div class="field-group"><div class="field-label">Tên deal *</div><input class="field-input" id="nd-name" placeholder="Company — Package name"></div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Công ty</div><input class="field-input" id="nd-company" placeholder="Tên công ty"></div>
+        <div class="field-group"><div class="field-label">Giá trị (₫)</div><input class="field-input" id="nd-value" placeholder="500,000,000"></div>
+      </div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Stage</div>
+          <select class="field-select" id="nd-stage">
+            <option value="prospect">Prospect</option><option value="qualified">Qualified</option>
+            <option value="proposal">Proposal</option><option value="negotiation">Negotiation</option>
+          </select>
+        </div>
+        <div class="field-group"><div class="field-label">Ngày dự kiến close</div><input class="field-input" id="nd-close" type="date"></div>
+      </div>
+      <div class="field-group" style="margin-bottom:0"><div class="field-label">Mô tả</div><textarea class="field-textarea" id="nd-desc" rows="2" placeholder="Mô tả ngắn về deal..."></textarea></div>
+    </div>
+    <div style="padding:12px 20px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px">
+      <button onclick="document.getElementById('new-deal-modal').style.display='none'" class="btn btn-ghost">Hủy</button>
+      <button onclick="submitNewDeal()" class="btn btn-primary" id="nd-submit">💾 Lưu Deal</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── NEW CAMPAIGN MODAL ── -->
+<div id="new-campaign-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:600;align-items:center;justify-content:center;padding:20px">
+  <div style="background:var(--bg2);border:1px solid var(--border2);border-radius:14px;width:100%;max-width:500px;overflow:hidden">
+    <div style="padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between">
+      <div style="font-family:'Syne',sans-serif;font-size:13px;font-weight:700">+ Campaign mới</div>
+      <button onclick="document.getElementById('new-campaign-modal').style.display='none'" style="width:24px;height:24px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;color:var(--text2);cursor:pointer;font-size:12px">✕</button>
+    </div>
+    <div style="padding:18px 20px;display:flex;flex-direction:column;gap:10px">
+      <div class="field-group"><div class="field-label">Tên campaign *</div><input class="field-input" id="nc-name" placeholder="Email Q2 2026..."></div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Kênh</div>
+          <select class="field-select" id="nc-channel">
+            <option value="email">📧 Email</option><option value="facebook">📘 Facebook</option>
+            <option value="google">🔍 Google</option><option value="tiktok">🎵 TikTok</option>
+            <option value="linkedin">💼 LinkedIn</option><option value="organic">🌐 Organic</option>
+          </select>
+        </div>
+        <div class="field-group"><div class="field-label">Ngân sách (₫)</div><input class="field-input" id="nc-budget" placeholder="50,000,000"></div>
+      </div>
+      <div class="field-row">
+        <div class="field-group"><div class="field-label">Ngày bắt đầu</div><input class="field-input" id="nc-start" type="date"></div>
+        <div class="field-group"><div class="field-label">Ngày kết thúc</div><input class="field-input" id="nc-end" type="date"></div>
+      </div>
+      <div class="field-group" style="margin-bottom:0"><div class="field-label">Mục tiêu</div><textarea class="field-textarea" id="nc-goal" rows="2" placeholder="Mục tiêu của campaign..."></textarea></div>
+    </div>
+    <div style="padding:12px 20px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px">
+      <button onclick="document.getElementById('new-campaign-modal').style.display='none'" class="btn btn-ghost">Hủy</button>
+      <button onclick="submitNewCampaign()" class="btn btn-primary" id="ncamp-submit">💾 Tạo Campaign</button>
     </div>
   </div>
 </div>
