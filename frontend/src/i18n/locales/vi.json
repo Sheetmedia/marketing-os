@@ -1,0 +1,2458 @@
+{
+  "common": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "edit": "Sửa",
+    "create": "Tạo mới",
+    "add": "Thêm",
+    "search": "Tìm kiếm",
+    "loading": "Đang tải...",
+    "refresh": "Làm mới",
+    "close": "Đóng",
+    "confirm": "Xác nhận",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "actions": "Hành động",
+    "status": "Trạng thái",
+    "noData": "Chưa có dữ liệu",
+    "viewAll": "Xem tất cả",
+    "export": "Xuất dữ liệu",
+    "filter": "Lọc",
+    "active": "Đang hoạt động",
+    "inactive": "Ngừng hoạt động",
+    "paused": "Tạm dừng",
+    "archived": "Đã lưu trữ",
+    "completed": "Hoàn thành",
+    "draft": "Bản nháp",
+    "review": "Đang xem xét",
+    "scheduled": "Đã lên lịch",
+    "published": "Đã đăng",
+    "pending": "Đang chờ",
+    "view": "Xem",
+    "audit": "Kiểm tra",
+    "creating": "Đang tạo...",
+    "saving": "Đang lưu...",
+    "saveChanges": "Lưu thay đổi",
+    "tryAgainButton": "Thử lại",
+    "networkError": "Lỗi kết nối mạng. Vui lòng thử lại.",
+    "sessionExpired": "Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.",
+    "yes": "Có",
+    "no": "Không",
+    "name": "Tên",
+    "type": "Loại",
+    "date": "Ngày",
+    "all": "Tất cả",
+    "showingRange": "Hiển thị {{start}}-{{end}} trong {{total}}",
+    "selectClientFirst": "Hãy chọn khách hàng trước",
+    "deleteKeyword": "Xóa từ khóa",
+    "comingSoon": "Sắp ra mắt - cần có API key OpenAI",
+    "lost": "Đã mất",
+    "broken": "Bị hỏng",
+    "follow": "Follow",
+    "nofollow": "Nofollow",
+    "critical": "Nghiêm trọng",
+    "warning": "Cảnh báo",
+    "info": "Thông tin",
+    "proTip": "Mẹo hay:"
+  },
+  "industries": {
+    "Technology": "Công nghệ",
+    "E-commerce": "Thương mại điện tử",
+    "Healthcare": "Y tế",
+    "Finance": "Tài chính",
+    "Sustainability": "Phát triển bền vững",
+    "SaaS": "Phần mềm SaaS"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Tổng quan",
+      "seo": "SEO",
+      "contentGrowth": "Nội dung & Tăng trưởng",
+      "clientsReports": "Khách hàng & Báo cáo"
+    },
+    "dashboard": "Bảng điều khiển",
+    "knowledgeBrain": "Kho tri thức",
+    "marketingBrain": "Trí tuệ Marketing",
+    "seoByAi": "SEO bằng AI",
+    "aiAssistant": "Trợ lý AI",
+    "seoAudit": "Kiểm tra SEO",
+    "keywords": "Từ khóa",
+    "backlinks": "Backlink",
+    "competitors": "Đối thủ cạnh tranh",
+    "contentStudio": "Xưởng nội dung",
+    "imageStudio": "Xưởng hình ảnh",
+    "socialMedia": "Mạng xã hội",
+    "adsManager": "Quản lý quảng cáo",
+    "campaigns": "Chiến dịch",
+    "clients": "Khách hàng",
+    "reports": "Báo cáo",
+    "alerts": "Cảnh báo",
+    "documentation": "Tài liệu hướng dẫn",
+    "bugReport": "Báo lỗi",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất",
+    "collapse": "Thu gọn thanh bên",
+    "expand": "Mở rộng thanh bên"
+  },
+  "header": {
+    "searchPlaceholder": "Tìm kiếm bất kỳ nội dung nào... (Ctrl+K)",
+    "noClientsYet": "Chưa có khách hàng nào",
+    "admin": "Quản trị viên",
+    "reportBug": "Báo lỗi"
+  },
+  "login": {
+    "title": "MarketingOS",
+    "subtitle": "Đăng nhập vào tài khoản của bạn",
+    "email": "Email",
+    "emailPlaceholder": "ban@congty.com",
+    "password": "Mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu của bạn",
+    "forgotPassword": "Quên mật khẩu?",
+    "signIn": "Đăng nhập",
+    "signingIn": "Đang đăng nhập...",
+    "loginFailed": "Đăng nhập thất bại. Vui lòng thử lại.",
+    "invalidCredentials": "Email hoặc mật khẩu không đúng",
+    "emailRequired": "Vui lòng nhập email",
+    "emailInvalid": "Vui lòng nhập email hợp lệ",
+    "passwordRequired": "Vui lòng nhập mật khẩu",
+    "passwordMinLength": "Mật khẩu phải có ít nhất 6 ký tự",
+    "copyright": "© 2026 MarketingOS. Bảo lưu mọi quyền."
+  },
+  "dashboard": {
+    "title": "Bảng điều khiển",
+    "welcome": "Chào mừng trở lại! Đây là tình hình mới nhất của các khách hàng của bạn.",
+    "refresh": "Làm mới",
+    "totalClients": "Tổng số khách hàng",
+    "avgSeoScore": "Điểm SEO trung bình",
+    "totalKeywordsTracked": "Tổng từ khóa theo dõi",
+    "totalBacklinks": "Tổng số backlink",
+    "activeCampaigns": "Chiến dịch đang chạy",
+    "aiContentGenerated": "Nội dung AI đã tạo",
+    "organicTrafficTrend": "Xu hướng lưu lượng tự nhiên",
+    "keywordRankingsDistribution": "Phân bổ thứ hạng từ khóa",
+    "recentActivity": "Hoạt động gần đây",
+    "topPerformingKeywords": "Từ khóa hiệu quả nhất",
+    "failedToLoad": "Không thể tải bảng điều khiển",
+    "tryAgain": "Vui lòng thử lại.",
+    "tryAgainButton": "Thử lại",
+    "refreshing": "Đang làm mới...",
+    "noClientsYet": "Chưa có khách hàng nào",
+    "noClientsDesc": "Chưa có khách hàng nào. Hãy thêm khách hàng đầu tiên để bắt đầu.",
+    "recentAlerts": "Cảnh báo gần đây",
+    "progress": "Tiến độ",
+    "table": {
+      "keyword": "Từ khóa",
+      "position": "Vị trí",
+      "change": "Thay đổi",
+      "volume": "Lượng tìm kiếm",
+      "client": "Khách hàng"
+    }
+  },
+  "clients": {
+    "title": "Khách hàng",
+    "subtitle": "Quản lý và theo dõi tất cả tài khoản khách hàng của bạn.",
+    "addClient": "Thêm khách hàng",
+    "addNewClient": "Thêm khách hàng mới",
+    "editClient": "Sửa thông tin khách hàng",
+    "companyName": "Tên công ty *",
+    "companyNamePlaceholder": "VD: Công ty Acme",
+    "websiteDomain": "Tên miền website *",
+    "websiteDomainPlaceholder": "VD: acmecorp.com",
+    "industry": "Ngành nghề",
+    "marketingGoals": "Mục tiêu marketing",
+    "marketingGoalsPlaceholder": "VD: Tăng lượng truy cập tự nhiên 50%",
+    "createClient": "Tạo khách hàng",
+    "searchPlaceholder": "Tìm khách hàng theo tên hoặc tên miền...",
+    "allStatuses": "Tất cả trạng thái",
+    "allIndustries": "Tất cả ngành nghề",
+    "failedToLoad": "Không thể tải danh sách khách hàng",
+    "failedToLoadGeneric": "Không thể tải danh sách khách hàng.",
+    "noClientsYet": "Chưa có khách hàng nào",
+    "noClientsDesc": "Hãy thêm khách hàng đầu tiên để bắt đầu quản lý SEO.",
+    "noClientsFound": "Không tìm thấy khách hàng",
+    "noClientsFoundDesc": "Hãy thử điều chỉnh từ khóa tìm kiếm hoặc bộ lọc.",
+    "seoScore": "Điểm SEO",
+    "keywords": "Từ khóa",
+    "campaigns": "Chiến dịch",
+    "auditStarted": "Đã bắt đầu kiểm tra thành công!",
+    "auditFailed": "Kiểm tra thất bại: {{status}}",
+    "auditStartFailed": "Không thể bắt đầu kiểm tra."
+  },
+  "clientDetail": {
+    "tabs": {
+      "Overview": "Tổng quan",
+      "SEO": "SEO",
+      "Keywords": "Từ khóa",
+      "Backlinks": "Backlink",
+      "Content": "Nội dung",
+      "Campaigns": "Chiến dịch",
+      "Reports": "Báo cáo"
+    },
+    "backToClients": "Quay lại danh sách khách hàng",
+    "failedToLoadClient": "Không thể tải thông tin khách hàng",
+    "failedToLoadClientData": "Không thể tải dữ liệu khách hàng.",
+    "clientNotFound": "Không tìm thấy khách hàng",
+    "clientNotFoundDesc": "Không thể tải khách hàng được yêu cầu.",
+    "runAudit": "Chạy kiểm tra",
+    "clientSince": "Khách hàng từ {{date}}",
+    "vsLastMonth": "{{change}} so với tháng trước",
+    "organicTraffic": "Lưu lượng tự nhiên",
+    "recentKeywords": "Từ khóa gần đây",
+    "brandKit": "Bộ nhận diện thương hiệu",
+    "brandColors": "Màu thương hiệu",
+    "fonts": "Phông chữ",
+    "goals": "Mục tiêu",
+    "competitors": "Đối thủ cạnh tranh",
+    "domainAuthorityAbbr": "DA",
+    "traffic": "Lưu lượng",
+    "noDashboardData": "Chưa có dữ liệu bảng điều khiển",
+    "noDashboardDataDesc": "Hãy chạy kiểm tra hoặc thêm từ khóa để bắt đầu thu thập dữ liệu cho khách hàng này.",
+    "googleSearchConsole": "Google Search Console",
+    "connected": "Đã kết nối",
+    "connectGscDesc": "Kết nối Google Search Console để lấy dữ liệu lưu lượng, lượt hiển thị và thứ hạng thực tế — miễn phí, không cần đăng ký.",
+    "connectGsc": "Kết nối Google Search Console",
+    "gscConnectedSuccess": "Đã kết nối Google Search Console thành công!",
+    "gscConnectFailed": "Không thể kết nối Google Search Console. Vui lòng thử lại.",
+    "gscOAuthNotConfigured": "Google OAuth chưa được cấu hình.",
+    "gscConnectStartFailed": "Không thể bắt đầu kết nối Google.",
+    "gscLoadFailed": "Không thể tải dữ liệu Search Console.",
+    "selectGscProperty": "Chọn tài sản đã xác minh khớp với trang web của khách hàng này:",
+    "noVerifiedProperties": "Không tìm thấy tài sản đã xác minh nào trong tài khoản Google này.",
+    "lastDaysRealData": "28 ngày gần nhất · dữ liệu thực từ Google",
+    "clicks": "Lượt nhấp",
+    "impressions": "Lượt hiển thị",
+    "ctr": "CTR",
+    "avgPosition": "Vị trí trung bình",
+    "query": "Truy vấn",
+    "latestAudit": "Kiểm tra gần nhất",
+    "overallScore": "Điểm tổng thể",
+    "performance": "Hiệu suất",
+    "issuesFound": "Số vấn đề phát hiện",
+    "seoMetricsOverTime": "Chỉ số SEO theo thời gian",
+    "auditHistory": "Lịch sử kiểm tra",
+    "score": "Điểm",
+    "issues": "Vấn đề",
+    "noSeoData": "Chưa có dữ liệu SEO",
+    "noSeoDataDesc": "Hãy chạy kiểm tra để bắt đầu thu thập dữ liệu SEO.",
+    "trackedKeywords": "Từ khóa đang theo dõi",
+    "difficulty": "Độ khó",
+    "noKeywordsTracked": "Chưa theo dõi từ khóa nào",
+    "noKeywordsTrackedDesc": "Hãy thêm từ khóa để bắt đầu theo dõi thứ hạng.",
+    "backlinksTitle": "Backlink",
+    "sourceUrl": "URL nguồn",
+    "targetUrl": "URL đích",
+    "noBacklinksFound": "Không tìm thấy backlink nào",
+    "noBacklinksFoundDesc": "Dữ liệu backlink sẽ hiển thị ở đây khi được phát hiện.",
+    "contentTitle": "Nội dung",
+    "untitled": "Chưa có tiêu đề",
+    "article": "Bài viết",
+    "noContentYet": "Chưa có nội dung nào",
+    "noContentYetDesc": "Hãy tạo nội dung để xem tại đây.",
+    "campaignsTitle": "Chiến dịch",
+    "noCampaignsYet": "Chưa có chiến dịch nào",
+    "noCampaignsYetDesc": "Hãy tạo chiến dịch để bắt đầu.",
+    "reportsTitle": "Báo cáo",
+    "reportNumber": "Báo cáo #{{num}}",
+    "general": "Chung",
+    "noReportsYet": "Chưa có báo cáo nào",
+    "noReportsYetDesc": "Báo cáo sẽ hiển thị ở đây sau khi được tạo.",
+    "failedToLoadTabData": "Không thể tải dữ liệu {{tab}}."
+  },
+  "keywords": {
+    "title": "Phân tích từ khóa",
+    "subtitle": "Theo dõi thứ hạng từ khóa, khám phá cơ hội và giám sát hiệu suất",
+    "addClientDesc": "Hãy thêm khách hàng để bắt đầu theo dõi từ khóa.",
+    "research": "Nghiên cứu",
+    "addKeywords": "Thêm từ khóa",
+    "enterOnePerLine": "Nhập mỗi từ khóa trên một dòng:",
+    "adding": "Đang thêm...",
+    "noKeywordsTracked": "Chưa theo dõi từ khóa nào",
+    "noKeywordsTrackedDesc": "Hãy thêm từ khóa để bắt đầu theo dõi thứ hạng.",
+    "totalKeywords": "Tổng số từ khóa",
+    "avgPosition": "Vị trí trung bình",
+    "inTop10": "Trong Top 10",
+    "improved": "Đã cải thiện",
+    "rankingDistribution": "Phân bổ thứ hạng",
+    "rankingTrend": "Xu hướng thứ hạng (Từ khóa hàng đầu)",
+    "rankingHistoryPlaceholder": "Lịch sử thứ hạng sẽ hiển thị khi dữ liệu được thu thập theo thời gian.",
+    "trackedKeywords": "Từ khóa đang theo dõi",
+    "searchPlaceholder": "Tìm từ khóa...",
+    "difficulty": "Độ khó",
+    "cpc": "CPC",
+    "serpFeatures": "Tính năng SERP",
+    "url": "URL"
+  },
+  "backlinks": {
+    "title": "Phân tích Backlink",
+    "selectClientDesc": "Hãy thêm khách hàng để bắt đầu phân tích backlink.",
+    "analyzeDomain": "Phân tích tên miền",
+    "analysisStarted": "Đã bắt đầu phân tích tên miền thành công!",
+    "noBacklinksFound": "Không tìm thấy backlink nào",
+    "noBacklinksFoundDesc": "Dữ liệu backlink sẽ hiển thị ở đây khi có sẵn.",
+    "totalBacklinks": "Tổng số backlink",
+    "referringDomains": "Tên miền liên kết đến",
+    "avgDomainAuthority": "DA trung bình",
+    "spamScore": "Điểm spam",
+    "backlinksCount": "Backlink ({{count}})",
+    "searchPlaceholder": "Tìm URL hoặc anchor text...",
+    "allStatus": "Tất cả trạng thái",
+    "allRelTypes": "Tất cả loại rel",
+    "sourceUrl": "URL nguồn",
+    "targetUrl": "URL đích",
+    "anchorText": "Anchor Text",
+    "rel": "Rel",
+    "noBacklinksMatchFilters": "Không có backlink nào khớp với bộ lọc hiện tại."
+  },
+  "seoAudit": {
+    "title": "Kiểm tra SEO",
+    "subtitle": "Phân tích toàn diện website và kiểm tra sức khỏe SEO kỹ thuật",
+    "runNewAudit": "Chạy kiểm tra mới",
+    "urlPlaceholder": "Nhập URL website (VD: https://example.com)",
+    "analyze": "Phân tích",
+    "enterUrlError": "Vui lòng nhập URL để phân tích.",
+    "auditStarted": "Đã bắt đầu kiểm tra thành công!",
+    "noAuditsYet": "Chưa có kiểm tra nào. Hãy chạy kiểm tra đầu tiên.",
+    "noAuditsYetDesc": "Nhập URL ở trên và bấm Phân tích để bắt đầu.",
+    "overallScore": "Điểm tổng thể",
+    "performance": "Hiệu suất",
+    "seo": "SEO",
+    "accessibility": "Khả năng truy cập",
+    "bestPractices": "Thực hành tốt nhất",
+    "coreWebVitals": "Core Web Vitals",
+    "threshold": "Ngưỡng: {{threshold}}",
+    "pagesCrawled": "Số trang đã thu thập",
+    "brokenLinks": "Liên kết hỏng",
+    "redirectChains": "Chuỗi chuyển hướng",
+    "duplicateContent": "Nội dung trùng lặp",
+    "technicalIssues": "Vấn đề kỹ thuật ({{count}})",
+    "urlLabel": "URL: {{url}}",
+    "mobileSeoIssues": "Vấn đề SEO trên di động"
+  },
+  "competitors": {
+    "title": "Phân tích đối thủ cạnh tranh",
+    "selectClientDesc": "Hãy thêm khách hàng để bắt đầu phân tích đối thủ.",
+    "addCompetitor": "Thêm đối thủ",
+    "noCompetitorsTracked": "Chưa theo dõi đối thủ nào",
+    "noCompetitorsTrackedDesc": "Hãy thêm đối thủ để bắt đầu theo dõi hiệu suất của họ.",
+    "deleteCompetitor": "Xóa đối thủ",
+    "domainAuthority": "Domain Authority",
+    "organicTraffic": "Lưu lượng tự nhiên",
+    "totalKeywords": "Tổng số từ khóa",
+    "totalBacklinks": "Tổng số backlink",
+    "competitorName": "Tên đối thủ",
+    "competitorNamePlaceholder": "VD: Công ty Acme",
+    "domain": "Tên miền",
+    "domainPlaceholder": "VD: acme.com",
+    "failedToAdd": "Không thể thêm đối thủ",
+    "failedToDelete": "Không thể xóa đối thủ",
+    "analysisTitle": "{{name}} - Phân tích",
+    "notAvailable": "Không có",
+    "higher": "cao hơn",
+    "lower": "thấp hơn",
+    "equal": "bằng nhau"
+  },
+  "contentStudio": {
+    "title": "Xưởng nội dung",
+    "subtitle": "Tạo, tối ưu và quản lý toàn bộ nội dung marketing với AI.",
+    "createContent": "Tạo nội dung",
+    "noContentYet": "Chưa có nội dung nào.",
+    "noContentYetDesc": "Hãy tạo nội dung đầu tiên để bắt đầu.",
+    "totalContent": "Tổng số nội dung",
+    "published": "Đã đăng",
+    "drafts": "Bản nháp",
+    "avgSeoScore": "Điểm SEO trung bình",
+    "allContent": "Tất cả nội dung",
+    "blogArticles": "Bài viết blog",
+    "landingPages": "Landing Page",
+    "emailCampaigns": "Chiến dịch email",
+    "adCopy": "Nội dung quảng cáo",
+    "searchPlaceholder": "Tìm nội dung...",
+    "noContentFound": "Không tìm thấy nội dung",
+    "noContentFoundDesc": "Hãy thử điều chỉnh bộ lọc hoặc tạo nội dung mới.",
+    "editContent": "Sửa nội dung",
+    "createNewContent": "Tạo nội dung mới",
+    "contentType": "Loại nội dung",
+    "topicTitle": "Chủ đề / Tiêu đề",
+    "topicTitlePlaceholder": "VD: Cách cải thiện tốc độ website",
+    "targetKeywords": "Từ khóa mục tiêu",
+    "targetKeywordsPlaceholder": "Cách nhau bởi dấu phẩy",
+    "tone": "Giọng văn",
+    "length": "Độ dài",
+    "additionalInstructions": "Hướng dẫn bổ sung",
+    "additionalInstructionsPlaceholder": "Hướng dẫn cụ thể cho việc tạo nội dung...",
+    "generateWithAI": "Tạo bằng AI",
+    "failedToDelete": "Không thể xóa nội dung",
+    "failedToGenerate": "Không thể tạo nội dung",
+    "readability": "Độ dễ đọc",
+    "types": {
+      "blog": "Blog",
+      "landing-page": "Landing Page",
+      "email": "Email",
+      "ad-copy": "Quảng cáo",
+      "social": "Bài đăng MXH"
+    },
+    "typeOptions": {
+      "blog": "Bài viết blog",
+      "landing-page": "Landing Page",
+      "email": "Chiến dịch email",
+      "ad-copy": "Nội dung quảng cáo",
+      "social": "Bài đăng mạng xã hội"
+    },
+    "tones": {
+      "professional": "Chuyên nghiệp",
+      "casual": "Thân mật",
+      "persuasive": "Thuyết phục",
+      "educational": "Giáo dục",
+      "humorous": "Hài hước"
+    },
+    "lengths": {
+      "short": "Ngắn",
+      "medium": "Vừa",
+      "long": "Dài"
+    }
+  },
+  "imageStudio": {
+    "title": "Xưởng sáng tạo AI",
+    "subtitle": "Tạo hình ảnh marketing ấn tượng bằng AI trong vài giây.",
+    "generateImage": "Tạo hình ảnh",
+    "chooseTemplate": "Chọn mẫu",
+    "prompt": "Mô tả",
+    "promptPlaceholder": "Mô tả hình ảnh bạn muốn tạo...",
+    "style": "Phong cách",
+    "textOverlay": "Chữ trên hình",
+    "textOverlayPlaceholder": "Chữ hiển thị trên hình ảnh",
+    "brandColors": "Màu thương hiệu",
+    "primary": "Màu chính",
+    "secondary": "Màu phụ",
+    "generatedImages": "Hình ảnh đã tạo ({{count}})",
+    "noImagesYet": "Chưa có hình ảnh nào được tạo.",
+    "noImagesYetDesc": "Dùng bảng điều khiển ở trên để tạo hình ảnh đầu tiên.",
+    "download": "Tải xuống",
+    "delete": "Xóa",
+    "imageUrlAlert": "URL hình ảnh: {{url}}",
+    "failedToGenerate": "Không thể tạo hình ảnh",
+    "failedToDelete": "Không thể xóa hình ảnh",
+    "templates": {
+      "instagram-post": "Bài đăng Instagram",
+      "facebook-ad": "Quảng cáo Facebook",
+      "linkedin-banner": "Banner LinkedIn",
+      "blog-thumbnail": "Ảnh thu nhỏ Blog",
+      "website-banner": "Banner Website",
+      "youtube-thumbnail": "Ảnh thu nhỏ YouTube"
+    },
+    "styles": {
+      "photorealistic": "Chân thực",
+      "illustration": "Minh họa",
+      "minimal": "Tối giản",
+      "abstract": "Trừu tượng",
+      "corporate": "Doanh nghiệp",
+      "vibrant": "Sống động"
+    }
+  },
+  "socialMedia": {
+    "title": "Mạng xã hội",
+    "createPost": "Tạo bài đăng",
+    "connectAccount": "Kết nối tài khoản",
+    "dismiss": "Bỏ qua",
+    "platform": "Nền tảng",
+    "content": "Nội dung",
+    "contentPlaceholder": "Viết nội dung bài đăng của bạn...",
+    "scheduleDate": "Ngày lên lịch (tùy chọn)",
+    "creatingPost": "Đang tạo...",
+    "connecting": "Đang kết nối...",
+    "connect": "Kết nối",
+    "accountName": "Tên tài khoản",
+    "accountNamePlaceholder": "@username hoặc tên trang",
+    "noPostsYet": "Chưa có bài đăng nào",
+    "noPostsYetDesc": "Hãy tạo bài đăng mạng xã hội đầu tiên để bắt đầu.",
+    "allPlatforms": "Tất cả nền tảng",
+    "allStatuses": "Tất cả trạng thái",
+    "followersCount": "{{count}} người theo dõi"
+  },
+  "knowledgeBase": {
+    "subtitle": "Kho tri thức riêng của từng client — dùng để Content Studio và AI Assistant trả lời chính xác, đúng brand voice.",
+    "addDocument": "Thêm tài liệu",
+    "noClients": "Chưa có client",
+    "noClientsDesc": "Thêm client trước để tạo kho tri thức.",
+    "searchPlaceholder": "Thử tìm kiếm ngữ nghĩa trong kho tri thức...",
+    "searching": "Đang tìm...",
+    "noRelevantChunks": "Không tìm thấy đoạn nào liên quan.",
+    "relevance": "Độ liên quan: {{score}}%",
+    "addDocumentDialogTitle": "Thêm tài liệu vào Knowledge Base",
+    "titleLabel": "Tiêu đề",
+    "titlePlaceholder": "VD: Brand Guideline, FAQ sản phẩm...",
+    "contentLabel": "Nội dung (text/markdown)",
+    "contentPlaceholder": "Dán nội dung: brand voice, thông tin sản phẩm, FAQ, chính sách...",
+    "processing": "Đang xử lý (chunk + embed)...",
+    "noDocuments": "Chưa có tài liệu nào",
+    "noDocumentsDesc": "Thêm tài liệu đầu tiên để Content Studio & AI Assistant có thể tham chiếu.",
+    "chunksCount": "{{count}} đoạn · {{date}}"
+  },
+  "marketingBrain": {
+    "subtitle": "Lớp điều phối AI: tổng hợp dữ liệu SEO, Content, Ads, Social, Backlink... thật của client để đề xuất chiến lược marketing tổng thể.",
+    "noClients": "Chưa có client",
+    "noClientsDesc": "Thêm client trước để tạo chiến lược marketing.",
+    "historyButton": "Lịch sử ({{count}})",
+    "generating": "Đang phân tích...",
+    "regenerate": "Tạo lại chiến lược",
+    "generate": "Tạo chiến lược",
+    "generateFailed": "Tạo chiến lược thất bại",
+    "historyTitle": "Lịch sử báo cáo",
+    "noHistory": "Chưa có báo cáo nào.",
+    "defaultStrategyLabel": "Báo cáo chiến lược",
+    "noStrategyTitle": "Chưa có chiến lược nào",
+    "noStrategyDesc": "Bấm \"Tạo chiến lược\" để AI phân tích toàn bộ dữ liệu hiện có của client và đề xuất hướng đi.",
+    "situationOverview": "Tổng quan tình hình",
+    "issuesFound": "Vấn đề phát hiện",
+    "noIssues": "Không có vấn đề đáng chú ý.",
+    "opportunities": "Cơ hội",
+    "estimatedImpact": "Tác động dự kiến: {{impact}}",
+    "noOpportunities": "Chưa có cơ hội nào được đề xuất.",
+    "channelRecommendations": "Đề xuất theo kênh",
+    "noChannelRecommendations": "Chưa có đề xuất kênh.",
+    "budgetAllocation": "Phân bổ ngân sách",
+    "noBudgetAllocation": "Chưa có đề xuất ngân sách.",
+    "kpiForecast": "Dự báo KPI (90 ngày)",
+    "noKpiForecast": "Chưa có dự báo KPI."
+  },
+  "aiAssistant": {
+    "welcomeMessage": "Xin chào! Tôi là Trợ lý Marketing AI của bạn. Tôi có thể giúp bạn về chiến lược SEO, ý tưởng nội dung, phân tích đối thủ, lên kế hoạch chiến dịch và nhiều hơn nữa. Bạn muốn bắt đầu với việc gì?",
+    "newChat": "Trò chuyện mới",
+    "tips": "Mẹo",
+    "tipsDesc": "Dùng các gợi ý nhanh bên dưới khung chat hoặc tự nhập câu hỏi marketing của bạn.",
+    "title": "Trợ lý Marketing AI",
+    "subtitle": "Được vận hành bởi AI tiên tiến · Luôn học hỏi",
+    "emptyResponse": "Đã nhận được tin nhắn của bạn nhưng phản hồi trống. Vui lòng thử lại.",
+    "failedToGetResponse": "Không thể lấy phản hồi từ AI",
+    "errorProcessing": "Xin lỗi, đã xảy ra lỗi khi xử lý yêu cầu của bạn. Vui lòng thử lại.",
+    "thinking": "AI đang suy nghĩ...",
+    "allClients": "Tất cả khách hàng",
+    "inputPlaceholder": "Hỏi tôi bất cứ điều gì về marketing...",
+    "disclaimer": "Phản hồi của AI được tạo dựa trên dữ liệu tài khoản của bạn và các phương pháp marketing tốt nhất.",
+    "suggestions": {
+      "analyzeSeo": "Phân tích SEO website của tôi",
+      "generateContentIdeas": "Tạo ý tưởng nội dung",
+      "compareCompetitors": "So sánh đối thủ cạnh tranh",
+      "planCampaign": "Lên kế hoạch chiến dịch",
+      "keywordOpportunities": "Cơ hội từ khóa",
+      "improveAdPerformance": "Cải thiện hiệu suất quảng cáo"
+    }
+  },
+  "alerts": {
+    "title": "Cảnh báo & Giám sát",
+    "markAllRead": "Đánh dấu đã đọc tất cả",
+    "noAlertsYet": "Chưa có cảnh báo nào",
+    "noAlertsYetDesc": "Cảnh báo sẽ hiển thị ở đây khi có thay đổi quan trọng được phát hiện.",
+    "totalAlerts": "Tổng số cảnh báo",
+    "warnings": "Cảnh báo",
+    "unread": "Chưa đọc",
+    "read": "Đã đọc",
+    "filters": "Bộ lọc:",
+    "alertType": "Loại cảnh báo",
+    "allTypes": "Tất cả loại",
+    "rankingDrops": "Tụt hạng",
+    "backlinkLoss": "Mất backlink",
+    "trafficDrop": "Sụt lưu lượng",
+    "campaignIssues": "Vấn đề chiến dịch",
+    "severity": "Mức độ",
+    "allSeverities": "Tất cả mức độ",
+    "details": "Chi tiết",
+    "noAlertsFound": "Không tìm thấy cảnh báo nào",
+    "tryAdjustingFilters": "Hãy thử điều chỉnh bộ lọc",
+    "alertSettings": "Cài đặt cảnh báo",
+    "notificationChannels": "Kênh thông báo",
+    "emailNotifications": "Thông báo qua email",
+    "slackNotifications": "Thông báo qua Slack",
+    "inAppNotifications": "Thông báo trong ứng dụng",
+    "saveSettings": "Lưu cài đặt",
+    "settingsSaved": "Đã lưu cài đặt thành công.",
+    "types": {
+      "ranking_drop": "Tụt hạng",
+      "backlink_loss": "Mất backlink",
+      "traffic_drop": "Sụt lưu lượng",
+      "campaign_issue": "Vấn đề chiến dịch",
+      "milestone": "Cột mốc",
+      "new_backlink": "Backlink mới"
+    },
+    "dateGroups": {
+      "today": "Hôm nay",
+      "yesterday": "Hôm qua",
+      "this_week": "Tuần này",
+      "earlier": "Trước đó"
+    }
+  },
+  "settings": {
+    "subtitle": "Quản lý tài khoản, agency và các tích hợp của bạn.",
+    "tabs": {
+      "Profile": "Hồ sơ",
+      "Agency": "Agency",
+      "Integrations": "Tích hợp",
+      "Notifications": "Thông báo",
+      "API Keys": "API Keys"
+    },
+    "profileInformation": "Thông tin hồ sơ",
+    "changeAvatar": "Đổi ảnh đại diện",
+    "avatarHint": "JPG, PNG hoặc GIF. Tối đa 2MB.",
+    "firstName": "Tên",
+    "lastName": "Họ",
+    "profileSaved": "Đã lưu hồ sơ thành công.",
+    "changePassword": "Đổi mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "currentPasswordPlaceholder": "Nhập mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "newPasswordPlaceholder": "Nhập mật khẩu mới",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu mới",
+    "updatePassword": "Cập nhật mật khẩu",
+    "agencySettings": "Cài đặt Agency",
+    "changeLogo": "Đổi logo",
+    "agencyName": "Tên Agency",
+    "subscriptionPlan": "Gói đăng ký",
+    "professionalPlan": "Gói Professional",
+    "planDesc": "Tối đa 50 khách hàng, không giới hạn từ khóa, tạo nội dung bằng AI",
+    "perMonth": "mỗi tháng",
+    "upgradePlan": "Nâng cấp gói",
+    "connectedServices": "Dịch vụ đã kết nối",
+    "notConnected": "Chưa kết nối",
+    "disconnect": "Ngắt kết nối",
+    "notificationPreferences": "Tùy chọn thông báo",
+    "savePreferences": "Lưu tùy chọn",
+    "apiKeysTitle": "API Keys",
+    "generateNewKey": "Tạo Key mới",
+    "createdLabel": "Tạo ngày {{date}} · Dùng lần cuối {{lastUsed}}",
+    "apiKeyNoticeImportant": "Quan trọng:",
+    "apiKeyNoticeText": "API keys cấp quyền truy cập đầy đủ vào tài khoản của bạn. Không chia sẻ công khai hoặc đưa vào version control.",
+    "integrationDescriptions": {
+      "Google Ads": "Quản lý chiến dịch PPC và đấu giá",
+      "Facebook Ads": "Chiến dịch quảng cáo mạng xã hội",
+      "LinkedIn Ads": "Quảng cáo B2B và tạo lead",
+      "Google Analytics": "Phân tích lưu lượng và hành vi website",
+      "Google Search Console": "Hiệu suất tìm kiếm và lập chỉ mục"
+    },
+    "notifications": {
+      "seo_score": {
+        "label": "Thay đổi điểm SEO",
+        "description": "Cảnh báo khi điểm SEO của bất kỳ khách hàng nào thay đổi hơn 5 điểm"
+      },
+      "keyword_ranking": {
+        "label": "Thay đổi thứ hạng từ khóa",
+        "description": "Thông báo khi từ khóa vào hoặc rời khỏi trang đầu"
+      },
+      "backlink_new": {
+        "label": "Phát hiện backlink mới",
+        "description": "Cảnh báo khi phát hiện backlink mới"
+      },
+      "backlink_lost": {
+        "label": "Mất backlink",
+        "description": "Cảnh báo khi backlink hiện có bị mất"
+      },
+      "crawl_errors": {
+        "label": "Lỗi thu thập dữ liệu",
+        "description": "Thông báo về lỗi thu thập dữ liệu mới phát hiện"
+      },
+      "campaign_complete": {
+        "label": "Cột mốc chiến dịch",
+        "description": "Cảnh báo khi chiến dịch đạt cột mốc quan trọng"
+      },
+      "weekly_digest": {
+        "label": "Bản tin hàng tuần",
+        "description": "Nhận tóm tắt hàng tuần về các chỉ số của tất cả khách hàng"
+      },
+      "ai_content": {
+        "label": "Nội dung AI đã sẵn sàng",
+        "description": "Thông báo khi nội dung do AI tạo ra sẵn sàng để xem xét"
+      }
+    },
+    "apiKeyNames": {
+      "Production API Key": "API Key Production",
+      "Development Key": "API Key Development"
+    },
+    "hoursAgo": "{{count}} giờ trước",
+    "daysAgo": "{{count}} ngày trước"
+  },
+  "adsManager": {
+    "createCampaign": "Tạo chiến dịch",
+    "syncSuccess": "Đồng bộ thành công!",
+    "syncTriggered": "Đã kích hoạt đồng bộ thành công!",
+    "campaignNameLabel": "Tên chiến dịch",
+    "campaignNamePlaceholder": "Tên chiến dịch",
+    "platform": "Nền tảng",
+    "budgetLabel": "Ngân sách ($)",
+    "campaignDetails": "Chi tiết chiến dịch",
+    "budget": "Ngân sách",
+    "spend": "Chi tiêu",
+    "clicks": "Lượt nhấp",
+    "conversions": "Chuyển đổi",
+    "roas": "ROAS",
+    "noCampaigns": "Chưa có chiến dịch quảng cáo nào",
+    "noCampaignsDesc": "Tạo chiến dịch quảng cáo đầu tiên để bắt đầu.",
+    "totalSpend": "Tổng chi tiêu",
+    "impressions": "Lượt hiển thị",
+    "accountsTab": "Tài khoản",
+    "searchCampaignsPlaceholder": "Tìm chiến dịch...",
+    "ended": "Đã kết thúc",
+    "tableCampaign": "Chiến dịch",
+    "detailsButton": "Chi tiết",
+    "noAdAccounts": "Chưa kết nối tài khoản quảng cáo nào",
+    "noAdAccountsDesc": "Kết nối tài khoản quảng cáo của bạn để bắt đầu.",
+    "disconnectedLabel": "Chưa kết nối",
+    "lastSynced": "Đồng bộ lần cuối: {{date}}",
+    "syncNow": "Đồng bộ ngay"
+  },
+  "campaigns": {
+    "title": "Lập kế hoạch chiến dịch",
+    "newCampaign": "Chiến dịch mới",
+    "clientLabel": "Khách hàng",
+    "startDate": "Ngày bắt đầu",
+    "endDate": "Ngày kết thúc",
+    "goalsLabel": "Mục tiêu (cách nhau bởi dấu phẩy)",
+    "goalsPlaceholder": "Tăng lưu lượng truy cập, Tăng chuyển đổi",
+    "channelsLabel": "Kênh (cách nhau bởi dấu phẩy)",
+    "channelsPlaceholder": "Google, Facebook, Email",
+    "noCampaignsYet": "Chưa có chiến dịch nào.",
+    "noCampaignsYetDesc": "Tạo chiến dịch đầu tiên để bắt đầu theo dõi hiệu suất.",
+    "activeCampaignsStat": "Chiến dịch đang chạy",
+    "totalBudget": "Tổng ngân sách",
+    "totalSpent": "Tổng chi tiêu",
+    "other": "Khác",
+    "unknown": "Không xác định",
+    "generateAiPlan": "Tạo kế hoạch AI",
+    "generatePlanFailed": "Tạo kế hoạch chiến dịch thất bại",
+    "aiCampaignPlan": "Kế hoạch chiến dịch AI",
+    "creativeBrief": "Creative Brief",
+    "audienceSegments": "Phân khúc đối tượng",
+    "demographics": "Nhân khẩu học: {{value}}",
+    "painPoints": "Nỗi đau: {{value}}",
+    "recommendedBudgetAllocation": "Phân bổ ngân sách đề xuất",
+    "milestones": "Cột mốc",
+    "types": {
+      "seo": "SEO",
+      "content": "Nội dung",
+      "ads": "Quảng cáo",
+      "social": "Mạng xã hội",
+      "email": "Email"
+    }
+  },
+  "reports": {
+    "generateReport": "Tạo báo cáo",
+    "noReportsYetDesc": "Tạo báo cáo đầu tiên để bắt đầu.",
+    "allReports": "Tất cả báo cáo",
+    "generatedLabel": "Đã tạo {{date}}",
+    "pdf": "PDF",
+    "pdfComingSoon": "Tính năng tải PDF sắp ra mắt",
+    "send": "Gửi",
+    "selectClient": "Chọn khách hàng",
+    "reportTypeLabel": "Loại báo cáo",
+    "selectType": "Chọn loại",
+    "generate": "Tạo",
+    "types": {
+      "SEO": "SEO",
+      "Ads": "Quảng cáo",
+      "Content": "Nội dung",
+      "Competitor": "Đối thủ cạnh tranh",
+      "Comprehensive": "Toàn diện"
+    },
+    "statuses": {
+      "generating": "Đang tạo",
+      "ready": "Sẵn sàng",
+      "sent": "Đã gửi"
+    }
+  },
+  "seoByAi": {
+    "demoModeBadge": "Chế độ Demo — Dữ liệu mô phỏng",
+    "subtitle": "Trí tuệ SEO, chiến lược và dự đoán được vận hành bởi AI",
+    "noAiDataYet": "Chưa có dữ liệu phân tích AI",
+    "noAiDataYetDesc": "Chọn một khách hàng và chạy phân tích AI để nhận thông tin chuyên sâu, chiến lược và dự đoán.",
+    "tabs": {
+      "insights": "Thông tin AI",
+      "actionPlan": "Kế hoạch hành động",
+      "strategy": "Chiến lược",
+      "predictions": "Dự đoán"
+    },
+    "aiGeneratedInsights": "Thông tin do AI tạo",
+    "insightTypes": {
+      "opportunity": "Cơ hội",
+      "threat": "Rủi ro",
+      "success": "Thành công",
+      "recommendation": "Khuyến nghị"
+    },
+    "confidencePct": "{{value}}% độ tin cậy",
+    "actionsTaken": "Hành động đã thực hiện",
+    "successRate": "Tỷ lệ thành công",
+    "trafficIncrease": "Tăng lưu lượng",
+    "valueCreated": "Giá trị tạo ra",
+    "overallAiScore": "Điểm AI tổng thể",
+    "noActionPlan": "Chưa có kế hoạch hành động",
+    "noActionPlanDesc": "AI sẽ tạo kế hoạch hành động khi phân tích hoàn tất.",
+    "priorityMatrix": "Ma trận ưu tiên",
+    "tableAction": "Hành động",
+    "tableImpact": "Tác động",
+    "tableEffort": "Công sức",
+    "tableTimeline": "Thời gian",
+    "tableValue": "Giá trị",
+    "channelAllocation": "Phân bổ theo kênh",
+    "noStrategyData": "Chưa có dữ liệu chiến lược",
+    "noStrategyDataDesc": "AI sẽ tạo khuyến nghị chiến lược khi phân tích hoàn tất.",
+    "predictedLabel": "Dự đoán: {{value}}",
+    "trafficForecast": "Dự báo lưu lượng",
+    "actualSeries": "Thực tế",
+    "predictedSeries": "Dự đoán",
+    "keywordRankingPredictions": "Dự đoán thứ hạng từ khóa",
+    "tableKeyword": "Từ khóa",
+    "tableCurrent": "Hiện tại",
+    "tablePredicted": "Dự đoán",
+    "tableConfidence": "Độ tin cậy",
+    "noPredictions": "Chưa có dự đoán",
+    "noPredictionsDesc": "AI sẽ tạo dự đoán khi thu thập đủ dữ liệu lịch sử."
+  },
+  "bugReport": {
+    "title": "Theo dõi lỗi",
+    "subtitle": "Báo cáo và theo dõi lỗi để cải thiện MarketingOS",
+    "reportBugButton": "Báo lỗi",
+    "reportBugDialogTitle": "Báo cáo lỗi",
+    "totalBugs": "Tổng số lỗi",
+    "allModules": "Tất cả module",
+    "searchByTitlePlaceholder": "Tìm theo tiêu đề...",
+    "noBugsYet": "Chưa có lỗi nào được báo cáo",
+    "noBugsYetDesc": "Bấm \"Báo lỗi\" để gửi báo cáo đầu tiên.",
+    "byLabel": "bởi {{name}}",
+    "descriptionLabel": "Mô tả",
+    "stepsToReproduce": "Các bước tái hiện",
+    "expectedBehavior": "Hành vi mong đợi",
+    "actualBehavior": "Hành vi thực tế",
+    "resolutionLabel": "Cách giải quyết",
+    "browserInfo": "Thông tin trình duyệt",
+    "markInProgress": "Đánh dấu đang xử lý",
+    "resolve": "Giải quyết",
+    "titleLabel": "Tiêu đề",
+    "titlePlaceholder": "Tóm tắt ngắn gọn về lỗi",
+    "moduleLabel": "Module",
+    "selectModule": "Chọn module",
+    "severityLabel": "Mức độ nghiêm trọng",
+    "descriptionPlaceholder": "Mô tả chi tiết về lỗi",
+    "stepsPlaceholder": "1. Vào...\n2. Bấm vào...\n3. Quan sát...",
+    "expectedPlaceholder": "Điều gì lẽ ra phải xảy ra",
+    "actualPlaceholder": "Điều gì thực sự xảy ra",
+    "submitBug": "Gửi báo cáo",
+    "resolveBugTitle": "Giải quyết lỗi",
+    "resolutionPlaceholder": "Mô tả cách lỗi đã được giải quyết...",
+    "markResolved": "Đánh dấu đã giải quyết",
+    "titleDescRequired": "Tiêu đề và Mô tả là bắt buộc.",
+    "bugSubmitted": "Đã gửi báo cáo lỗi thành công!",
+    "bugMarkedAs": "Lỗi đã được đánh dấu là {{status}}",
+    "bugResolvedSuccess": "Đã giải quyết lỗi thành công!",
+    "confirmDelete": "Bạn có chắc muốn xóa báo cáo lỗi này không?",
+    "bugDeleted": "Đã xóa báo cáo lỗi",
+    "failedToFetchBugs": "Không thể tải danh sách lỗi",
+    "failedToLoadBugs": "Không thể tải danh sách lỗi",
+    "failedToFetchStats": "Không thể tải thống kê",
+    "failedToSubmitReport": "Không thể gửi báo cáo lỗi",
+    "failedToSubmitBug": "Không thể gửi báo cáo lỗi",
+    "failedToUpdateBug": "Không thể cập nhật lỗi",
+    "failedToResolveBug": "Không thể giải quyết lỗi",
+    "failedToDeleteBug": "Không thể xóa lỗi",
+    "statuses": {
+      "open": "Mở",
+      "in_progress": "Đang xử lý",
+      "resolved": "Đã giải quyết",
+      "closed": "Đã đóng"
+    },
+    "severities": {
+      "critical": "Nghiêm trọng",
+      "high": "Cao",
+      "medium": "Trung bình",
+      "low": "Thấp"
+    },
+    "modules": {
+      "Dashboard": "Bảng điều khiển",
+      "Clients": "Khách hàng",
+      "SEO Audit": "Kiểm tra SEO",
+      "Keywords": "Từ khóa",
+      "Backlinks": "Backlink",
+      "Competitors": "Đối thủ cạnh tranh",
+      "Content Studio": "Xưởng nội dung",
+      "Image Studio": "Xưởng hình ảnh",
+      "Social Media": "Mạng xã hội",
+      "Ads Manager": "Quản lý quảng cáo",
+      "Campaigns": "Chiến dịch",
+      "Reports": "Báo cáo",
+      "AI Assistant": "Trợ lý AI",
+      "SEO By AI": "SEO bằng AI",
+      "Alerts": "Cảnh báo",
+      "Settings": "Cài đặt",
+      "Documentation": "Tài liệu hướng dẫn",
+      "Other": "Khác"
+    },
+    "timeAgo": {
+      "justNow": "vừa xong",
+      "minutesAgo_one": "{{count}} phút trước",
+      "minutesAgo_other": "{{count}} phút trước",
+      "hoursAgo_one": "{{count}} giờ trước",
+      "hoursAgo_other": "{{count}} giờ trước",
+      "daysAgo_one": "{{count}} ngày trước",
+      "daysAgo_other": "{{count}} ngày trước",
+      "monthsAgo_one": "{{count}} tháng trước",
+      "monthsAgo_other": "{{count}} tháng trước"
+    }
+  },
+  "documentation": {
+    "hero": {
+      "title": "Tài liệu",
+      "subtitle": "Mọi thứ bạn cần biết để làm chủ MarketingOS"
+    },
+    "search": {
+      "placeholder": "Tìm kiếm tài liệu...",
+      "resultsHeading": "Kết quả tìm kiếm ({{count}})",
+      "noResultsTitle": "Không tìm thấy kết quả",
+      "noResultsSubtitle": "Hãy thử tìm với từ khóa khác"
+    },
+    "quickStart": {
+      "badge": "Hướng dẫn bắt đầu nhanh",
+      "heading": "Bắt đầu chỉ với 4 bước",
+      "steps": [
+        {
+          "title": "Thêm khách hàng đầu tiên",
+          "description": "Nhấn Khách hàng > Thêm khách hàng > Nhập thông tin công ty"
+        },
+        {
+          "title": "Chạy kiểm tra SEO",
+          "description": "Vào Kiểm tra SEO > Chọn khách hàng > Chạy kiểm tra"
+        },
+        {
+          "title": "Theo dõi từ khóa",
+          "description": "Vào Từ khóa > Thêm từ khóa bạn muốn lên hạng"
+        },
+        {
+          "title": "Bật chế độ tự động AI",
+          "description": "Vào SEO By AI > Bật Atlas để quản lý mọi thứ"
+        }
+      ]
+    },
+    "toc": {
+      "heading": "Mục lục"
+    },
+    "moduleSection": {
+      "heading": "Tài liệu theo module",
+      "subtitle": "Nhấn vào một module bất kỳ để xem đầy đủ tài liệu"
+    },
+    "backToTopLabel": "Lên đầu trang",
+    "modules": {
+      "dashboard": {
+        "title": "Bảng điều khiển",
+        "description": "Tổng quan toàn bộ dữ liệu marketing của tất cả khách hàng ở một nơi.",
+        "whatItShowsHeading": "Dashboard hiển thị gì",
+        "whatItShowsText": "Dashboard là trung tâm điều khiển của bạn. Nó tổng hợp dữ liệu từ tất cả khách hàng và hiển thị những chỉ số, xu hướng và cảnh báo quan trọng nhất để bạn nắm được tình trạng của mọi chiến dịch chỉ trong nháy mắt.",
+        "keySectionsHeading": "Các khu vực chính",
+        "keySectionsTable": {
+          "headers": [
+            "Khu vực",
+            "Hiển thị gì"
+          ],
+          "rows": [
+            [
+              "Thẻ thống kê",
+              "Tổng số khách hàng, từ khóa theo dõi, backlink, nội dung"
+            ],
+            [
+              "Biểu đồ traffic",
+              "Xu hướng traffic tự nhiên trong 30/90/365 ngày qua"
+            ],
+            [
+              "Phân bổ từ khóa",
+              "Biểu đồ tròn thể hiện dải vị trí từ khóa"
+            ],
+            [
+              "Nhật ký hoạt động",
+              "Các hành động gần đây của bạn và Atlas AI"
+            ],
+            [
+              "Từ khóa hàng đầu",
+              "Những từ khóa hoạt động tốt nhất trên tất cả khách hàng"
+            ],
+            [
+              "Chiến dịch đang chạy",
+              "Các chiến dịch đang triển khai kèm thanh tiến độ"
+            ],
+            [
+              "Cảnh báo",
+              "Các vấn đề cần bạn chú ý, sắp xếp theo mức độ nghiêm trọng"
+            ]
+          ]
+        },
+        "howToUseHeading": "Cách sử dụng",
+        "howToUseSteps": [
+          "Dashboard tự động cập nhật mỗi khi bạn truy cập.",
+          "Nhấn vào bất kỳ thẻ thống kê nào để xem chi tiết module tương ứng.",
+          "Dùng bộ chọn khoảng thời gian ở góc trên bên phải để thay đổi phạm vi thời gian.",
+          "Theo mặc định, số liệu tổng hợp từ tất cả khách hàng đang hoạt động. Dùng bộ lọc khách hàng để tập trung vào một khách hàng cụ thể."
+        ],
+        "protip": "Hãy kiểm tra dashboard đầu tiên vào mỗi buổi sáng. Phần cảnh báo sẽ cho bạn biết nếu có điều gì cần xử lý gấp."
+      },
+      "clients": {
+        "title": "Quản lý khách hàng",
+        "description": "Thêm, sửa và quản lý toàn bộ khách hàng cùng thiết lập thương hiệu của họ.",
+        "howToAddHeading": "Cách thêm khách hàng",
+        "howToAddSteps": [
+          "Vào trang Khách hàng từ thanh điều hướng bên trái.",
+          "Nhấn nút \"Add Client\" ở góc trên bên phải.",
+          "Điền các trường bắt buộc: Tên công ty và Tên miền.",
+          "Thêm thông tin tùy chọn: Ngành, Màu thương hiệu, Font thương hiệu.",
+          "Nhập các từ khóa mục tiêu mà khách hàng muốn lên hạng.",
+          "Thêm các tên miền đối thủ cần theo dõi.",
+          "Thiết lập mục tiêu marketing (VD: \"Tăng traffic tự nhiên lên 50%\").",
+          "Nhấn \"Create Client\" để lưu."
+        ],
+        "fieldsHeading": "Giải thích các trường thông tin",
+        "fieldsTable": {
+          "headers": [
+            "Trường",
+            "Mô tả",
+            "Bắt buộc"
+          ],
+          "rows": [
+            [
+              "Tên công ty",
+              "Tên chính thức của khách hàng hoặc thương hiệu",
+              "Có"
+            ],
+            [
+              "Tên miền",
+              "URL website (VD: example.com)",
+              "Có"
+            ],
+            [
+              "Ngành",
+              "Danh mục kinh doanh để đưa ra khuyến nghị phù hợp",
+              "Không"
+            ],
+            [
+              "Màu thương hiệu",
+              "Mã màu chính và phụ dùng cho nội dung/hình ảnh",
+              "Không"
+            ],
+            [
+              "Font thương hiệu",
+              "Kiểu chữ ưa thích cho nội dung được tạo ra",
+              "Không"
+            ],
+            [
+              "Từ khóa",
+              "Các cụm từ tìm kiếm mục tiêu cần theo dõi thứ hạng",
+              "Không"
+            ],
+            [
+              "Đối thủ cạnh tranh",
+              "Các tên miền đối thủ cần giám sát",
+              "Không"
+            ],
+            [
+              "Mục tiêu marketing",
+              "Các mục tiêu định hướng cho khuyến nghị của AI",
+              "Không"
+            ]
+          ]
+        },
+        "statusHeading": "Trạng thái khách hàng",
+        "statusActiveBadge": "Đang hoạt động",
+        "statusActiveText": "Khách hàng đang được quản lý và theo dõi tích cực.",
+        "statusPausedBadge": "Tạm dừng",
+        "statusPausedText": "Việc theo dõi tạm thời dừng lại. Dữ liệu vẫn được giữ nguyên.",
+        "statusArchivedBadge": "Đã lưu trữ",
+        "statusArchivedText": "Khách hàng không còn hoạt động. Dữ liệu lịch sử vẫn có thể truy cập.",
+        "editingHeading": "Chỉnh sửa và xóa",
+        "editingText": "Nhấn vào bất kỳ thẻ khách hàng nào để mở trang chi tiết. Dùng biểu tượng chỉnh sửa để sửa thông tin, hoặc nút menu để xem các tùy chọn gồm Lưu trữ và Xóa. Xóa khách hàng là hành động vĩnh viễn và sẽ xóa toàn bộ dữ liệu liên quan.",
+        "brandKitHeading": "Bộ nhận diện thương hiệu",
+        "brandKitText": "Màu sắc và font chữ thương hiệu bạn thiết lập tại đây sẽ được AI Content Studio và AI Image Studio tự động sử dụng để duy trì tính nhất quán về hình ảnh trên tất cả nội dung được tạo ra.",
+        "protip": "Hãy điền càng nhiều thông tin càng tốt khi tạo khách hàng mới. Càng cung cấp nhiều ngữ cảnh, nội dung và khuyến nghị do AI tạo ra sẽ càng chất lượng."
+      },
+      "seo-audit": {
+        "title": "Kiểm tra SEO",
+        "description": "Quét website để tìm các vấn đề SEO kỹ thuật và nhận hướng khắc phục cụ thể.",
+        "whatIsHeading": "Kiểm tra SEO là gì?",
+        "whatIsText": "Kiểm tra SEO sẽ quét website của khách hàng và đánh giá theo hàng trăm tiêu chí SEO kỹ thuật tốt nhất. Nó xác định các vấn đề có thể đang ảnh hưởng đến thứ hạng tìm kiếm và đưa ra khuyến nghị cụ thể để khắc phục.",
+        "howToRunHeading": "Cách chạy kiểm tra",
+        "howToRunSteps": [
+          "Vào Kiểm tra SEO từ thanh điều hướng bên trái.",
+          "Chọn một khách hàng từ danh sách thả xuống.",
+          "Nhấn \"Run Audit\" và chờ quá trình quét hoàn tất (thường mất 1-3 phút).",
+          "Xem lại kết quả được sắp xếp theo danh mục và mức độ nghiêm trọng."
+        ],
+        "scoresHeading": "Hiểu về điểm số",
+        "scoresTable": {
+          "headers": [
+            "Điểm",
+            "Khoảng",
+            "Ý nghĩa"
+          ],
+          "rows": [
+            [
+              "Tổng thể",
+              "0-100",
+              "Điểm sức khỏe tổng hợp của toàn bộ website"
+            ],
+            [
+              "Hiệu suất",
+              "0-100",
+              "Tốc độ trang và mức độ tối ưu tải trang"
+            ],
+            [
+              "SEO",
+              "0-100",
+              "Các yếu tố SEO on-page và thực hành tốt nhất"
+            ],
+            [
+              "Khả năng truy cập",
+              "0-100",
+              "Mức độ dễ sử dụng của website với mọi người dùng"
+            ],
+            [
+              "Thực hành tốt nhất",
+              "0-100",
+              "Bảo mật, tiêu chuẩn hiện đại và chất lượng mã nguồn"
+            ]
+          ]
+        },
+        "vitalsHeading": "Giải thích Core Web Vitals",
+        "vitalsTable": {
+          "headers": [
+            "Chỉ số",
+            "Đo lường gì",
+            "Tốt",
+            "Cần cải thiện",
+            "Kém"
+          ],
+          "rows": [
+            [
+              "LCP (Largest Contentful Paint)",
+              "Tốc độ tải trang",
+              "< 2.5s",
+              "2.5s - 4.0s",
+              "> 4.0s"
+            ],
+            [
+              "FID (First Input Delay)",
+              "Độ phản hồi tương tác",
+              "< 100ms",
+              "100ms - 300ms",
+              "> 300ms"
+            ],
+            [
+              "CLS (Cumulative Layout Shift)",
+              "Độ ổn định thị giác",
+              "< 0.1",
+              "0.1 - 0.25",
+              "> 0.25"
+            ]
+          ]
+        },
+        "severityHeading": "Mức độ nghiêm trọng của vấn đề",
+        "severityCriticalBadge": "Nghiêm trọng",
+        "severityCriticalText": "Cần khắc phục ngay. Những vấn đề này đang ảnh hưởng trực tiếp đến thứ hạng của bạn.",
+        "severityWarningBadge": "Cảnh báo",
+        "severityWarningText": "Nên khắc phục sớm. Những vấn đề này có thể đang giới hạn tiềm năng xếp hạng.",
+        "severityInfoBadge": "Thông tin",
+        "severityInfoText": "Nên có nhưng không bắt buộc. Cải thiện nhỏ giúp website hoàn thiện hơn.",
+        "commonIssuesHeading": "Các vấn đề thường gặp và cách khắc phục",
+        "commonIssuesTable": {
+          "headers": [
+            "Vấn đề",
+            "Mức độ ảnh hưởng",
+            "Cách khắc phục"
+          ],
+          "rows": [
+            [
+              "Thiếu meta description",
+              "Trung bình",
+              "Thêm mô tả riêng biệt dài 150-160 ký tự cho mỗi trang"
+            ],
+            [
+              "Hình ảnh quá nặng",
+              "Cao",
+              "Nén hình ảnh, dùng định dạng WebP, thêm thuộc tính width/height"
+            ],
+            [
+              "Liên kết hỏng (404)",
+              "Cao",
+              "Sửa hoặc gỡ bỏ các liên kết trỏ đến trang không tồn tại"
+            ],
+            [
+              "Thiếu alt text",
+              "Trung bình",
+              "Thêm thuộc tính alt mô tả cho mỗi hình ảnh"
+            ],
+            [
+              "Chuỗi redirect",
+              "Trung bình",
+              "Cập nhật liên kết để trỏ trực tiếp đến URL cuối cùng"
+            ],
+            [
+              "Thiếu thẻ H1",
+              "Trung bình",
+              "Thêm đúng một thẻ H1 cho mỗi trang với tiêu đề mô tả rõ ràng"
+            ],
+            [
+              "Phản hồi máy chủ chậm",
+              "Cao",
+              "Nâng cấp hosting, bật caching, tối ưu truy vấn cơ sở dữ liệu"
+            ]
+          ]
+        },
+        "protip": "Sau khi khắc phục các vấn đề nghiêm trọng, hãy chạy lại kiểm tra để xác nhận. Hãy đặt mục tiêu điểm tổng thể trên 80 trước khi chuyển sang xử lý các vấn đề mức cảnh báo."
+      },
+      "keywords": {
+        "title": "Phân tích từ khóa",
+        "description": "Theo dõi thứ hạng từ khóa, khám phá cơ hội và giám sát vị trí.",
+        "whatAreHeading": "Từ khóa là gì?",
+        "whatAreText": "Từ khóa là những cụm từ tìm kiếm mà người dùng nhập vào Google khi tìm sản phẩm, dịch vụ hoặc thông tin. Theo dõi vị trí từ khóa cho bạn biết website của mình đang hiển thị rõ nét như thế nào trong kết quả tìm kiếm.",
+        "howToAddHeading": "Cách thêm từ khóa",
+        "howToAddSteps": [
+          "Vào Từ khóa từ thanh điều hướng bên trái.",
+          "Chọn khách hàng từ danh sách thả xuống.",
+          "Nhấn \"Add Keywords\" để nhập từ khóa thủ công, mỗi từ khóa một dòng.",
+          "Hoặc nhấn \"AI Research\" để AI tự khám phá các từ khóa phù hợp với lĩnh vực của bạn.",
+          "Từ khóa sẽ bắt đầu được theo dõi trong vòng 24 giờ."
+        ],
+        "columnsHeading": "Giải thích các cột trong bảng",
+        "columnsTable": {
+          "headers": [
+            "Cột",
+            "Ý nghĩa"
+          ],
+          "rows": [
+            [
+              "Vị trí",
+              "Thứ hạng Google hiện tại của từ khóa này (1 = kết quả đầu tiên)"
+            ],
+            [
+              "Thay đổi",
+              "Thay đổi vị trí kể từ lần kiểm tra trước (xanh = tăng, đỏ = giảm)"
+            ],
+            [
+              "Lượng tìm kiếm",
+              "Lượng tìm kiếm hàng tháng - có bao nhiêu người tìm cụm từ này"
+            ],
+            [
+              "Độ khó",
+              "Mức độ khó để lên hạng cho từ khóa này (0-100)"
+            ],
+            [
+              "CPC",
+              "Chi phí mỗi lượt nhấp nếu bạn chạy quảng cáo cho từ khóa này"
+            ],
+            [
+              "SERP Features",
+              "Các loại kết quả đặc biệt xuất hiện cho từ khóa này"
+            ],
+            [
+              "URL",
+              "Trang nào trên website của bạn đang xếp hạng cho từ khóa này"
+            ]
+          ]
+        },
+        "rangesHeading": "Dải vị trí",
+        "rangesTable": {
+          "headers": [
+            "Dải",
+            "Nhãn",
+            "Mức độ hiển thị"
+          ],
+          "rows": [
+            [
+              "1-3",
+              "Xuất sắc",
+              "Đầu trang 1 - nhận khoảng 60% tổng số lượt nhấp"
+            ],
+            [
+              "4-10",
+              "Trang 1",
+              "Hiển thị ở trang đầu - nhận khoảng 30% lượt nhấp"
+            ],
+            [
+              "11-20",
+              "Trang 2",
+              "Ít khi được người dùng nhìn thấy - rất ít lượt nhấp"
+            ],
+            [
+              "21-50",
+              "Thấp",
+              "Bị chôn vùi trong kết quả - gần như không có traffic tự nhiên"
+            ],
+            [
+              "50+",
+              "Không hiển thị",
+              "Gần như vô hình trong kết quả tìm kiếm"
+            ]
+          ]
+        },
+        "difficultyHeading": "Độ khó từ khóa",
+        "difficultyEasyBadge": "Dễ (0-30)",
+        "difficultyEasyText": "Website mới hoặc nhỏ vẫn có thể lên hạng chỉ với nội dung chất lượng.",
+        "difficultyMediumBadge": "Trung bình (31-60)",
+        "difficultyMediumText": "Cần nội dung tốt kết hợp với một số backlink để lên hạng.",
+        "difficultyHardBadge": "Khó (61-100)",
+        "difficultyHardText": "Cạnh tranh rất cao. Cần độ uy tín mạnh, nội dung tốt và nhiều backlink chất lượng.",
+        "serpFeaturesHeading": "SERP Features",
+        "serpFeaturesTable": {
+          "headers": [
+            "Tính năng",
+            "Là gì"
+          ],
+          "rows": [
+            [
+              "Featured Snippet",
+              "Ô câu trả lời nổi bật ở vị trí đầu tiên trong kết quả"
+            ],
+            [
+              "People Also Ask",
+              "Các câu hỏi liên quan có thể mở rộng, xuất hiện trong kết quả"
+            ],
+            [
+              "Image Pack",
+              "Một dải hình ảnh hiển thị trong kết quả tìm kiếm"
+            ],
+            [
+              "Video",
+              "Kết quả video, thường đến từ YouTube"
+            ],
+            [
+              "Knowledge Panel",
+              "Ô thông tin hiển thị ở bên phải kết quả tìm kiếm"
+            ]
+          ]
+        },
+        "groupsHeading": "Nhóm từ khóa",
+        "groupsText": "Sắp xếp các từ khóa liên quan thành nhóm (VD: \"Từ khóa thương hiệu\", \"Từ khóa sản phẩm\", \"Câu hỏi dài\") để dễ quản lý và phân tích hơn. Các nhóm giúp bạn thấy được cụm chủ đề nào đang hoạt động tốt nhất.",
+        "protip": "Hãy tập trung vào các từ khóa có lượng tìm kiếm cao nhưng độ khó thấp để đạt thứ hạng nhanh nhất. Đây thường là các từ khóa dài (3+ từ) mà các đối thủ lớn thường bỏ qua."
+      },
+      "backlinks": {
+        "title": "Phân tích Backlink",
+        "description": "Giám sát hồ sơ backlink, tìm cơ hội mới và bảo vệ website của bạn.",
+        "whatAreHeading": "Backlink là gì?",
+        "whatAreText": "Backlink là các liên kết từ website khác trỏ về website của bạn. Google xem mỗi backlink như một \"phiếu tín nhiệm\" - càng có nhiều backlink chất lượng, website của bạn càng có uy tín và thứ hạng càng cao.",
+        "whyMatterHeading": "Vì sao backlink quan trọng",
+        "whyMatterText": "Backlink là một trong 3 yếu tố xếp hạng hàng đầu của Google. Một website có 100 backlink chất lượng cao gần như luôn xếp hạng cao hơn website có 1.000 backlink chất lượng thấp. Chất lượng quan trọng hơn số lượng rất nhiều.",
+        "metricsHeading": "Các chỉ số chính",
+        "metricsTable": {
+          "headers": [
+            "Chỉ số",
+            "Ý nghĩa",
+            "Giá trị tốt"
+          ],
+          "rows": [
+            [
+              "Domain Authority (DA)",
+              "Độ mạnh của tên miền liên kết đến (0-100)",
+              "Từ 40+ là mạnh"
+            ],
+            [
+              "Spam Score",
+              "Khả năng liên kết là spam (0-100%)",
+              "Dưới 10%"
+            ],
+            [
+              "Follow vs Nofollow",
+              "Liên kết có truyền sức mạnh xếp hạng hay không",
+              "Follow link truyền giá trị"
+            ],
+            [
+              "Anchor Text",
+              "Văn bản có thể nhấp của liên kết",
+              "Liên quan đến nội dung của bạn"
+            ],
+            [
+              "Referring Domains",
+              "Số tên miền riêng biệt liên kết đến bạn",
+              "Sự đa dạng là quan trọng nhất"
+            ]
+          ]
+        },
+        "goodBacklinkHeading": "Điều gì tạo nên một backlink tốt",
+        "goodBacklinkList": [
+          "Đến từ website có Domain Authority cao (40+)",
+          "Có spam score thấp (dưới 10%)",
+          "Đến từ website liên quan đến ngành của bạn",
+          "Là liên kết \"dofollow\" (truyền giá trị xếp hạng)",
+          "Có anchor text tự nhiên, mô tả rõ ràng",
+          "Được đặt trong nội dung chính (không phải footer hay sidebar)"
+        ],
+        "monitoringHeading": "Giám sát backlink của bạn",
+        "monitoringSteps": [
+          "Kiểm tra dashboard backlink hàng tuần để xem liên kết mới và liên kết đã mất.",
+          "Xem lại các backlink mới - từ chối (disavow) những liên kết từ website spam hoặc không liên quan.",
+          "Khi mất một backlink giá trị, hãy kiểm tra xem trang liên kết đã bị gỡ hay liên kết đã bị thay đổi.",
+          "Liên hệ quản trị viên của các website đã gỡ liên kết của bạn để yêu cầu khôi phục.",
+          "Theo dõi xu hướng số lượng referring domain - con số này nên tăng đều đặn."
+        ],
+        "protip": "Một backlink từ một trang tin tức uy tín cao (DA 70+) có giá trị hơn 100 backlink từ các thư mục chất lượng thấp. Hãy tập trung xây dựng liên kết từ các nguồn uy tín và liên quan."
+      },
+      "competitors": {
+        "title": "Phân tích đối thủ cạnh tranh",
+        "description": "Phân tích chiến lược đối thủ và tìm ra những khoảng trống bạn có thể khai thác.",
+        "howToAddHeading": "Cách thêm đối thủ cạnh tranh",
+        "howToAddSteps": [
+          "Vào Competitor Intelligence từ thanh điều hướng bên trái.",
+          "Chọn khách hàng từ danh sách thả xuống.",
+          "Nhấn \"Add Competitor\" và nhập tên miền của đối thủ.",
+          "Hệ thống sẽ tự động bắt đầu phân tích hồ sơ SEO của họ."
+        ],
+        "analysisTypesHeading": "Các loại phân tích",
+        "keywordGapHeading": "Phân tích khoảng trống từ khóa",
+        "keywordGapText": "Khám phá những từ khóa mà đối thủ đang xếp hạng nhưng bạn thì chưa. Đây là những cơ hội tức thời - nếu họ có thể lên hạng, bạn cũng có thể. Sắp xếp theo lượng tìm kiếm để tìm ra những khoảng trống có tác động lớn nhất trước.",
+        "contentGapHeading": "Phân tích khoảng trống nội dung",
+        "contentGapText": "Xác định các chủ đề và loại nội dung mà đối thủ đã đề cập nhưng bạn chưa khai thác. Dùng thông tin này để lên kế hoạch lịch nội dung và lấp đầy các khoảng trống.",
+        "backlinkGapHeading": "Phân tích khoảng trống backlink",
+        "backlinkGapText": "Tìm ra các website đang liên kết đến đối thủ nhưng chưa liên kết đến bạn. Đây là những mục tiêu outreach tiềm năng vì họ đã liên kết đến các website trong lĩnh vực của bạn.",
+        "insightsHeading": "Cách sử dụng thông tin phân tích",
+        "insightsSteps": [
+          "Thêm các từ khóa khoảng trống vào danh sách theo dõi từ khóa của bạn.",
+          "Tạo nội dung để bao phủ các chủ đề mà đối thủ đã đề cập nhưng bạn chưa có.",
+          "Tiếp cận các website đang liên kết đến đối thủ và giới thiệu nội dung của bạn như một lựa chọn thay thế hoặc bổ sung.",
+          "So sánh DA, traffic, từ khóa và backlink song song để đánh giá tiến độ của bạn."
+        ],
+        "protip": "Hãy chạy phân tích đối thủ hàng tháng. Đối thủ của bạn liên tục thay đổi, và những khoảng trống cùng cơ hội mới xuất hiện thường xuyên. Hãy tập trung vào các khoảng trống có lượng tìm kiếm cao nhất và độ khó từ khóa thấp nhất."
+      },
+      "content-studio": {
+        "title": "AI Content Studio",
+        "description": "Tạo bài blog, landing page, email và nhiều loại nội dung khác được tối ưu SEO.",
+        "contentTypesHeading": "Các loại nội dung",
+        "contentTypesTable": {
+          "headers": [
+            "Loại",
+            "Phù hợp nhất cho",
+            "Độ dài thông thường"
+          ],
+          "rows": [
+            [
+              "Bài blog",
+              "Traffic tự nhiên và xây dựng vị thế chuyên gia",
+              "1.000-2.500 từ"
+            ],
+            [
+              "Landing Page",
+              "Chuyển đổi và thu thập khách hàng tiềm năng",
+              "500-1.500 từ"
+            ],
+            [
+              "Chiến dịch email",
+              "Nuôi dưỡng khách hàng tiềm năng và thúc đẩy hành động",
+              "200-500 từ"
+            ],
+            [
+              "Nội dung quảng cáo",
+              "Quảng cáo trả phí trên các nền tảng",
+              "50-150 từ"
+            ],
+            [
+              "Bài đăng mạng xã hội",
+              "Tương tác trên mạng xã hội",
+              "50-280 ký tự"
+            ]
+          ]
+        },
+        "howToGenerateHeading": "Cách tạo nội dung",
+        "howToGenerateSteps": [
+          "Vào AI Content Studio từ thanh điều hướng bên trái.",
+          "Chọn loại nội dung bạn muốn tạo.",
+          "Nhập chủ đề hoặc ý tưởng tiêu đề của bạn.",
+          "Thiết lập các từ khóa mục tiêu (sẽ được lồng ghép tự nhiên vào nội dung).",
+          "Chọn giọng văn phù hợp với thương hiệu của bạn.",
+          "Thiết lập số từ hoặc độ dài mong muốn.",
+          "Nhấn \"Generate\" và chờ trong vài giây.",
+          "Xem lại kết quả, chỉnh sửa, sau đó đăng hoặc lưu dưới dạng bản nháp."
+        ],
+        "toneHeading": "Các lựa chọn giọng văn",
+        "toneTable": {
+          "headers": [
+            "Giọng văn",
+            "Phù hợp nhất cho"
+          ],
+          "rows": [
+            [
+              "Chuyên nghiệp",
+              "Nội dung B2B, whitepaper, blog doanh nghiệp"
+            ],
+            [
+              "Thân mật",
+              "Thương hiệu lifestyle, blog cá nhân, mạng xã hội"
+            ],
+            [
+              "Thuyết phục",
+              "Landing page, nội dung quảng cáo, email bán hàng"
+            ],
+            [
+              "Giáo dục",
+              "Hướng dẫn thực hành, tutorial, tài liệu hướng dẫn"
+            ],
+            [
+              "Hài hước",
+              "Mạng xã hội, nội dung thể hiện cá tính thương hiệu"
+            ]
+          ]
+        },
+        "seoPanelHeading": "Bảng tối ưu SEO",
+        "seoPanelText": "Mỗi nội dung được tạo ra đều kèm theo bảng phân tích điểm SEO với danh sách kiểm tra: mức độ sử dụng từ khóa, cấu trúc heading, độ dài meta title (nên đạt 50-60 ký tự), độ dài meta description (nên đạt 150-160 ký tự), gợi ý liên kết nội bộ, và điểm dễ đọc.",
+        "workflowHeading": "Quy trình nội dung",
+        "workflowDraftBadge": "Bản nháp",
+        "workflowReviewBadge": "Đang xem xét",
+        "workflowPublishedBadge": "Đã đăng",
+        "protip": "Nội dung do AI tạo ra là điểm khởi đầu, không phải sản phẩm hoàn chỉnh. Hãy luôn xem lại, kiểm chứng thông tin và thêm góc nhìn riêng của bạn. Nội dung tốt nhất kết hợp hiệu quả của AI với chuyên môn của con người."
+      },
+      "image-studio": {
+        "title": "AI Image Studio",
+        "description": "Tạo hình ảnh ấn tượng cho mạng xã hội, quảng cáo, blog và nhiều hơn nữa.",
+        "typesHeading": "Loại hình ảnh và kích thước",
+        "typesTable": {
+          "headers": [
+            "Loại",
+            "Kích thước",
+            "Trường hợp sử dụng"
+          ],
+          "rows": [
+            [
+              "Bài đăng Instagram",
+              "1080 x 1080 px",
+              "Định dạng vuông cho feed Instagram"
+            ],
+            [
+              "Quảng cáo Facebook",
+              "1200 x 628 px",
+              "Định dạng ngang cho quảng cáo Facebook"
+            ],
+            [
+              "Banner LinkedIn",
+              "1584 x 396 px",
+              "Banner rộng cho trang cá nhân/trang LinkedIn"
+            ],
+            [
+              "Ảnh thu nhỏ blog",
+              "1200 x 630 px",
+              "Ảnh đại diện cho bài blog"
+            ],
+            [
+              "Banner website",
+              "1920 x 600 px",
+              "Banner khu vực hero cho website"
+            ],
+            [
+              "Ảnh thu nhỏ YouTube",
+              "1280 x 720 px",
+              "Ảnh thu nhỏ video cho YouTube"
+            ]
+          ]
+        },
+        "howToGenerateHeading": "Cách tạo hình ảnh",
+        "howToGenerateSteps": [
+          "Vào AI Image Studio từ thanh điều hướng bên trái.",
+          "Chọn loại hình ảnh (thao tác này sẽ thiết lập đúng kích thước).",
+          "Viết mô tả chi tiết về những gì bạn muốn có trong hình ảnh.",
+          "Chọn phong cách hình ảnh từ các tùy chọn.",
+          "Tùy chọn thiết lập màu thương hiệu để đảm bảo tính nhất quán.",
+          "Nhấn \"Generate\" và chờ hình ảnh được tạo ra.",
+          "Tải hình ảnh xuống hoặc dùng trực tiếp trong nội dung."
+        ],
+        "styleHeading": "Các tùy chọn phong cách",
+        "styleTable": {
+          "headers": [
+            "Phong cách",
+            "Mô tả"
+          ],
+          "rows": [
+            [
+              "Chân thực",
+              "Trông giống như ảnh chụp thật"
+            ],
+            [
+              "Minh họa",
+              "Phong cách vẽ tay hoặc nghệ thuật số"
+            ],
+            [
+              "Tối giản",
+              "Sạch sẽ, đơn giản, nhiều khoảng trắng"
+            ],
+            [
+              "Trừu tượng",
+              "Hình khối và họa tiết mang tính nghệ thuật"
+            ],
+            [
+              "Doanh nghiệp",
+              "Chuyên nghiệp, phù hợp với môi trường kinh doanh"
+            ],
+            [
+              "Rực rỡ",
+              "Màu sắc nổi bật, bắt mắt và tràn đầy năng lượng"
+            ]
+          ]
+        },
+        "protip": "Hãy mô tả càng chi tiết càng tốt trong prompt của bạn. Thay vì \"ảnh văn phòng\", hãy thử \"văn phòng mở hiện đại với ánh sáng tự nhiên, bàn gỗ, cây xanh, và một nhóm nhân viên đa dạng đang cùng thảo luận quanh bảng trắng.\" Cũng nên nêu rõ những gì KHÔNG muốn xuất hiện."
+      },
+      "social-media": {
+        "title": "Quản lý mạng xã hội",
+        "description": "Lên lịch bài đăng, quản lý tài khoản và theo dõi hiệu suất mạng xã hội.",
+        "connectingHeading": "Kết nối tài khoản",
+        "connectingText": "MarketingOS hỗ trợ Instagram, Facebook, LinkedIn và Twitter/X. Kết nối tài khoản qua Settings > Integrations, hoặc khi được yêu cầu trong module Social Media.",
+        "connectingSteps": [
+          "Nhấn \"Connect Account\" và chọn nền tảng.",
+          "Cấp quyền cho MarketingOS quản lý tài khoản của bạn.",
+          "Chọn tài khoản này thuộc về khách hàng nào.",
+          "Tài khoản của bạn giờ đã sẵn sàng để đăng bài và xem phân tích."
+        ],
+        "creatingHeading": "Tạo bài đăng",
+        "creatingSteps": [
+          "Nhấn \"Create Post\" trong module Social Media.",
+          "Viết nội dung của bạn hoặc nhấn \"AI Generate\" để có caption do AI tạo.",
+          "Thêm hình ảnh hoặc video bằng cách tải lên hoặc chọn từ Image Studio.",
+          "Chọn những nền tảng muốn đăng (hỗ trợ chọn nhiều nền tảng).",
+          "Chọn \"Post Now\" để đăng ngay, hoặc \"Schedule\" để chọn ngày giờ cụ thể.",
+          "Xem lại và xác nhận."
+        ],
+        "captionHeading": "Công cụ tạo caption AI",
+        "captionText": "Nhập một chủ đề và chọn giọng văn, AI sẽ tạo ra caption được tối ưu riêng cho từng nền tảng. Nó tự động điều chỉnh độ dài và phong cách cho từng nền tảng (VD: ngắn hơn cho Twitter, nhiều hashtag hơn cho Instagram).",
+        "calendarHeading": "Lịch nội dung",
+        "calendarText": "Chế độ xem lịch theo tháng hiển thị tất cả bài đăng đã lên lịch và đã đăng. Kéo thả để đổi lịch. Được mã hóa màu theo từng nền tảng để dễ theo dõi. Nhấn vào bất kỳ bài đăng nào để sửa hoặc hủy.",
+        "frequencyHeading": "Tần suất đăng bài khuyến nghị",
+        "frequencyTable": {
+          "headers": [
+            "Nền tảng",
+            "Tần suất",
+            "Thời điểm tốt nhất"
+          ],
+          "rows": [
+            [
+              "Instagram",
+              "3-5 bài/tuần",
+              "Thứ 3-6, 10h - 14h"
+            ],
+            [
+              "Facebook",
+              "3-5 bài/tuần",
+              "Thứ 4-6, 13h - 16h"
+            ],
+            [
+              "LinkedIn",
+              "2-3 bài/tuần",
+              "Thứ 3-5, 8h - 10h"
+            ],
+            [
+              "Twitter/X",
+              "1-3 bài/ngày",
+              "Thứ 2-6, 9h - 15h"
+            ]
+          ]
+        },
+        "protip": "Sự đều đặn quan trọng hơn tần suất. Đăng 3 bài chất lượng cao mỗi tuần vẫn tốt hơn 3 bài trung bình mỗi ngày. Hãy dùng lịch để lên kế hoạch trước ít nhất 2 tuần."
+      },
+      "ads-manager": {
+        "title": "Quản lý quảng cáo",
+        "description": "Quản lý các chiến dịch quảng cáo trả phí trên Google, Facebook và LinkedIn.",
+        "platformsHeading": "Các nền tảng được hỗ trợ",
+        "platformsList": [
+          [
+            "Google Ads",
+            "Search, Display, YouTube, Shopping"
+          ],
+          [
+            "Facebook Ads",
+            "Feed, Stories, Reels, Messenger"
+          ],
+          [
+            "LinkedIn Ads",
+            "Sponsored Content, InMail, Text Ads"
+          ]
+        ],
+        "connectingHeading": "Kết nối tài khoản quảng cáo",
+        "connectingSteps": [
+          "Vào Settings > Integrations.",
+          "Nhấn \"Connect\" bên cạnh nền tảng quảng cáo.",
+          "Đăng nhập vào tài khoản quảng cáo và cấp quyền truy cập.",
+          "Chọn (các) tài khoản quảng cáo cụ thể cần nhập.",
+          "Chiến dịch của bạn sẽ tự động đồng bộ."
+        ],
+        "metricsHeading": "Giải thích các chỉ số chính",
+        "metricsTable": {
+          "headers": [
+            "Chỉ số",
+            "Ý nghĩa",
+            "Chuẩn tốt"
+          ],
+          "rows": [
+            [
+              "Impressions",
+              "Số lần quảng cáo của bạn được hiển thị",
+              "Tùy thuộc vào ngân sách"
+            ],
+            [
+              "Clicks",
+              "Số lần người dùng nhấp vào quảng cáo của bạn",
+              "Càng cao càng tốt"
+            ],
+            [
+              "CTR (Click-Through Rate)",
+              "Clicks / Impressions * 100",
+              "> 2% là tốt"
+            ],
+            [
+              "Conversions",
+              "Số hành động mong muốn đã hoàn tất (mua hàng, đăng ký)",
+              "Tùy thuộc vào mục tiêu"
+            ],
+            [
+              "CPC (Cost Per Click)",
+              "Chi phí trung bình cho mỗi lượt nhấp",
+              "Càng thấp càng tốt"
+            ],
+            [
+              "Chi phí mỗi lead",
+              "Tổng chi tiêu / Số lượng lead",
+              "Khác nhau tùy ngành"
+            ],
+            [
+              "ROAS",
+              "Doanh thu tạo ra / Chi tiêu quảng cáo",
+              "> 3 lần là tốt"
+            ]
+          ]
+        },
+        "funnelHeading": "Phễu chuyển đổi",
+        "funnelImpressionsBadge": "Lượt hiển thị",
+        "funnelClicksBadge": "Lượt nhấp",
+        "funnelConversionsBadge": "Chuyển đổi",
+        "funnelText": "Mỗi giai đoạn sẽ thu hẹp dần. Nếu impressions cao nhưng clicks thấp, hãy cải thiện nội dung sáng tạo của quảng cáo. Nếu clicks cao nhưng conversions thấp, hãy tối ưu landing page của bạn.",
+        "protip": "Hãy bắt đầu với ngân sách hàng ngày nhỏ và mở rộng những gì hiệu quả. Không bao giờ tăng ngân sách quá 20% trong một lần, vì những bước nhảy đột ngột có thể làm reset thuật toán học của nền tảng quảng cáo."
+      },
+      "campaigns": {
+        "title": "Lập kế hoạch chiến dịch",
+        "description": "Lên kế hoạch và quản lý các chiến dịch marketing đa kênh với mục tiêu và ngân sách.",
+        "whatIsHeading": "Chiến dịch là gì?",
+        "whatIsText": "Một chiến dịch là nỗ lực marketing đa kênh được phối hợp, có mục tiêu, ngân sách, thời gian và sản phẩm bàn giao rõ ràng. Nó tập hợp nội dung, quảng cáo, bài đăng mạng xã hội và các hoạt động SEO dưới một mái nhà chung để theo dõi và tối ưu.",
+        "typesHeading": "Các loại chiến dịch",
+        "typesTable": {
+          "headers": [
+            "Loại",
+            "Kênh chính",
+            "Mục tiêu"
+          ],
+          "rows": [
+            [
+              "SEO",
+              "Tìm kiếm tự nhiên",
+              "Cải thiện thứ hạng và traffic tự nhiên"
+            ],
+            [
+              "Content",
+              "Blog/website",
+              "Xây dựng vị thế và thu hút khách truy cập"
+            ],
+            [
+              "Ads",
+              "Nền tảng trả phí",
+              "Thúc đẩy traffic có mục tiêu và chuyển đổi"
+            ],
+            [
+              "Social",
+              "Mạng xã hội",
+              "Xây dựng nhận diện thương hiệu và tương tác"
+            ],
+            [
+              "Email",
+              "Danh sách email",
+              "Nuôi dưỡng khách hàng tiềm năng và thúc đẩy mua lại"
+            ]
+          ]
+        },
+        "howToCreateHeading": "Cách tạo một chiến dịch",
+        "howToCreateSteps": [
+          "Vào Campaign Planner từ thanh điều hướng bên trái.",
+          "Nhấn \"Create Campaign.\"",
+          "Nhập tên chiến dịch và chọn loại chiến dịch.",
+          "Thiết lập ngày bắt đầu và kết thúc.",
+          "Xác định phân bổ ngân sách.",
+          "Thiết lập mục tiêu có thể đo lường được (VD: 500 lead mới, 10.000 lượt truy cập).",
+          "Chọn các kênh và nền tảng liên quan.",
+          "Thêm các thành phần của chiến dịch: nội dung, quảng cáo, bài đăng mạng xã hội, landing page.",
+          "Nhấn \"Launch\" khi sẵn sàng hoặc lưu dưới dạng Draft."
+        ],
+        "lifecycleHeading": "Vòng đời chiến dịch",
+        "lifecycleDraftBadge": "Bản nháp",
+        "lifecycleActiveBadge": "Đang hoạt động",
+        "lifecyclePausedBadge": "Tạm dừng",
+        "lifecycleCompletedBadge": "Hoàn thành",
+        "trackingHeading": "Theo dõi chỉ số",
+        "trackingText": "Mỗi chiến dịch theo dõi tiến độ ngân sách (đã chi so với phân bổ), impressions, clicks, conversions và các chỉ số mục tiêu tùy chỉnh. Thanh tiến độ cho biết bạn đang tiến gần đến mục tiêu như thế nào.",
+        "protip": "Hãy đặt mục tiêu SMART cho mỗi chiến dịch: Cụ thể, Đo lường được, Khả thi, Liên quan và Có thời hạn. \"Tăng traffic blog thêm 30% trong 90 ngày\" tốt hơn nhiều so với \"có thêm traffic\"."
+      },
+      "reports": {
+        "title": "Báo cáo",
+        "description": "Tạo báo cáo đẹp mắt, sẵn sàng gửi khách hàng với biểu đồ và thông tin chi tiết.",
+        "typesHeading": "Các loại báo cáo",
+        "typesTable": {
+          "headers": [
+            "Loại",
+            "Nội dung bao gồm"
+          ],
+          "rows": [
+            [
+              "Báo cáo SEO",
+              "Thứ hạng, traffic tự nhiên, sức khỏe kỹ thuật, backlink"
+            ],
+            [
+              "Báo cáo quảng cáo",
+              "Chi tiêu quảng cáo, ROAS, conversions, chiến dịch hàng đầu"
+            ],
+            [
+              "Báo cáo nội dung",
+              "Nội dung đã đăng, traffic, tương tác, điểm SEO"
+            ],
+            [
+              "Báo cáo đối thủ",
+              "So sánh cạnh tranh, khoảng trống từ khóa/nội dung/backlink"
+            ],
+            [
+              "Báo cáo tổng hợp",
+              "Tất cả nội dung trên kết hợp thành một báo cáo điều hành"
+            ]
+          ]
+        },
+        "howToGenerateHeading": "Cách tạo báo cáo",
+        "howToGenerateSteps": [
+          "Vào Reports từ thanh điều hướng bên trái.",
+          "Chọn một khách hàng từ danh sách thả xuống.",
+          "Chọn loại báo cáo.",
+          "Thiết lập khoảng thời gian (7 ngày qua, 30 ngày, 90 ngày, hoặc tùy chỉnh).",
+          "Nhấn \"Generate Report.\"",
+          "Xem lại báo cáo với tóm tắt điều hành, chỉ số chính, biểu đồ và khuyến nghị."
+        ],
+        "sharingHeading": "Chia sẻ và lên lịch",
+        "sharingList": [
+          [
+            "Tải PDF:",
+            "Xuất file PDF được định dạng đẹp mắt để chia sẻ ngoại tuyến."
+          ],
+          [
+            "Gửi email cho khách hàng:",
+            "Gửi báo cáo trực tiếp đến hộp thư của khách hàng."
+          ],
+          [
+            "Lên lịch:",
+            "Thiết lập báo cáo tự động hàng tuần hoặc hàng tháng để không bao giờ bỏ lỡ."
+          ]
+        ],
+        "protip": "Hãy lên lịch báo cáo tổng hợp hàng tháng cho mỗi khách hàng. Báo cáo tự động giúp bạn tiết kiệm hàng giờ đồng hồ và đảm bảo khách hàng luôn cảm thấy được cập nhật thông tin, ngay cả khi bạn đang bận rộn."
+      },
+      "knowledge-brain": {
+        "title": "Kho tri thức",
+        "description": "Kho tri thức riêng cho từng khách hàng, giúp nội dung và chiến lược do AI tạo ra bám sát giọng thương hiệu và bối cảnh kinh doanh thực tế của khách hàng.",
+        "whatIsHeading": "Kho tri thức là gì?",
+        "whatIsText": "Kho tri thức là một cơ sở dữ liệu tri thức riêng cho từng khách hàng. Các tài liệu bạn thêm vào đây — hướng dẫn thương hiệu, thông tin sản phẩm, ghi chú chiến dịch trước đây, câu hỏi thường gặp — sẽ tự động được chia nhỏ và mã hóa (embedding), để các tính năng AI khác có thể tìm kiếm theo ngữ nghĩa và dựa câu trả lời của mình trên bối cảnh kinh doanh thực tế của khách hàng thay vì lời khuyên chung chung.",
+        "howToAddHeading": "Cách thêm tài liệu",
+        "howToAddSteps": [
+          "Vào Kho tri thức từ thanh điều hướng bên trái.",
+          "Chọn khách hàng từ danh sách thả xuống.",
+          "Nhấn \"Add Document.\"",
+          "Đặt tiêu đề mô tả rõ ràng và dán hoặc viết nội dung.",
+          "Lưu lại — tài liệu sẽ tự động được chia nhỏ và mã hóa ở chế độ nền."
+        ],
+        "searchHeading": "Tìm kiếm theo ngữ nghĩa",
+        "searchText": "Ô tìm kiếm ở trên dùng phương pháp tìm kiếm theo ngữ nghĩa (semantic), không phải khớp từ khóa. Hãy nhập một câu hỏi bằng ngôn ngữ tự nhiên, bạn sẽ nhận lại những đoạn nội dung liên quan nhất từ tài liệu của mình, kèm điểm mức độ liên quan, ngay cả khi chúng không chứa đúng những từ bạn gõ.",
+        "whatToAddHeading": "Nên thêm gì vào đây",
+        "whatToAddTable": {
+          "headers": [
+            "Loại nội dung",
+            "Vì sao hữu ích"
+          ],
+          "rows": [
+            [
+              "Hướng dẫn thương hiệu",
+              "Giúp nội dung do AI tạo ra giữ đúng giọng điệu và bản sắc thương hiệu"
+            ],
+            [
+              "Thông tin sản phẩm/dịch vụ",
+              "Giúp AI tham chiếu đúng sản phẩm thực tế thay vì đoán mò"
+            ],
+            [
+              "Bài học từ chiến dịch trước",
+              "Giúp AI tránh lặp lại những gì đã không hiệu quả"
+            ],
+            [
+              "Câu hỏi thường gặp và cách xử lý phản đối",
+              "Cải thiện chất lượng câu trả lời của AI Assistant cho khách hàng này"
+            ],
+            [
+              "Ghi chú định vị đối thủ cạnh tranh",
+              "Giúp các khuyến nghị chiến lược của Marketing Brain sắc bén hơn"
+            ]
+          ]
+        },
+        "usedByHeading": "Những tính năng nào sử dụng tri thức này",
+        "usedByText": "Marketing Brain, AI Assistant, Content Studio và Campaigns đều tự động lấy các đoạn nội dung liên quan từ kho tri thức này khi tạo chiến lược, câu trả lời hoặc nội dung cho khách hàng — bạn không cần đính kèm tài liệu thủ công mỗi lần.",
+        "protip": "Hãy thêm một vài tài liệu cốt lõi (hướng dẫn giọng thương hiệu, tổng quan sản phẩm, chân dung khách hàng mục tiêu) cho mỗi khách hàng ngay khi tiếp nhận. Kho tri thức chỉ phát huy tác dụng khi có nội dung để tìm kiếm."
+      },
+      "marketing-brain": {
+        "title": "Trí tuệ Marketing",
+        "description": "Một CMO bán thời gian dạng AI, phân tích toàn bộ dữ liệu đa kênh của khách hàng và đưa ra đánh giá chiến lược có thứ tự ưu tiên.",
+        "whatIsHeading": "Trí tuệ Marketing là gì?",
+        "whatIsText": "Trí tuệ Marketing đóng vai trò như một CMO bán thời gian dạng AI cho từng khách hàng. Khi bạn nhấn Generate, nó tổng hợp dữ liệu thực tế, mới nhất từ tất cả các engine đã kết nối — SEO, nội dung, backlink, chiến dịch, quảng cáo, mạng xã hội và đối thủ cạnh tranh — cùng với các ghi chú liên quan từ Kho tri thức của khách hàng, sau đó yêu cầu AI Gateway phân tích toàn diện và đưa ra đánh giá chiến lược dựa hoàn toàn trên dữ liệu đó.",
+        "howToGenerateHeading": "Cách tạo một chiến lược",
+        "howToGenerateSteps": [
+          "Vào Trí tuệ Marketing từ thanh điều hướng bên trái.",
+          "Chọn khách hàng từ danh sách thả xuống.",
+          "Nhấn \"Generate.\"",
+          "Chờ trong khi AI Gateway tổng hợp dữ liệu của khách hàng và tạo ra đánh giá.",
+          "Xem lại kết quả, hoặc nhấn \"Regenerate\" bất cứ khi nào bạn muốn có đánh giá mới dựa trên dữ liệu mới nhất."
+        ],
+        "reportSectionsHeading": "Đọc hiểu báo cáo",
+        "reportSectionsTable": {
+          "headers": [
+            "Phần",
+            "Hiển thị gì"
+          ],
+          "rows": [
+            [
+              "Tổng quan tình hình",
+              "Tóm tắt trung thực dài 2-4 câu về vị thế hiện tại của khách hàng"
+            ],
+            [
+              "Vấn đề phát hiện",
+              "Các vấn đề phát hiện được trong dữ liệu, gắn nhãn theo danh mục và mức độ nghiêm trọng"
+            ],
+            [
+              "Cơ hội",
+              "Các cơ hội cụ thể, có thứ tự ưu tiên kèm tác động ước tính"
+            ],
+            [
+              "Khuyến nghị theo kênh",
+              "Hành động cụ thể tiếp theo cho từng kênh (SEO, quảng cáo, nội dung, mạng xã hội...)"
+            ],
+            [
+              "Phân bổ ngân sách",
+              "Đề xuất tỷ lệ phần trăm phân bổ ngân sách giữa các kênh"
+            ],
+            [
+              "Dự báo KPI",
+              "2-4 chỉ số chính kèm mục tiêu thực tế trong 90 ngày"
+            ]
+          ]
+        },
+        "severityHeading": "Mức độ nghiêm trọng của vấn đề",
+        "severityCriticalBadge": "Nghiêm trọng",
+        "severityCriticalText": "Đang ảnh hưởng trực tiếp đến kết quả của khách hàng ngay lúc này — cần xử lý trước tiên.",
+        "severityHighBadge": "Cao",
+        "severityHighText": "Ảnh hưởng tiêu cực đáng kể. Xử lý tiếp theo sau các vấn đề nghiêm trọng.",
+        "severityMediumBadge": "Trung bình",
+        "severityMediumText": "Nên khắc phục, nhưng chưa cấp bách.",
+        "severityLowBadge": "Thấp",
+        "severityLowText": "Nhỏ. Có thể để sau.",
+        "priorityHeading": "Mức độ ưu tiên của cơ hội và khuyến nghị",
+        "priorityText": "Mỗi cơ hội và khuyến nghị theo kênh đều được gắn nhãn mức độ ưu tiên Cao, Trung bình hoặc Thấp dựa trên tác động kỳ vọng — dùng nhãn này để quyết định nên hành động vào việc gì trước.",
+        "historyHeading": "Lịch sử chiến lược",
+        "historyText": "Mỗi lần bạn tạo một chiến lược, nó sẽ được lưu vào lịch sử của khách hàng đó. Nhấn \"History\" để xem lại các báo cáo trước đây và nhấn vào bất kỳ báo cáo nào để xem lại — tạo chiến lược mới không ghi đè lên các chiến lược cũ.",
+        "protip": "Hãy tạo lại chiến lược hàng tháng, hoặc ngay sau một thay đổi lớn (khởi động chiến dịch mới, chạy kiểm tra SEO, cập nhật phân tích đối thủ) để các khuyến nghị luôn dựa trên dữ liệu hiện tại, không phải một ảnh chụp đã cũ."
+      },
+      "ai-assistant": {
+        "title": "Trợ lý AI",
+        "description": "Trợ lý marketing thông minh giúp trả lời câu hỏi và gợi ý chiến lược.",
+        "whatItCanDoHeading": "AI Assistant có thể làm gì",
+        "whatItCanDoText": "AI Assistant là giao diện trò chuyện có thể trả lời các câu hỏi về marketing, gợi ý chiến lược, phân tích dữ liệu của bạn, giải thích các chỉ số, hỗ trợ xử lý sự cố và tạo kế hoạch hành động.",
+        "examplesHeading": "Các câu hỏi mẫu theo danh mục",
+        "categories": [
+          {
+            "heading": "Câu hỏi về SEO",
+            "questions": [
+              "Vì sao thứ hạng của tôi giảm trong tuần này?",
+              "Tôi nên tập trung vào từ khóa nào tiếp theo?",
+              "Làm sao để khắc phục các vấn đề Core Web Vitals từ kết quả kiểm tra của tôi?"
+            ]
+          },
+          {
+            "heading": "Câu hỏi về nội dung",
+            "questions": [
+              "Gợi ý 10 ý tưởng chủ đề blog cho một công ty SaaS.",
+              "Tôi nên đăng bài blog với tần suất bao nhiêu?",
+              "Định dạng nội dung nào phù hợp nhất để tạo khách hàng tiềm năng?"
+            ]
+          },
+          {
+            "heading": "Câu hỏi về quảng cáo",
+            "questions": [
+              "Làm sao để cải thiện CTR của Google Ads?",
+              "Tôi nên phân bổ ngân sách bao nhiêu cho Facebook Ads?",
+              "Vì sao chi phí mỗi lead của tôi lại cao như vậy?"
+            ]
+          },
+          {
+            "heading": "Câu hỏi về chiến lược",
+            "questions": [
+              "Tạo một kế hoạch hành động SEO trong 90 ngày cho khách hàng của tôi.",
+              "Tôi nên ưu tiên kênh marketing nào với ngân sách 5.000 USD/tháng?",
+              "Làm sao để đo lường ROI marketing?"
+            ]
+          }
+        ],
+        "tipsHeading": "Mẹo để nhận được câu trả lời tốt hơn",
+        "tipsSteps": [
+          "\"Làm sao để cải thiện tỷ lệ chuyển đổi của landing page?\" tốt hơn nhiều so với \"Giúp tôi về marketing.\"",
+          "Cung cấp ngữ cảnh: \"Khách hàng của tôi là một công ty SaaS B2B bán công cụ quản lý dự án.\"",
+          "Chọn một khách hàng trong danh sách thả xuống để AI có thể truy cập dữ liệu của khách hàng đó.",
+          "Đặt câu hỏi tiếp theo để đào sâu hơn vào bất kỳ chủ đề nào."
+        ],
+        "tipsSpecificLabel": "Hãy cụ thể:",
+        "protip": "Hãy chọn một khách hàng trước khi đặt câu hỏi. AI Assistant sẽ tham chiếu dữ liệu thực tế của khách hàng đó (thứ hạng, traffic, backlink) để đưa ra câu trả lời được cá nhân hóa, dựa trên dữ liệu thay vì lời khuyên chung chung."
+      },
+      "seo-by-ai": {
+        "title": "SEO bằng AI (Atlas)",
+        "description": "Tác nhân AI hoàn toàn tự động quản lý chiến lược SEO của bạn 24/7.",
+        "whatIsHeading": "Atlas là gì?",
+        "whatIsText": "Atlas là tác nhân AI tự động của MarketingOS. Sau khi được bật, nó liên tục giám sát hiệu suất SEO của bạn, xác định cơ hội và vấn đề, tạo kế hoạch hành động, và có thể tự động thực thi các thay đổi - tất cả mà không cần bạn phải làm gì cả.",
+        "howItWorksHeading": "Cách hoạt động",
+        "cycleMonitorBadge": "Giám sát",
+        "cycleAnalyzeBadge": "Phân tích",
+        "cyclePlanBadge": "Lập kế hoạch",
+        "cycleExecuteBadge": "Thực thi",
+        "cycleLearnBadge": "Học hỏi",
+        "howItWorksText": "Atlas chạy liên tục chu trình này, học hỏi từ kết quả để đưa ra quyết định tốt hơn theo thời gian.",
+        "actionTypesHeading": "Các loại hành động",
+        "actionTypesTable": {
+          "headers": [
+            "Loại",
+            "Mô tả",
+            "Ví dụ"
+          ],
+          "rows": [
+            [
+              "Tự động thực thi",
+              "Atlas tự động thực hiện các hành động này",
+              "Cập nhật meta description, sửa liên kết hỏng"
+            ],
+            [
+              "Cần phê duyệt",
+              "Atlas đề xuất và chờ bạn xác nhận",
+              "Đăng nội dung mới, khởi động chiến dịch quảng cáo"
+            ]
+          ]
+        },
+        "actionCategoriesHeading": "Các danh mục hành động",
+        "actionCategoriesTable": {
+          "headers": [
+            "Danh mục",
+            "Ví dụ"
+          ],
+          "rows": [
+            [
+              "SEO kỹ thuật",
+              "Sửa lỗi crawl, tối ưu tốc độ trang, thêm schema markup"
+            ],
+            [
+              "Nội dung",
+              "Tạo bài viết mới, cập nhật nội dung hiện có, tối ưu heading"
+            ],
+            [
+              "Từ khóa",
+              "Thêm từ khóa mới cần theo dõi, điều chỉnh chiến lược nhắm mục tiêu"
+            ],
+            [
+              "Backlink",
+              "Xác định cơ hội liên kết, gắn cờ các liên kết độc hại để disavow"
+            ],
+            [
+              "Social",
+              "Lên lịch bài đăng, tối ưu thời điểm đăng bài"
+            ],
+            [
+              "Ads",
+              "Điều chỉnh giá thầu, tạm dừng quảng cáo kém hiệu quả, đề xuất chiến dịch mới"
+            ],
+            [
+              "Đối thủ cạnh tranh",
+              "Cảnh báo thay đổi của đối thủ, xác định khoảng trống mới"
+            ],
+            [
+              "Báo cáo",
+              "Tạo và gửi báo cáo theo lịch"
+            ]
+          ]
+        },
+        "autopilotHeading": "Các chế độ Autopilot",
+        "autopilotTable": {
+          "headers": [
+            "Chế độ",
+            "Atlas có thể làm gì",
+            "Phù hợp nhất cho"
+          ],
+          "rows": [
+            [
+              "Full Auto",
+              "Tự động thực thi tất cả hành động",
+              "Người dùng có kinh nghiệm, tin tưởng AI"
+            ],
+            [
+              "Semi-Auto",
+              "Tự động thực thi các hành động an toàn, xin phê duyệt cho hành động quan trọng",
+              "Hầu hết người dùng (khuyến nghị)"
+            ],
+            [
+              "Manual Review",
+              "Đề xuất tất cả hành động nhưng không thực thi gì nếu chưa được phê duyệt",
+              "Người dùng mới đang làm quen với nền tảng"
+            ]
+          ]
+        },
+        "strategyTabHeading": "Tab Chiến lược",
+        "strategyTabText": "Tab Chiến lược hiển thị chiến lược SEO hiện tại của Atlas: nó đang tập trung vào điều gì, vì sao, và kết quả kỳ vọng là gì. Nó bao gồm cả dự báo traffic và thứ hạng kèm khoảng tin cậy.",
+        "chattingHeading": "Trò chuyện với Atlas",
+        "chattingText": "Bạn có thể trò chuyện trực tiếp với Atlas để hỏi về chiến lược, trạng thái hiện tại hoặc hiệu suất của nó. Ví dụ:",
+        "chattingExamples": [
+          "Atlas, bạn đang làm gì ngay bây giờ?",
+          "Vì sao bạn ưu tiên sửa meta description?",
+          "Bạn dự đoán kết quả gì cho tháng tới?",
+          "Tạm dừng tất cả hành động tạo nội dung."
+        ],
+        "protip": "Hãy bắt đầu với chế độ Semi-Auto để xây dựng lòng tin. Khi thấy Atlas đưa ra quyết định tốt một cách nhất quán, hãy chuyển sang Full Auto để đạt hiệu quả tối đa. Xem lại nhật ký hoạt động hàng tuần để luôn nắm được tình hình."
+      },
+      "alerts": {
+        "title": "Cảnh báo & Giám sát",
+        "description": "Cảnh báo theo thời gian thực về sụt giảm thứ hạng, thay đổi backlink và sự cố chiến dịch.",
+        "typesHeading": "Các loại cảnh báo",
+        "typesTable": {
+          "headers": [
+            "Cảnh báo",
+            "Yếu tố kích hoạt",
+            "Hành động cần thực hiện"
+          ],
+          "rows": [
+            [
+              "Sụt giảm thứ hạng",
+              "Từ khóa giảm từ 5 vị trí trở lên",
+              "Kiểm tra trang để tìm vấn đề, xem lại thay đổi của đối thủ"
+            ],
+            [
+              "Mất backlink",
+              "Backlink giá trị cao bị gỡ bỏ",
+              "Liên hệ quản trị viên, tìm liên kết thay thế"
+            ],
+            [
+              "Sụt giảm traffic",
+              "Traffic tự nhiên giảm từ 20% trở lên",
+              "Kiểm tra cập nhật thuật toán, vấn đề kỹ thuật"
+            ],
+            [
+              "Sự cố chiến dịch",
+              "Chỉ số chiến dịch dưới ngưỡng",
+              "Xem lại thiết lập chiến dịch, điều chỉnh nhắm mục tiêu"
+            ]
+          ]
+        },
+        "severityHeading": "Mức độ nghiêm trọng",
+        "severityCriticalBadge": "Nghiêm trọng",
+        "severityCriticalText": "Cần được xử lý ngay lập tức. Ảnh hưởng đáng kể đến hiệu suất.",
+        "severityWarningBadge": "Cảnh báo",
+        "severityWarningText": "Nên được xử lý sớm. Có thể trở nên tệ hơn nếu bị bỏ qua.",
+        "severityInfoBadge": "Thông tin",
+        "severityInfoText": "Chỉ để bạn nắm thông tin. Không cần hành động ngay.",
+        "managingHeading": "Quản lý cảnh báo",
+        "managingSteps": [
+          "Xem các cảnh báo mới trên trang Alerts hoặc chuông thông báo trên header.",
+          "Nhấn vào một cảnh báo để xem đầy đủ chi tiết và hành động khuyến nghị.",
+          "Đánh dấu đã đọc hoặc thực hiện hành động trực tiếp từ thẻ cảnh báo.",
+          "Cấu hình ngưỡng cảnh báo tại Settings > Notifications."
+        ],
+        "channelsHeading": "Kênh thông báo",
+        "channelsTable": {
+          "headers": [
+            "Kênh",
+            "Phù hợp nhất cho"
+          ],
+          "rows": [
+            [
+              "Trong ứng dụng",
+              "Luôn bật - xem cảnh báo khi bạn đăng nhập"
+            ],
+            [
+              "Email",
+              "Tổng hợp hàng ngày hoặc cảnh báo nghiêm trọng theo thời gian thực"
+            ],
+            [
+              "Slack",
+              "Thông báo cho nhóm trong kênh workspace của bạn"
+            ]
+          ]
+        },
+        "frequencyHeading": "Tùy chọn tần suất cảnh báo",
+        "frequencyList": [
+          [
+            "Thời gian thực:",
+            "Được thông báo ngay lập tức (khuyến nghị cho cảnh báo nghiêm trọng)"
+          ],
+          [
+            "Hàng giờ:",
+            "Tổng hợp theo lô mỗi giờ"
+          ],
+          [
+            "Tổng hợp hàng ngày:",
+            "Một email tổng hợp mỗi ngày (khuyến nghị cho cảnh báo mức thông tin)"
+          ]
+        ],
+        "protip": "Hãy đặt cảnh báo nghiêm trọng ở chế độ thời gian thực và cảnh báo thông tin ở chế độ tổng hợp hàng ngày. Bằng cách này, bạn sẽ được thông báo ngay khi có điều gì quan trọng xảy ra mà không bị quá tải bởi những cập nhật nhỏ."
+      },
+      "settings": {
+        "title": "Cài đặt",
+        "description": "Cấu hình hồ sơ, agency, tích hợp, thông báo và API key của bạn.",
+        "profileHeading": "Cài đặt hồ sơ",
+        "profileList": [
+          [
+            "Tên:",
+            "Tên hiển thị của bạn trên toàn nền tảng."
+          ],
+          [
+            "Email:",
+            "Dùng để đăng nhập và nhận thông báo."
+          ],
+          [
+            "Mật khẩu:",
+            "Đổi mật khẩu của bạn (phải có 8+ ký tự với sự kết hợp chữ cái, số và ký hiệu)."
+          ]
+        ],
+        "agencyHeading": "Cài đặt Agency",
+        "agencyList": [
+          [
+            "Tên Agency:",
+            "Xuất hiện trên báo cáo và tài liệu gửi khách hàng."
+          ],
+          [
+            "Logo:",
+            "Tải logo của bạn lên để dùng cho báo cáo white-label."
+          ],
+          [
+            "Gói đăng ký:",
+            "Xem và quản lý gói hiện tại cùng thông tin thanh toán."
+          ]
+        ],
+        "integrationsHeading": "Tích hợp",
+        "integrationsTable": {
+          "headers": [
+            "Tích hợp",
+            "Kết nối với gì",
+            "Cho phép làm gì"
+          ],
+          "rows": [
+            [
+              "Google Ads",
+              "Tài khoản Google Ads của bạn",
+              "Nhập chiến dịch, theo dõi hiệu suất quảng cáo"
+            ],
+            [
+              "Facebook Ads",
+              "Tài khoản Facebook Business của bạn",
+              "Nhập chiến dịch, theo dõi hiệu suất quảng cáo"
+            ],
+            [
+              "LinkedIn Ads",
+              "LinkedIn Campaign Manager của bạn",
+              "Nhập chiến dịch, theo dõi hiệu suất quảng cáo"
+            ],
+            [
+              "Google Analytics",
+              "Thuộc tính GA4 của bạn",
+              "Nhập dữ liệu traffic, phân tích hành vi người dùng"
+            ],
+            [
+              "Search Console",
+              "Thuộc tính GSC của bạn",
+              "Nhập hiệu suất tìm kiếm, dữ liệu lập chỉ mục"
+            ]
+          ]
+        },
+        "notificationsHeading": "Tùy chọn thông báo",
+        "notificationsText": "Cấu hình loại cảnh báo bạn muốn nhận, qua kênh nào (email, Slack, trong ứng dụng) và với tần suất bao nhiêu. Bạn có thể thiết lập tùy chọn khác nhau cho mỗi mức độ nghiêm trọng.",
+        "apiKeysHeading": "API Keys",
+        "apiKeysSteps": [
+          "Vào Settings > API Keys.",
+          "Nhấn \"Generate New Key.\"",
+          "Đặt tên mô tả cho key (VD: \"Zapier Integration\").",
+          "Sao chép key ngay lập tức - nó sẽ không hiển thị lại lần nữa.",
+          "Dùng key trong header Authorization: Bearer YOUR_API_KEY."
+        ],
+        "protip": "Hãy kết nối Google Search Console và Google Analytics trước tiên - chúng cung cấp dữ liệu giá trị nhất cho việc theo dõi SEO và hoàn toàn miễn phí sử dụng."
+      },
+      "glossary": {
+        "title": "Từ điển thuật ngữ SEO",
+        "description": "Các thuật ngữ SEO và marketing kỹ thuật số thiết yếu được giải thích bằng ngôn ngữ dễ hiểu.",
+        "intro": "Một tài liệu tham khảo toàn diện về các thuật ngữ SEO và marketing kỹ thuật số. Hãy lưu lại trang này và quay lại bất cứ khi nào bạn gặp một thuật ngữ chưa quen thuộc.",
+        "terms": [
+          [
+            "A/B Testing",
+            "So sánh hai phiên bản của một trang hoặc quảng cáo để xem phiên bản nào hiệu quả hơn. Một nửa khách truy cập xem phiên bản A, nửa còn lại xem phiên bản B, và bạn chọn ra phiên bản chiến thắng."
+          ],
+          [
+            "Alt Text",
+            "Mô tả văn bản gắn vào hình ảnh giúp công cụ tìm kiếm hiểu nội dung hình ảnh và cải thiện khả năng tiếp cận cho người dùng khiếm thị."
+          ],
+          [
+            "Anchor Text",
+            "Văn bản có thể nhấp trong một liên kết. Anchor text mô tả rõ ràng giúp công cụ tìm kiếm hiểu trang được liên kết nói về điều gì."
+          ],
+          [
+            "Backlink",
+            "Một liên kết từ website khác trỏ về website của bạn. Mỗi backlink chất lượng đóng vai trò như một phiếu tín nhiệm trong mắt Google."
+          ],
+          [
+            "Bounce Rate",
+            "Tỷ lệ phần trăm khách truy cập rời khỏi website của bạn sau khi chỉ xem một trang. Thấp hơn thường là tốt hơn."
+          ],
+          [
+            "Canonical URL",
+            "Phiên bản được ưu tiên của một trang khi có nhiều URL có nội dung tương tự nhau. Giúp ngăn ngừa vấn đề nội dung trùng lặp."
+          ],
+          [
+            "Click-Through Rate (CTR)",
+            "Tỷ lệ phần trăm người dùng nhấp vào liên kết của bạn sau khi thấy nó trong kết quả tìm kiếm. Tính bằng Clicks / Impressions * 100."
+          ],
+          [
+            "Content Gap",
+            "Các chủ đề hoặc từ khóa mà đối thủ của bạn đã đề cập nhưng bạn thì chưa. Lấp đầy các khoảng trống nội dung là một chiến lược tăng trưởng quan trọng."
+          ],
+          [
+            "Conversion",
+            "Khi khách truy cập hoàn tất một hành động mong muốn: mua sản phẩm, đăng ký nhận bản tin, điền vào biểu mẫu, v.v."
+          ],
+          [
+            "Core Web Vitals",
+            "Các chỉ số của Google để đo lường trải nghiệm trang: tốc độ tải (LCP), khả năng tương tác (FID) và độ ổn định thị giác (CLS)."
+          ],
+          [
+            "Cost Per Click (CPC)",
+            "Số tiền trung bình bạn trả mỗi khi có người nhấp vào quảng cáo của bạn. Thay đổi tùy theo mức độ cạnh tranh của từ khóa."
+          ],
+          [
+            "Crawl",
+            "Khi các bot của công cụ tìm kiếm truy cập và quét website của bạn để khám phá và lập chỉ mục các trang."
+          ],
+          [
+            "Domain Authority (DA)",
+            "Điểm số từ 0-100 dự đoán khả năng một website xếp hạng trong kết quả tìm kiếm. Cao hơn là tốt hơn. Được phát triển bởi Moz."
+          ],
+          [
+            "Dofollow",
+            "Loại liên kết truyền giá trị SEO (link juice) đến trang được liên kết. Là loại liên kết mặc định trừ khi được chỉ định khác."
+          ],
+          [
+            "E-E-A-T",
+            "Experience, Expertise, Authoritativeness, Trustworthiness (Kinh nghiệm, Chuyên môn, Uy tín, Độ tin cậy). Tiêu chí chất lượng của Google để đánh giá người tạo nội dung và website."
+          ],
+          [
+            "Featured Snippet",
+            "Ô câu trả lời nổi bật ở đầu kết quả tìm kiếm Google. Có nội dung xuất hiện ở đây đồng nghĩa với khả năng hiển thị tối đa."
+          ],
+          [
+            "Google Algorithm",
+            "Hệ thống phức tạp mà Google sử dụng để truy xuất và xếp hạng các trang từ chỉ mục của mình. Được cập nhật hàng nghìn lần mỗi năm."
+          ],
+          [
+            "H1 Tag",
+            "Tiêu đề chính của một trang trong HTML. Mỗi trang nên có đúng một thẻ H1 mô tả rõ ràng nội dung trang."
+          ],
+          [
+            "Impressions",
+            "Số lần trang hoặc quảng cáo của bạn xuất hiện trong kết quả tìm kiếm hoặc trên một nền tảng, bất kể có được nhấp vào hay không."
+          ],
+          [
+            "Indexing",
+            "Quá trình công cụ tìm kiếm lưu trữ và sắp xếp các trang web để có thể truy xuất cho các tìm kiếm liên quan."
+          ],
+          [
+            "Internal Link",
+            "Một liên kết từ trang này sang trang khác trên cùng website của bạn. Giúp phân phối độ uy tín của trang và hỗ trợ điều hướng."
+          ],
+          [
+            "Keyword",
+            "Một từ hoặc cụm từ mà người dùng nhập vào công cụ tìm kiếm. Nội dung của bạn nhắm đến các từ khóa cụ thể để thu hút khách truy cập phù hợp."
+          ],
+          [
+            "Keyword Difficulty",
+            "Điểm số (0-100) cho biết mức độ khó để lên hạng trang đầu tiên cho một từ khóa cụ thể. Cao hơn nghĩa là cạnh tranh nhiều hơn."
+          ],
+          [
+            "Landing Page",
+            "Một trang web độc lập được thiết kế cho một chiến dịch marketing cụ thể, tối ưu để chuyển đổi khách truy cập thành khách hàng tiềm năng hoặc khách hàng."
+          ],
+          [
+            "Link Building",
+            "Quá trình khiến các website khác liên kết đến website của bạn. Các chiến lược bao gồm guest posting, content marketing và outreach."
+          ],
+          [
+            "Long-tail Keyword",
+            "Một cụm từ tìm kiếm dài hơn, cụ thể hơn (3+ từ). Lượng tìm kiếm thấp hơn nhưng tỷ lệ chuyển đổi cao hơn và ít cạnh tranh hơn."
+          ],
+          [
+            "Meta Description",
+            "Một đoạn tóm tắt ngắn (150-160 ký tự) về nội dung trang, xuất hiện dưới tiêu đề trong kết quả tìm kiếm. Ảnh hưởng đến CTR."
+          ],
+          [
+            "Meta Title",
+            "Tiêu đề của một trang khi xuất hiện trong kết quả tìm kiếm và tab trình duyệt. Nên có độ dài 50-60 ký tự và bao gồm từ khóa mục tiêu."
+          ],
+          [
+            "Nofollow",
+            "Thuộc tính liên kết báo cho công cụ tìm kiếm không truyền giá trị xếp hạng đến trang được liên kết. Dùng cho quảng cáo, nội dung do người dùng tạo, v.v."
+          ],
+          [
+            "Organic Traffic",
+            "Khách truy cập tìm thấy website của bạn qua kết quả tìm kiếm không trả phí, trái ngược với quảng cáo trả phí, mạng xã hội hoặc truy cập trực tiếp."
+          ],
+          [
+            "Page Authority",
+            "Điểm số (0-100) dự đoán mức độ xếp hạng tốt của một trang cụ thể. Tương tự Domain Authority nhưng áp dụng cho từng trang riêng lẻ."
+          ],
+          [
+            "People Also Ask",
+            "Một tính năng SERP của Google hiển thị các câu hỏi liên quan mà người dùng thường tìm kiếm. Nguồn ý tưởng nội dung tuyệt vời."
+          ],
+          [
+            "Position/Ranking",
+            "Vị trí trang của bạn xuất hiện trong kết quả tìm kiếm cho một từ khóa nhất định. Vị trí 1 là kết quả đầu tiên."
+          ],
+          [
+            "Referring Domain",
+            "Một website riêng biệt liên kết đến bạn. 10 liên kết từ 10 tên miền khác nhau có giá trị hơn 10 liên kết từ 1 tên miền."
+          ],
+          [
+            "ROAS",
+            "Return on Ad Spend (Lợi tức trên chi tiêu quảng cáo). Doanh thu tạo ra chia cho chi tiêu quảng cáo. ROAS 3 lần nghĩa là bạn kiếm được 3 USD cho mỗi 1 USD chi cho quảng cáo."
+          ],
+          [
+            "Schema Markup",
+            "Mã dữ liệu có cấu trúc gắn vào trang giúp công cụ tìm kiếm hiểu nội dung của bạn và có thể kích hoạt kết quả rich results."
+          ],
+          [
+            "Search Volume",
+            "Số lần trung bình một từ khóa được tìm kiếm mỗi tháng. Lượng tìm kiếm càng cao thì tiềm năng traffic càng lớn."
+          ],
+          [
+            "SERP",
+            "Search Engine Results Page (Trang kết quả công cụ tìm kiếm). Trang bạn thấy sau khi nhập một truy vấn vào Google."
+          ],
+          [
+            "SERP Features",
+            "Các loại kết quả đặc biệt ngoài liên kết xanh thông thường: featured snippet, image pack, video carousel, knowledge panel, v.v."
+          ],
+          [
+            "Sitemap",
+            "Một tệp XML liệt kê tất cả các trang trên website của bạn, giúp công cụ tìm kiếm khám phá và thu thập nội dung của bạn hiệu quả hơn."
+          ],
+          [
+            "Spam Score",
+            "Một chỉ số (0-100%) cho biết khả năng một website hoặc liên kết bị công cụ tìm kiếm phạt. Cao hơn là tệ hơn."
+          ],
+          [
+            "Technical SEO",
+            "Các tối ưu về hạ tầng website của bạn (tốc độ, khả năng thu thập dữ liệu, thân thiện với thiết bị di động, bảo mật) giúp công cụ tìm kiếm truy cập và lập chỉ mục nội dung của bạn."
+          ],
+          [
+            "Title Tag",
+            "Giống như Meta Title. Phần tử HTML chỉ định tiêu đề của một trang web, hiển thị trong kết quả tìm kiếm và tab trình duyệt."
+          ]
+        ],
+        "protip": "Hãy lưu lại từ điển thuật ngữ này và quay lại bất cứ khi nào bạn gặp một thuật ngữ chưa quen thuộc ở nơi khác trên nền tảng. Hiểu rõ những khái niệm này chính là nền tảng của SEO hiệu quả."
+      }
+    }
+  }
+}

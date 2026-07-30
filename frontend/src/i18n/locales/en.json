@@ -1,0 +1,2458 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "refresh": "Refresh",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "actions": "Actions",
+    "status": "Status",
+    "noData": "No data yet",
+    "viewAll": "View all",
+    "export": "Export",
+    "filter": "Filter",
+    "active": "Active",
+    "inactive": "Inactive",
+    "paused": "Paused",
+    "archived": "Archived",
+    "completed": "Completed",
+    "draft": "Draft",
+    "review": "In Review",
+    "scheduled": "Scheduled",
+    "published": "Published",
+    "pending": "Pending",
+    "view": "View",
+    "audit": "Audit",
+    "creating": "Creating...",
+    "saving": "Saving...",
+    "saveChanges": "Save Changes",
+    "tryAgainButton": "Try Again",
+    "networkError": "Network error. Please try again.",
+    "sessionExpired": "Session expired. Please login again.",
+    "yes": "Yes",
+    "no": "No",
+    "name": "Name",
+    "type": "Type",
+    "date": "Date",
+    "all": "All",
+    "showingRange": "Showing {{start}}-{{end}} of {{total}}",
+    "selectClientFirst": "Select a client first",
+    "deleteKeyword": "Delete keyword",
+    "comingSoon": "Coming soon - requires OpenAI API key",
+    "lost": "Lost",
+    "broken": "Broken",
+    "follow": "Follow",
+    "nofollow": "Nofollow",
+    "critical": "Critical",
+    "warning": "Warning",
+    "info": "Info",
+    "proTip": "Pro Tip:"
+  },
+  "industries": {
+    "Technology": "Technology",
+    "E-commerce": "E-commerce",
+    "Healthcare": "Healthcare",
+    "Finance": "Finance",
+    "Sustainability": "Sustainability",
+    "SaaS": "SaaS"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Overview",
+      "seo": "SEO",
+      "contentGrowth": "Content & Growth",
+      "clientsReports": "Clients & Reports"
+    },
+    "dashboard": "Dashboard",
+    "knowledgeBrain": "Knowledge Brain",
+    "marketingBrain": "Marketing Brain",
+    "seoByAi": "SEO By AI",
+    "aiAssistant": "AI Assistant",
+    "seoAudit": "SEO Audit",
+    "keywords": "Keywords",
+    "backlinks": "Backlinks",
+    "competitors": "Competitors",
+    "contentStudio": "Content Studio",
+    "imageStudio": "Image Studio",
+    "socialMedia": "Social Media",
+    "adsManager": "Ads Manager",
+    "campaigns": "Campaigns",
+    "clients": "Clients",
+    "reports": "Reports",
+    "alerts": "Alerts",
+    "documentation": "Documentation",
+    "bugReport": "Bug Report",
+    "settings": "Settings",
+    "logout": "Logout",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar"
+  },
+  "header": {
+    "searchPlaceholder": "Search anything... (Ctrl+K)",
+    "noClientsYet": "No clients yet",
+    "admin": "Admin",
+    "reportBug": "Report a Bug"
+  },
+  "login": {
+    "title": "MarketingOS",
+    "subtitle": "Sign in to your account",
+    "email": "Email",
+    "emailPlaceholder": "you@company.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "loginFailed": "Login failed. Please try again.",
+    "invalidCredentials": "Invalid email or password",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "copyright": "© 2026 MarketingOS. All rights reserved."
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back! Here's what's happening across your clients.",
+    "refresh": "Refresh",
+    "totalClients": "Total Clients",
+    "avgSeoScore": "Avg SEO Score",
+    "totalKeywordsTracked": "Total Keywords Tracked",
+    "totalBacklinks": "Total Backlinks",
+    "activeCampaigns": "Active Campaigns",
+    "aiContentGenerated": "AI Content Generated",
+    "organicTrafficTrend": "Organic Traffic Trend",
+    "keywordRankingsDistribution": "Keyword Rankings Distribution",
+    "recentActivity": "Recent Activity",
+    "topPerformingKeywords": "Top Performing Keywords",
+    "failedToLoad": "Failed to load dashboard",
+    "tryAgain": "Please try again.",
+    "tryAgainButton": "Try Again",
+    "refreshing": "Refreshing...",
+    "noClientsYet": "No clients yet",
+    "noClientsDesc": "No clients yet. Add your first client to get started.",
+    "recentAlerts": "Recent Alerts",
+    "progress": "Progress",
+    "table": {
+      "keyword": "Keyword",
+      "position": "Pos",
+      "change": "Change",
+      "volume": "Volume",
+      "client": "Client"
+    }
+  },
+  "clients": {
+    "title": "Clients",
+    "subtitle": "Manage and monitor all your client accounts.",
+    "addClient": "Add Client",
+    "addNewClient": "Add New Client",
+    "editClient": "Edit Client",
+    "companyName": "Company Name *",
+    "companyNamePlaceholder": "e.g. Acme Corporation",
+    "websiteDomain": "Website Domain *",
+    "websiteDomainPlaceholder": "e.g. acmecorp.com",
+    "industry": "Industry",
+    "marketingGoals": "Marketing Goals",
+    "marketingGoalsPlaceholder": "e.g. Increase organic traffic by 50%",
+    "createClient": "Create Client",
+    "searchPlaceholder": "Search clients by name or domain...",
+    "allStatuses": "All Statuses",
+    "allIndustries": "All Industries",
+    "failedToLoad": "Failed to load clients",
+    "failedToLoadGeneric": "Failed to load clients.",
+    "noClientsYet": "No clients yet",
+    "noClientsDesc": "Add your first client to get started with SEO management.",
+    "noClientsFound": "No clients found",
+    "noClientsFoundDesc": "Try adjusting your search or filter criteria.",
+    "seoScore": "SEO Score",
+    "keywords": "Keywords",
+    "campaigns": "Campaigns",
+    "auditStarted": "Audit started successfully!",
+    "auditFailed": "Audit failed: {{status}}",
+    "auditStartFailed": "Failed to start audit."
+  },
+  "clientDetail": {
+    "tabs": {
+      "Overview": "Overview",
+      "SEO": "SEO",
+      "Keywords": "Keywords",
+      "Backlinks": "Backlinks",
+      "Content": "Content",
+      "Campaigns": "Campaigns",
+      "Reports": "Reports"
+    },
+    "backToClients": "Back to Clients",
+    "failedToLoadClient": "Failed to load client",
+    "failedToLoadClientData": "Failed to load client data.",
+    "clientNotFound": "Client not found",
+    "clientNotFoundDesc": "The requested client could not be loaded.",
+    "runAudit": "Run Audit",
+    "clientSince": "Client since {{date}}",
+    "vsLastMonth": "{{change}} vs last month",
+    "organicTraffic": "Organic Traffic",
+    "recentKeywords": "Recent Keywords",
+    "brandKit": "Brand Kit",
+    "brandColors": "Brand Colors",
+    "fonts": "Fonts",
+    "goals": "Goals",
+    "competitors": "Competitors",
+    "domainAuthorityAbbr": "DA",
+    "traffic": "Traffic",
+    "noDashboardData": "No dashboard data yet",
+    "noDashboardDataDesc": "Run an audit or add keywords to start collecting data for this client.",
+    "googleSearchConsole": "Google Search Console",
+    "connected": "Connected",
+    "connectGscDesc": "Connect Google Search Console for real organic traffic, impressions, and ranking data — free, no subscription needed.",
+    "connectGsc": "Connect Google Search Console",
+    "gscConnectedSuccess": "Google Search Console connected successfully!",
+    "gscConnectFailed": "Failed to connect Google Search Console. Please try again.",
+    "gscOAuthNotConfigured": "Google OAuth is not configured yet.",
+    "gscConnectStartFailed": "Failed to start Google connection.",
+    "gscLoadFailed": "Failed to load Search Console data.",
+    "selectGscProperty": "Select the verified property that matches this client's site:",
+    "noVerifiedProperties": "No verified properties found on this Google account.",
+    "lastDaysRealData": "last 28 days · real data from Google",
+    "clicks": "Clicks",
+    "impressions": "Impressions",
+    "ctr": "CTR",
+    "avgPosition": "Avg Position",
+    "query": "Query",
+    "latestAudit": "Latest Audit",
+    "overallScore": "Overall Score",
+    "performance": "Performance",
+    "issuesFound": "Issues Found",
+    "seoMetricsOverTime": "SEO Metrics Over Time",
+    "auditHistory": "Audit History",
+    "score": "Score",
+    "issues": "Issues",
+    "noSeoData": "No SEO data yet",
+    "noSeoDataDesc": "Run an audit to start collecting SEO data.",
+    "trackedKeywords": "Tracked Keywords",
+    "difficulty": "Difficulty",
+    "noKeywordsTracked": "No keywords tracked yet",
+    "noKeywordsTrackedDesc": "Add keywords to start tracking rankings.",
+    "backlinksTitle": "Backlinks",
+    "sourceUrl": "Source URL",
+    "targetUrl": "Target URL",
+    "noBacklinksFound": "No backlinks found",
+    "noBacklinksFoundDesc": "Backlink data will appear here once discovered.",
+    "contentTitle": "Content",
+    "untitled": "Untitled",
+    "article": "Article",
+    "noContentYet": "No content yet",
+    "noContentYetDesc": "Create content to see it listed here.",
+    "campaignsTitle": "Campaigns",
+    "noCampaignsYet": "No campaigns yet",
+    "noCampaignsYetDesc": "Create a campaign to get started.",
+    "reportsTitle": "Reports",
+    "reportNumber": "Report #{{num}}",
+    "general": "General",
+    "noReportsYet": "No reports yet",
+    "noReportsYetDesc": "Reports will appear here once generated.",
+    "failedToLoadTabData": "Failed to load {{tab}} data."
+  },
+  "keywords": {
+    "title": "Keyword Intelligence",
+    "subtitle": "Track keyword rankings, discover opportunities, and monitor performance",
+    "addClientDesc": "Add a client to start tracking keywords.",
+    "research": "Research",
+    "addKeywords": "Add Keywords",
+    "enterOnePerLine": "Enter one keyword per line:",
+    "adding": "Adding...",
+    "noKeywordsTracked": "No keywords tracked yet",
+    "noKeywordsTrackedDesc": "Add keywords to start tracking rankings.",
+    "totalKeywords": "Total Keywords",
+    "avgPosition": "Avg Position",
+    "inTop10": "In Top 10",
+    "improved": "Improved",
+    "rankingDistribution": "Ranking Distribution",
+    "rankingTrend": "Ranking Trend (Top Keyword)",
+    "rankingHistoryPlaceholder": "Ranking history will appear once data is collected over time.",
+    "trackedKeywords": "Tracked Keywords",
+    "searchPlaceholder": "Search keywords...",
+    "difficulty": "Difficulty",
+    "cpc": "CPC",
+    "serpFeatures": "SERP Features",
+    "url": "URL"
+  },
+  "backlinks": {
+    "title": "Backlink Intelligence",
+    "selectClientDesc": "Add a client to start analyzing backlinks.",
+    "analyzeDomain": "Analyze Domain",
+    "analysisStarted": "Domain analysis started successfully!",
+    "noBacklinksFound": "No backlinks found",
+    "noBacklinksFoundDesc": "Backlink data will appear here once available.",
+    "totalBacklinks": "Total Backlinks",
+    "referringDomains": "Referring Domains",
+    "avgDomainAuthority": "Avg Domain Authority",
+    "spamScore": "Spam Score",
+    "backlinksCount": "Backlinks ({{count}})",
+    "searchPlaceholder": "Search URL or anchor text...",
+    "allStatus": "All Status",
+    "allRelTypes": "All Rel Types",
+    "sourceUrl": "Source URL",
+    "targetUrl": "Target URL",
+    "anchorText": "Anchor Text",
+    "rel": "Rel",
+    "noBacklinksMatchFilters": "No backlinks match the current filters."
+  },
+  "seoAudit": {
+    "title": "SEO Audit",
+    "subtitle": "Comprehensive website analysis and technical SEO health check",
+    "runNewAudit": "Run New Audit",
+    "urlPlaceholder": "Enter website URL (e.g., https://example.com)",
+    "analyze": "Analyze",
+    "enterUrlError": "Please enter a URL to analyze.",
+    "auditStarted": "Audit started successfully!",
+    "noAuditsYet": "No audits yet. Run your first audit.",
+    "noAuditsYetDesc": "Enter a URL above and click Analyze to get started.",
+    "overallScore": "Overall Score",
+    "performance": "Performance",
+    "seo": "SEO",
+    "accessibility": "Accessibility",
+    "bestPractices": "Best Practices",
+    "coreWebVitals": "Core Web Vitals",
+    "threshold": "Threshold: {{threshold}}",
+    "pagesCrawled": "Pages Crawled",
+    "brokenLinks": "Broken Links",
+    "redirectChains": "Redirect Chains",
+    "duplicateContent": "Duplicate Content",
+    "technicalIssues": "Technical Issues ({{count}})",
+    "urlLabel": "URL: {{url}}",
+    "mobileSeoIssues": "Mobile SEO Issues"
+  },
+  "competitors": {
+    "title": "Competitor Intelligence",
+    "selectClientDesc": "Add a client to start competitor analysis.",
+    "addCompetitor": "Add Competitor",
+    "noCompetitorsTracked": "No competitors tracked yet",
+    "noCompetitorsTrackedDesc": "Add competitors to start tracking their performance.",
+    "deleteCompetitor": "Delete competitor",
+    "domainAuthority": "Domain Authority",
+    "organicTraffic": "Organic Traffic",
+    "totalKeywords": "Total Keywords",
+    "totalBacklinks": "Total Backlinks",
+    "competitorName": "Competitor Name",
+    "competitorNamePlaceholder": "e.g. Acme Corp",
+    "domain": "Domain",
+    "domainPlaceholder": "e.g. acme.com",
+    "failedToAdd": "Failed to add competitor",
+    "failedToDelete": "Failed to delete competitor",
+    "analysisTitle": "{{name}} - Analysis",
+    "notAvailable": "N/A",
+    "higher": "higher",
+    "lower": "lower",
+    "equal": "equal"
+  },
+  "contentStudio": {
+    "title": "Content Studio",
+    "subtitle": "Create, optimize, and manage all your marketing content with AI.",
+    "createContent": "Create Content",
+    "noContentYet": "No content yet.",
+    "noContentYetDesc": "Create your first piece of content to get started.",
+    "totalContent": "Total Content",
+    "published": "Published",
+    "drafts": "Drafts",
+    "avgSeoScore": "Avg SEO Score",
+    "allContent": "All Content",
+    "blogArticles": "Blog Articles",
+    "landingPages": "Landing Pages",
+    "emailCampaigns": "Email Campaigns",
+    "adCopy": "Ad Copy",
+    "searchPlaceholder": "Search content...",
+    "noContentFound": "No content found",
+    "noContentFoundDesc": "Try adjusting your filters or create new content.",
+    "editContent": "Edit Content",
+    "createNewContent": "Create New Content",
+    "contentType": "Content Type",
+    "topicTitle": "Topic / Title",
+    "topicTitlePlaceholder": "e.g. How to Improve Website Speed",
+    "targetKeywords": "Target Keywords",
+    "targetKeywordsPlaceholder": "Comma separated",
+    "tone": "Tone",
+    "length": "Length",
+    "additionalInstructions": "Additional Instructions",
+    "additionalInstructionsPlaceholder": "Any specific instructions for content generation...",
+    "generateWithAI": "Generate with AI",
+    "failedToDelete": "Failed to delete content",
+    "failedToGenerate": "Failed to generate content",
+    "readability": "Readability",
+    "types": {
+      "blog": "Blog",
+      "landing-page": "Landing Page",
+      "email": "Email",
+      "ad-copy": "Ad Copy",
+      "social": "Social Post"
+    },
+    "typeOptions": {
+      "blog": "Blog Article",
+      "landing-page": "Landing Page",
+      "email": "Email Campaign",
+      "ad-copy": "Ad Copy",
+      "social": "Social Post"
+    },
+    "tones": {
+      "professional": "Professional",
+      "casual": "Casual",
+      "persuasive": "Persuasive",
+      "educational": "Educational",
+      "humorous": "Humorous"
+    },
+    "lengths": {
+      "short": "Short",
+      "medium": "Medium",
+      "long": "Long"
+    }
+  },
+  "imageStudio": {
+    "title": "AI Creative Studio",
+    "subtitle": "Generate stunning marketing visuals with AI in seconds.",
+    "generateImage": "Generate Image",
+    "chooseTemplate": "Choose a Template",
+    "prompt": "Prompt",
+    "promptPlaceholder": "Describe the image you want to create...",
+    "style": "Style",
+    "textOverlay": "Text Overlay",
+    "textOverlayPlaceholder": "Text to display on the image",
+    "brandColors": "Brand Colors",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "generatedImages": "Generated Images ({{count}})",
+    "noImagesYet": "No images generated yet.",
+    "noImagesYetDesc": "Use the panel above to generate your first image.",
+    "download": "Download",
+    "delete": "Delete",
+    "imageUrlAlert": "Image URL: {{url}}",
+    "failedToGenerate": "Failed to generate image",
+    "failedToDelete": "Failed to delete image",
+    "templates": {
+      "instagram-post": "Instagram Post",
+      "facebook-ad": "Facebook Ad",
+      "linkedin-banner": "LinkedIn Banner",
+      "blog-thumbnail": "Blog Thumbnail",
+      "website-banner": "Website Banner",
+      "youtube-thumbnail": "YouTube Thumbnail"
+    },
+    "styles": {
+      "photorealistic": "Photorealistic",
+      "illustration": "Illustration",
+      "minimal": "Minimal",
+      "abstract": "Abstract",
+      "corporate": "Corporate",
+      "vibrant": "Vibrant"
+    }
+  },
+  "socialMedia": {
+    "title": "Social Media",
+    "createPost": "Create Post",
+    "connectAccount": "Connect Account",
+    "dismiss": "Dismiss",
+    "platform": "Platform",
+    "content": "Content",
+    "contentPlaceholder": "Write your post content...",
+    "scheduleDate": "Schedule Date (optional)",
+    "creatingPost": "Creating...",
+    "connecting": "Connecting...",
+    "connect": "Connect",
+    "accountName": "Account Name",
+    "accountNamePlaceholder": "@username or page name",
+    "noPostsYet": "No social posts yet",
+    "noPostsYetDesc": "Create your first social media post to get started.",
+    "allPlatforms": "All Platforms",
+    "allStatuses": "All Statuses",
+    "followersCount": "{{count}} followers"
+  },
+  "knowledgeBase": {
+    "subtitle": "Each client's private knowledge base — powers Content Studio and AI Assistant with accurate, on-brand answers.",
+    "addDocument": "Add Document",
+    "noClients": "No clients yet",
+    "noClientsDesc": "Add a client first to create a knowledge base.",
+    "searchPlaceholder": "Try a semantic search across the knowledge base...",
+    "searching": "Searching...",
+    "noRelevantChunks": "No relevant passages found.",
+    "relevance": "Relevance: {{score}}%",
+    "addDocumentDialogTitle": "Add Document to Knowledge Base",
+    "titleLabel": "Title",
+    "titlePlaceholder": "e.g. Brand Guidelines, Product FAQ...",
+    "contentLabel": "Content (text/markdown)",
+    "contentPlaceholder": "Paste content: brand voice, product info, FAQ, policies...",
+    "processing": "Processing (chunk + embed)...",
+    "noDocuments": "No documents yet",
+    "noDocumentsDesc": "Add your first document so Content Studio & AI Assistant can reference it.",
+    "chunksCount": "{{count}} chunks · {{date}}"
+  },
+  "marketingBrain": {
+    "subtitle": "AI orchestration layer: aggregates real SEO, Content, Ads, Social, and Backlink data for the client to propose an overall marketing strategy.",
+    "noClients": "No clients yet",
+    "noClientsDesc": "Add a client first to generate a marketing strategy.",
+    "historyButton": "History ({{count}})",
+    "generating": "Analyzing...",
+    "regenerate": "Regenerate Strategy",
+    "generate": "Generate Strategy",
+    "generateFailed": "Failed to generate strategy",
+    "historyTitle": "Strategy History",
+    "noHistory": "No reports yet.",
+    "defaultStrategyLabel": "Strategy Report",
+    "noStrategyTitle": "No strategy yet",
+    "noStrategyDesc": "Click \"Generate Strategy\" to have AI analyze all of the client's existing data and propose a direction.",
+    "situationOverview": "Situation Overview",
+    "issuesFound": "Issues Found",
+    "noIssues": "No notable issues.",
+    "opportunities": "Opportunities",
+    "estimatedImpact": "Estimated impact: {{impact}}",
+    "noOpportunities": "No opportunities proposed yet.",
+    "channelRecommendations": "Channel Recommendations",
+    "noChannelRecommendations": "No channel recommendations yet.",
+    "budgetAllocation": "Budget Allocation",
+    "noBudgetAllocation": "No budget recommendation yet.",
+    "kpiForecast": "KPI Forecast (90 days)",
+    "noKpiForecast": "No KPI forecast yet."
+  },
+  "aiAssistant": {
+    "welcomeMessage": "Hello! I'm your AI Marketing Assistant. I can help you with SEO strategy, content ideas, competitor analysis, campaign planning, and more. What would you like to work on?",
+    "newChat": "New Chat",
+    "tips": "Tips",
+    "tipsDesc": "Use the quick suggestions below the chat or type your own marketing questions.",
+    "title": "AI Marketing Assistant",
+    "subtitle": "Powered by advanced AI · Always learning",
+    "emptyResponse": "I received your message but got an empty response. Please try again.",
+    "failedToGetResponse": "Failed to get AI response",
+    "errorProcessing": "Sorry, I encountered an error processing your request. Please try again.",
+    "thinking": "AI is thinking...",
+    "allClients": "All Clients",
+    "inputPlaceholder": "Ask me anything about marketing...",
+    "disclaimer": "AI responses are generated based on your account data and marketing best practices.",
+    "suggestions": {
+      "analyzeSeo": "Analyze my website SEO",
+      "generateContentIdeas": "Generate content ideas",
+      "compareCompetitors": "Compare competitors",
+      "planCampaign": "Plan a campaign",
+      "keywordOpportunities": "Keyword opportunities",
+      "improveAdPerformance": "Improve my ad performance"
+    }
+  },
+  "alerts": {
+    "title": "Alerts & Monitoring",
+    "markAllRead": "Mark All Read",
+    "noAlertsYet": "No alerts yet",
+    "noAlertsYetDesc": "Alerts will appear here when important changes are detected.",
+    "totalAlerts": "Total Alerts",
+    "warnings": "Warnings",
+    "unread": "Unread",
+    "read": "Read",
+    "filters": "Filters:",
+    "alertType": "Alert Type",
+    "allTypes": "All Types",
+    "rankingDrops": "Ranking Drops",
+    "backlinkLoss": "Backlink Loss",
+    "trafficDrop": "Traffic Drop",
+    "campaignIssues": "Campaign Issues",
+    "severity": "Severity",
+    "allSeverities": "All Severities",
+    "details": "Details",
+    "noAlertsFound": "No alerts found",
+    "tryAdjustingFilters": "Try adjusting your filters",
+    "alertSettings": "Alert Settings",
+    "notificationChannels": "Notification Channels",
+    "emailNotifications": "Email notifications",
+    "slackNotifications": "Slack notifications",
+    "inAppNotifications": "In-app notifications",
+    "saveSettings": "Save Settings",
+    "settingsSaved": "Settings saved successfully.",
+    "types": {
+      "ranking_drop": "Ranking Drop",
+      "backlink_loss": "Backlink Loss",
+      "traffic_drop": "Traffic Drop",
+      "campaign_issue": "Campaign Issue",
+      "milestone": "Milestone",
+      "new_backlink": "New Backlink"
+    },
+    "dateGroups": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "this_week": "This Week",
+      "earlier": "Earlier"
+    }
+  },
+  "settings": {
+    "subtitle": "Manage your account, agency, and integrations.",
+    "tabs": {
+      "Profile": "Profile",
+      "Agency": "Agency",
+      "Integrations": "Integrations",
+      "Notifications": "Notifications",
+      "API Keys": "API Keys"
+    },
+    "profileInformation": "Profile Information",
+    "changeAvatar": "Change Avatar",
+    "avatarHint": "JPG, PNG or GIF. Max 2MB.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "profileSaved": "Profile saved successfully.",
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "currentPasswordPlaceholder": "Enter current password",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "updatePassword": "Update Password",
+    "agencySettings": "Agency Settings",
+    "changeLogo": "Change Logo",
+    "agencyName": "Agency Name",
+    "subscriptionPlan": "Subscription Plan",
+    "professionalPlan": "Professional Plan",
+    "planDesc": "Up to 50 clients, unlimited keywords, AI content generation",
+    "perMonth": "per month",
+    "upgradePlan": "Upgrade Plan",
+    "connectedServices": "Connected Services",
+    "notConnected": "Not Connected",
+    "disconnect": "Disconnect",
+    "notificationPreferences": "Notification Preferences",
+    "savePreferences": "Save Preferences",
+    "apiKeysTitle": "API Keys",
+    "generateNewKey": "Generate New Key",
+    "createdLabel": "Created {{date}} · Last used {{lastUsed}}",
+    "apiKeyNoticeImportant": "Important:",
+    "apiKeyNoticeText": "API keys grant full access to your account. Never share them publicly or commit them to version control.",
+    "integrationDescriptions": {
+      "Google Ads": "Manage PPC campaigns and bidding",
+      "Facebook Ads": "Social media advertising campaigns",
+      "LinkedIn Ads": "B2B advertising and lead generation",
+      "Google Analytics": "Website traffic and behavior analytics",
+      "Google Search Console": "Search performance and indexing"
+    },
+    "notifications": {
+      "seo_score": {
+        "label": "SEO Score Changes",
+        "description": "Alert when any client SEO score changes by more than 5 points"
+      },
+      "keyword_ranking": {
+        "label": "Keyword Ranking Changes",
+        "description": "Notify when keywords enter or leave the first page"
+      },
+      "backlink_new": {
+        "label": "New Backlinks Detected",
+        "description": "Alert when new backlinks are discovered"
+      },
+      "backlink_lost": {
+        "label": "Lost Backlinks",
+        "description": "Alert when existing backlinks are lost"
+      },
+      "crawl_errors": {
+        "label": "Crawl Errors",
+        "description": "Notify about new crawl errors detected"
+      },
+      "campaign_complete": {
+        "label": "Campaign Milestones",
+        "description": "Alert when campaigns reach key milestones"
+      },
+      "weekly_digest": {
+        "label": "Weekly Digest",
+        "description": "Receive a weekly summary of all client metrics"
+      },
+      "ai_content": {
+        "label": "AI Content Ready",
+        "description": "Notify when AI-generated content is ready for review"
+      }
+    },
+    "apiKeyNames": {
+      "Production API Key": "Production API Key",
+      "Development Key": "Development Key"
+    },
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago"
+  },
+  "adsManager": {
+    "createCampaign": "Create Campaign",
+    "syncSuccess": "Sync completed successfully!",
+    "syncTriggered": "Sync triggered successfully!",
+    "campaignNameLabel": "Campaign Name",
+    "campaignNamePlaceholder": "Campaign name",
+    "platform": "Platform",
+    "budgetLabel": "Budget ($)",
+    "campaignDetails": "Campaign Details",
+    "budget": "Budget",
+    "spend": "Spend",
+    "clicks": "Clicks",
+    "conversions": "Conversions",
+    "roas": "ROAS",
+    "noCampaigns": "No ad campaigns yet",
+    "noCampaignsDesc": "Create your first ad campaign to get started.",
+    "totalSpend": "Total Spend",
+    "impressions": "Impressions",
+    "accountsTab": "Accounts",
+    "searchCampaignsPlaceholder": "Search campaigns...",
+    "ended": "Ended",
+    "tableCampaign": "Campaign",
+    "detailsButton": "Details",
+    "noAdAccounts": "No ad accounts connected",
+    "noAdAccountsDesc": "Connect your ad accounts to get started.",
+    "disconnectedLabel": "Disconnected",
+    "lastSynced": "Last synced: {{date}}",
+    "syncNow": "Sync Now"
+  },
+  "campaigns": {
+    "title": "Campaign Planner",
+    "newCampaign": "New Campaign",
+    "clientLabel": "Client",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "goalsLabel": "Goals (comma-separated)",
+    "goalsPlaceholder": "Increase traffic, Boost conversions",
+    "channelsLabel": "Channels (comma-separated)",
+    "channelsPlaceholder": "Google, Facebook, Email",
+    "noCampaignsYet": "No campaigns yet.",
+    "noCampaignsYetDesc": "Create your first campaign to start tracking performance.",
+    "activeCampaignsStat": "Active Campaigns",
+    "totalBudget": "Total Budget",
+    "totalSpent": "Total Spent",
+    "other": "Other",
+    "unknown": "Unknown",
+    "generateAiPlan": "Generate AI Plan",
+    "generatePlanFailed": "Campaign plan generation failed",
+    "aiCampaignPlan": "AI Campaign Plan",
+    "creativeBrief": "Creative Brief",
+    "audienceSegments": "Audience Segments",
+    "demographics": "Demographics: {{value}}",
+    "painPoints": "Pain points: {{value}}",
+    "recommendedBudgetAllocation": "Recommended Budget Allocation",
+    "milestones": "Milestones",
+    "types": {
+      "seo": "SEO",
+      "content": "Content",
+      "ads": "Ads",
+      "social": "Social",
+      "email": "Email"
+    }
+  },
+  "reports": {
+    "generateReport": "Generate Report",
+    "noReportsYetDesc": "Generate your first report to get started.",
+    "allReports": "All Reports",
+    "generatedLabel": "Generated {{date}}",
+    "pdf": "PDF",
+    "pdfComingSoon": "PDF download coming soon",
+    "send": "Send",
+    "selectClient": "Select Client",
+    "reportTypeLabel": "Report Type",
+    "selectType": "Select Type",
+    "generate": "Generate",
+    "types": {
+      "SEO": "SEO",
+      "Ads": "Ads",
+      "Content": "Content",
+      "Competitor": "Competitor",
+      "Comprehensive": "Comprehensive"
+    },
+    "statuses": {
+      "generating": "Generating",
+      "ready": "Ready",
+      "sent": "Sent"
+    }
+  },
+  "seoByAi": {
+    "demoModeBadge": "Demo Mode — Simulated Data",
+    "subtitle": "AI-powered SEO intelligence, strategy, and predictions",
+    "noAiDataYet": "No AI analysis data yet",
+    "noAiDataYetDesc": "Select a client and run AI analysis to get insights, strategy, and predictions.",
+    "tabs": {
+      "insights": "AI Insights",
+      "actionPlan": "Action Plan",
+      "strategy": "Strategy",
+      "predictions": "Predictions"
+    },
+    "aiGeneratedInsights": "AI-Generated Insights",
+    "insightTypes": {
+      "opportunity": "Opportunity",
+      "threat": "Threat",
+      "success": "Success",
+      "recommendation": "Recommendation"
+    },
+    "confidencePct": "{{value}}% confidence",
+    "actionsTaken": "Actions Taken",
+    "successRate": "Success Rate",
+    "trafficIncrease": "Traffic Increase",
+    "valueCreated": "Value Created",
+    "overallAiScore": "Overall AI Score",
+    "noActionPlan": "No action plan available",
+    "noActionPlanDesc": "AI will generate an action plan once analysis is complete.",
+    "priorityMatrix": "Priority Matrix",
+    "tableAction": "Action",
+    "tableImpact": "Impact",
+    "tableEffort": "Effort",
+    "tableTimeline": "Timeline",
+    "tableValue": "Value",
+    "channelAllocation": "Channel Allocation",
+    "noStrategyData": "No strategy data available",
+    "noStrategyDataDesc": "AI will generate strategy recommendations once analysis is complete.",
+    "predictedLabel": "Predicted: {{value}}",
+    "trafficForecast": "Traffic Forecast",
+    "actualSeries": "Actual",
+    "predictedSeries": "Predicted",
+    "keywordRankingPredictions": "Keyword Ranking Predictions",
+    "tableKeyword": "Keyword",
+    "tableCurrent": "Current",
+    "tablePredicted": "Predicted",
+    "tableConfidence": "Confidence",
+    "noPredictions": "No predictions available",
+    "noPredictionsDesc": "AI will generate predictions once enough historical data is collected."
+  },
+  "bugReport": {
+    "title": "Bug Tracker",
+    "subtitle": "Report and track bugs to improve MarketingOS",
+    "reportBugButton": "Report Bug",
+    "reportBugDialogTitle": "Report a Bug",
+    "totalBugs": "Total Bugs",
+    "allModules": "All Modules",
+    "searchByTitlePlaceholder": "Search by title...",
+    "noBugsYet": "No bugs reported yet",
+    "noBugsYetDesc": "Click \"Report Bug\" to submit your first report.",
+    "byLabel": "by {{name}}",
+    "descriptionLabel": "Description",
+    "stepsToReproduce": "Steps to Reproduce",
+    "expectedBehavior": "Expected Behavior",
+    "actualBehavior": "Actual Behavior",
+    "resolutionLabel": "Resolution",
+    "browserInfo": "Browser Info",
+    "markInProgress": "Mark In Progress",
+    "resolve": "Resolve",
+    "titleLabel": "Title",
+    "titlePlaceholder": "Brief summary of the bug",
+    "moduleLabel": "Module",
+    "selectModule": "Select module",
+    "severityLabel": "Severity",
+    "descriptionPlaceholder": "Detailed description of the bug",
+    "stepsPlaceholder": "1. Go to...\n2. Click on...\n3. Observe...",
+    "expectedPlaceholder": "What should happen",
+    "actualPlaceholder": "What actually happens",
+    "submitBug": "Submit Bug",
+    "resolveBugTitle": "Resolve Bug",
+    "resolutionPlaceholder": "Describe how the bug was resolved...",
+    "markResolved": "Mark Resolved",
+    "titleDescRequired": "Title and Description are required.",
+    "bugSubmitted": "Bug report submitted successfully!",
+    "bugMarkedAs": "Bug marked as {{status}}",
+    "bugResolvedSuccess": "Bug resolved successfully!",
+    "confirmDelete": "Are you sure you want to delete this bug report?",
+    "bugDeleted": "Bug report deleted",
+    "failedToFetchBugs": "Failed to fetch bugs",
+    "failedToLoadBugs": "Failed to load bugs",
+    "failedToFetchStats": "Failed to fetch stats",
+    "failedToSubmitReport": "Failed to submit bug report",
+    "failedToSubmitBug": "Failed to submit bug",
+    "failedToUpdateBug": "Failed to update bug",
+    "failedToResolveBug": "Failed to resolve bug",
+    "failedToDeleteBug": "Failed to delete bug",
+    "statuses": {
+      "open": "Open",
+      "in_progress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+    },
+    "severities": {
+      "critical": "Critical",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "modules": {
+      "Dashboard": "Dashboard",
+      "Clients": "Clients",
+      "SEO Audit": "SEO Audit",
+      "Keywords": "Keywords",
+      "Backlinks": "Backlinks",
+      "Competitors": "Competitors",
+      "Content Studio": "Content Studio",
+      "Image Studio": "Image Studio",
+      "Social Media": "Social Media",
+      "Ads Manager": "Ads Manager",
+      "Campaigns": "Campaigns",
+      "Reports": "Reports",
+      "AI Assistant": "AI Assistant",
+      "SEO By AI": "SEO By AI",
+      "Alerts": "Alerts",
+      "Settings": "Settings",
+      "Documentation": "Documentation",
+      "Other": "Other"
+    },
+    "timeAgo": {
+      "justNow": "just now",
+      "minutesAgo_one": "{{count}} minute ago",
+      "minutesAgo_other": "{{count}} minutes ago",
+      "hoursAgo_one": "{{count}} hour ago",
+      "hoursAgo_other": "{{count}} hours ago",
+      "daysAgo_one": "{{count}} day ago",
+      "daysAgo_other": "{{count}} days ago",
+      "monthsAgo_one": "{{count}} month ago",
+      "monthsAgo_other": "{{count}} months ago"
+    }
+  },
+  "documentation": {
+    "hero": {
+      "title": "Documentation",
+      "subtitle": "Everything you need to know to master MarketingOS"
+    },
+    "search": {
+      "placeholder": "Search documentation...",
+      "resultsHeading": "Search Results ({{count}})",
+      "noResultsTitle": "No results found",
+      "noResultsSubtitle": "Try searching with different keywords"
+    },
+    "quickStart": {
+      "badge": "Quick Start Guide",
+      "heading": "Get up and running in 4 steps",
+      "steps": [
+        {
+          "title": "Add Your First Client",
+          "description": "Click Clients > Add Client > Enter company details"
+        },
+        {
+          "title": "Run an SEO Audit",
+          "description": "Go to SEO Audit > Select client > Run audit"
+        },
+        {
+          "title": "Track Keywords",
+          "description": "Go to Keywords > Add keywords you want to rank for"
+        },
+        {
+          "title": "Enable AI Autopilot",
+          "description": "Go to SEO By AI > Enable Atlas to manage everything"
+        }
+      ]
+    },
+    "toc": {
+      "heading": "Table of Contents"
+    },
+    "moduleSection": {
+      "heading": "Module Documentation",
+      "subtitle": "Click any module to expand its full documentation"
+    },
+    "backToTopLabel": "Back to top",
+    "modules": {
+      "dashboard": {
+        "title": "Dashboard",
+        "description": "Overview of all your marketing data across clients in one place.",
+        "whatItShowsHeading": "What It Shows",
+        "whatItShowsText": "The Dashboard is your command center. It aggregates data from all your clients and surfaces the most important metrics, trends, and alerts so you can see the health of every campaign at a glance.",
+        "keySectionsHeading": "Key Sections",
+        "keySectionsTable": {
+          "headers": [
+            "Section",
+            "What It Shows"
+          ],
+          "rows": [
+            [
+              "Stats Cards",
+              "Total clients, keywords tracked, backlinks, content pieces"
+            ],
+            [
+              "Traffic Chart",
+              "Organic traffic trend over the last 30/90/365 days"
+            ],
+            [
+              "Keyword Distribution",
+              "Pie chart showing keyword position ranges"
+            ],
+            [
+              "Activity Feed",
+              "Recent actions taken by you and Atlas AI"
+            ],
+            [
+              "Top Keywords",
+              "Your best-performing keywords across all clients"
+            ],
+            [
+              "Active Campaigns",
+              "Campaigns currently running with progress bars"
+            ],
+            [
+              "Alerts",
+              "Issues that need your attention, sorted by severity"
+            ]
+          ]
+        },
+        "howToUseHeading": "How to Use",
+        "howToUseSteps": [
+          "The dashboard updates automatically every time you visit it.",
+          "Click any stat card to drill down into the detailed module.",
+          "Use the date range picker in the top-right to change the time window.",
+          "Stats aggregate from all your active clients by default. Use the client filter to focus on one."
+        ],
+        "protip": "Check your dashboard first thing every morning. The alerts section will tell you if anything needs urgent attention."
+      },
+      "clients": {
+        "title": "Client Management",
+        "description": "Add, edit, and manage all your clients and their brand settings.",
+        "howToAddHeading": "How to Add a Client",
+        "howToAddSteps": [
+          "Navigate to the Clients page from the sidebar.",
+          "Click the \"Add Client\" button in the top-right corner.",
+          "Fill in the required fields: Company Name and Domain.",
+          "Add optional details: Industry, Brand Colors, Brand Fonts.",
+          "Enter target keywords your client wants to rank for.",
+          "Add competitor domains to track.",
+          "Set marketing goals (e.g., \"Increase organic traffic by 50%\").",
+          "Click \"Create Client\" to save."
+        ],
+        "fieldsHeading": "Client Fields Explained",
+        "fieldsTable": {
+          "headers": [
+            "Field",
+            "Description",
+            "Required"
+          ],
+          "rows": [
+            [
+              "Company Name",
+              "The official name of the client or brand",
+              "Yes"
+            ],
+            [
+              "Domain",
+              "The website URL (e.g., example.com)",
+              "Yes"
+            ],
+            [
+              "Industry",
+              "Business category for tailored recommendations",
+              "No"
+            ],
+            [
+              "Brand Colors",
+              "Primary and secondary hex colors for content/images",
+              "No"
+            ],
+            [
+              "Brand Fonts",
+              "Typography preferences for generated content",
+              "No"
+            ],
+            [
+              "Keywords",
+              "Target search terms to track rankings for",
+              "No"
+            ],
+            [
+              "Competitors",
+              "Competitor domains to monitor",
+              "No"
+            ],
+            [
+              "Marketing Goals",
+              "Objectives that guide AI recommendations",
+              "No"
+            ]
+          ]
+        },
+        "statusHeading": "Client Status",
+        "statusActiveBadge": "Active",
+        "statusActiveText": "Client is being actively managed and tracked.",
+        "statusPausedBadge": "Paused",
+        "statusPausedText": "Tracking is temporarily stopped. Data is preserved.",
+        "statusArchivedBadge": "Archived",
+        "statusArchivedText": "Client is no longer active. Historical data remains accessible.",
+        "editingHeading": "Editing and Deleting",
+        "editingText": "Click on any client card to open their detail page. Use the edit icon to modify details, or the menu button for options including Archive and Delete. Deleting a client is permanent and removes all associated data.",
+        "brandKitHeading": "Brand Kit",
+        "brandKitText": "Brand colors and fonts you set here are automatically used by the AI Content Studio and AI Image Studio to maintain visual consistency across all generated assets.",
+        "protip": "Fill in as many details as possible when creating a client. The more context you provide, the better AI-generated content and recommendations will be."
+      },
+      "seo-audit": {
+        "title": "SEO Audit",
+        "description": "Scan websites for technical SEO issues and get actionable fixes.",
+        "whatIsHeading": "What Is an SEO Audit?",
+        "whatIsText": "An SEO audit scans your client's website and evaluates it against hundreds of technical SEO best practices. It identifies issues that could be hurting search rankings and provides specific recommendations to fix them.",
+        "howToRunHeading": "How to Run an Audit",
+        "howToRunSteps": [
+          "Go to SEO Audit from the sidebar.",
+          "Select a client from the dropdown.",
+          "Click \"Run Audit\" and wait for the scan to complete (usually 1-3 minutes).",
+          "Review the results organized by category and severity."
+        ],
+        "scoresHeading": "Understanding Scores",
+        "scoresTable": {
+          "headers": [
+            "Score",
+            "Range",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "Overall",
+              "0-100",
+              "Combined health score of the entire site"
+            ],
+            [
+              "Performance",
+              "0-100",
+              "Page speed and loading optimization"
+            ],
+            [
+              "SEO",
+              "0-100",
+              "On-page SEO elements and best practices"
+            ],
+            [
+              "Accessibility",
+              "0-100",
+              "How usable the site is for all visitors"
+            ],
+            [
+              "Best Practices",
+              "0-100",
+              "Security, modern standards, and code quality"
+            ]
+          ]
+        },
+        "vitalsHeading": "Core Web Vitals Explained",
+        "vitalsTable": {
+          "headers": [
+            "Metric",
+            "What It Measures",
+            "Good",
+            "Needs Improvement",
+            "Poor"
+          ],
+          "rows": [
+            [
+              "LCP (Largest Contentful Paint)",
+              "Page load speed",
+              "< 2.5s",
+              "2.5s - 4.0s",
+              "> 4.0s"
+            ],
+            [
+              "FID (First Input Delay)",
+              "Interactivity responsiveness",
+              "< 100ms",
+              "100ms - 300ms",
+              "> 300ms"
+            ],
+            [
+              "CLS (Cumulative Layout Shift)",
+              "Visual stability",
+              "< 0.1",
+              "0.1 - 0.25",
+              "> 0.25"
+            ]
+          ]
+        },
+        "severityHeading": "Issue Severity Levels",
+        "severityCriticalBadge": "Critical",
+        "severityCriticalText": "Fix immediately. These are actively hurting your rankings.",
+        "severityWarningBadge": "Warning",
+        "severityWarningText": "Fix soon. These may be limiting your ranking potential.",
+        "severityInfoBadge": "Info",
+        "severityInfoText": "Nice to have. Minor improvements for a polished site.",
+        "commonIssuesHeading": "Common Issues and Fixes",
+        "commonIssuesTable": {
+          "headers": [
+            "Issue",
+            "Impact",
+            "How to Fix"
+          ],
+          "rows": [
+            [
+              "Missing meta descriptions",
+              "Medium",
+              "Add a unique 150-160 character description to every page"
+            ],
+            [
+              "Large images",
+              "High",
+              "Compress images, use WebP format, add width/height attributes"
+            ],
+            [
+              "Broken links (404s)",
+              "High",
+              "Fix or remove links pointing to non-existent pages"
+            ],
+            [
+              "Missing alt text",
+              "Medium",
+              "Add descriptive alt attributes to every image"
+            ],
+            [
+              "Redirect chains",
+              "Medium",
+              "Update links to point directly to the final URL"
+            ],
+            [
+              "Missing H1 tag",
+              "Medium",
+              "Add exactly one H1 tag per page with a descriptive heading"
+            ],
+            [
+              "Slow server response",
+              "High",
+              "Upgrade hosting, enable caching, optimize database queries"
+            ]
+          ]
+        },
+        "protip": "After fixing critical issues, run the audit again to verify your fixes. Aim for an overall score above 80 before moving to warning-level issues."
+      },
+      "keywords": {
+        "title": "Keyword Intelligence",
+        "description": "Track keyword rankings, discover opportunities, and monitor positions.",
+        "whatAreHeading": "What Are Keywords?",
+        "whatAreText": "Keywords are the search terms people type into Google when looking for products, services, or information. Tracking your keyword positions tells you how visible your website is in search results.",
+        "howToAddHeading": "How to Add Keywords",
+        "howToAddSteps": [
+          "Go to Keywords from the sidebar.",
+          "Select your client from the dropdown.",
+          "Click \"Add Keywords\" to enter keywords manually, one per line.",
+          "Or click \"AI Research\" to let AI discover relevant keywords for your niche.",
+          "Keywords will begin tracking within 24 hours."
+        ],
+        "columnsHeading": "Table Columns Explained",
+        "columnsTable": {
+          "headers": [
+            "Column",
+            "What It Means"
+          ],
+          "rows": [
+            [
+              "Position",
+              "Current Google ranking for this keyword (1 = top result)"
+            ],
+            [
+              "Change",
+              "Position change since last check (green = improved, red = dropped)"
+            ],
+            [
+              "Volume",
+              "Monthly search volume - how many people search this term"
+            ],
+            [
+              "Difficulty",
+              "How hard it is to rank for this keyword (0-100)"
+            ],
+            [
+              "CPC",
+              "Cost per click if you were to run ads for this keyword"
+            ],
+            [
+              "SERP Features",
+              "Special result types appearing for this keyword"
+            ],
+            [
+              "URL",
+              "Which page on your site ranks for this keyword"
+            ]
+          ]
+        },
+        "rangesHeading": "Position Ranges",
+        "rangesTable": {
+          "headers": [
+            "Range",
+            "Label",
+            "Visibility"
+          ],
+          "rows": [
+            [
+              "1-3",
+              "Excellent",
+              "Top of page 1 - gets ~60% of all clicks"
+            ],
+            [
+              "4-10",
+              "Page 1",
+              "Visible on first page - gets ~30% of clicks"
+            ],
+            [
+              "11-20",
+              "Page 2",
+              "Rarely seen by users - very few clicks"
+            ],
+            [
+              "21-50",
+              "Low",
+              "Buried in results - almost no organic traffic"
+            ],
+            [
+              "50+",
+              "Not visible",
+              "Effectively invisible in search results"
+            ]
+          ]
+        },
+        "difficultyHeading": "Keyword Difficulty",
+        "difficultyEasyBadge": "Easy (0-30)",
+        "difficultyEasyText": "New or small sites can rank with quality content alone.",
+        "difficultyMediumBadge": "Medium (31-60)",
+        "difficultyMediumText": "Requires good content plus some backlinks to rank.",
+        "difficultyHardBadge": "Hard (61-100)",
+        "difficultyHardText": "Very competitive. Needs strong authority, content, and backlinks.",
+        "serpFeaturesHeading": "SERP Features",
+        "serpFeaturesTable": {
+          "headers": [
+            "Feature",
+            "What It Is"
+          ],
+          "rows": [
+            [
+              "Featured Snippet",
+              "A highlighted answer box at the very top of results"
+            ],
+            [
+              "People Also Ask",
+              "Expandable related questions that appear in results"
+            ],
+            [
+              "Image Pack",
+              "A row of images shown within the search results"
+            ],
+            [
+              "Video",
+              "Video results, typically from YouTube"
+            ],
+            [
+              "Knowledge Panel",
+              "An information box on the right side of results"
+            ]
+          ]
+        },
+        "groupsHeading": "Keyword Groups",
+        "groupsText": "Organize related keywords into groups (e.g., \"Brand Terms\", \"Product Keywords\", \"Long-tail Questions\") for easier management and analysis. Groups help you see which topic clusters are performing best.",
+        "protip": "Focus on keywords with high search volume but low difficulty for the fastest ranking wins. These are often long-tail keywords (3+ words) that larger competitors overlook."
+      },
+      "backlinks": {
+        "title": "Backlink Intelligence",
+        "description": "Monitor your backlink profile, find opportunities, and protect your site.",
+        "whatAreHeading": "What Are Backlinks?",
+        "whatAreText": "Backlinks are links from other websites that point to your site. Google treats each backlink as a \"vote of confidence\" - the more quality backlinks you have, the more authoritative your site appears, and the higher you rank.",
+        "whyMatterHeading": "Why They Matter",
+        "whyMatterText": "Backlinks are one of Google's top 3 ranking factors. A site with 100 high-quality backlinks will almost always outrank a site with 1,000 low-quality ones. Quality matters far more than quantity.",
+        "metricsHeading": "Key Metrics",
+        "metricsTable": {
+          "headers": [
+            "Metric",
+            "What It Means",
+            "Good Value"
+          ],
+          "rows": [
+            [
+              "Domain Authority (DA)",
+              "Strength of the linking domain (0-100)",
+              "40+ is strong"
+            ],
+            [
+              "Spam Score",
+              "Likelihood the link is spammy (0-100%)",
+              "Below 10%"
+            ],
+            [
+              "Follow vs Nofollow",
+              "Whether the link passes ranking power",
+              "Follow links pass value"
+            ],
+            [
+              "Anchor Text",
+              "The clickable text of the link",
+              "Relevant to your content"
+            ],
+            [
+              "Referring Domains",
+              "Unique domains linking to you",
+              "Diversity matters most"
+            ]
+          ]
+        },
+        "goodBacklinkHeading": "What Makes a Good Backlink",
+        "goodBacklinkList": [
+          "Comes from a site with high Domain Authority (40+)",
+          "Has a low spam score (under 10%)",
+          "Is from a website relevant to your industry",
+          "Is a \"dofollow\" link (passes ranking value)",
+          "Has natural, descriptive anchor text",
+          "Is placed within the main content (not footer or sidebar)"
+        ],
+        "monitoringHeading": "Monitoring Your Backlinks",
+        "monitoringSteps": [
+          "Check your backlink dashboard weekly for new and lost links.",
+          "Review new backlinks - disavow any from spammy or irrelevant sites.",
+          "When you lose a valuable backlink, check if the linking page was removed or the link was changed.",
+          "Contact the webmaster of sites that removed your links to request reinstatement.",
+          "Monitor your referring domain count trend - it should be growing steadily."
+        ],
+        "protip": "One backlink from a high-authority news site (DA 70+) is worth more than 100 backlinks from low-quality directories. Focus on earning links from reputable, relevant sources."
+      },
+      "competitors": {
+        "title": "Competitor Intelligence",
+        "description": "Analyze competitor strategies and find gaps you can exploit.",
+        "howToAddHeading": "How to Add Competitors",
+        "howToAddSteps": [
+          "Go to Competitor Intelligence from the sidebar.",
+          "Select your client from the dropdown.",
+          "Click \"Add Competitor\" and enter their domain name.",
+          "The system will begin analyzing their SEO profile automatically."
+        ],
+        "analysisTypesHeading": "Analysis Types",
+        "keywordGapHeading": "Keyword Gap Analysis",
+        "keywordGapText": "Discovers keywords your competitors rank for that you do not. These are immediate opportunities - if they can rank, so can you. Sort by volume to find the highest-impact gaps first.",
+        "contentGapHeading": "Content Gap Analysis",
+        "contentGapText": "Identifies topics and content types your competitors cover that you have not addressed yet. Use these to plan your content calendar and fill coverage holes.",
+        "backlinkGapHeading": "Backlink Gap Analysis",
+        "backlinkGapText": "Finds websites that link to your competitors but not to you. These are warm outreach targets because they already link to sites in your space.",
+        "insightsHeading": "How to Use Insights",
+        "insightsSteps": [
+          "Add gap keywords to your keyword tracking list.",
+          "Create content to cover topics your competitors address but you do not.",
+          "Reach out to sites linking to competitors and pitch your content as an alternative or addition.",
+          "Compare DA, traffic, keywords, and backlinks side by side to benchmark your progress."
+        ],
+        "protip": "Run competitor analysis monthly. Your competitors are constantly evolving, and new gaps and opportunities appear regularly. Focus on the gaps with the highest search volume and lowest keyword difficulty."
+      },
+      "content-studio": {
+        "title": "AI Content Studio",
+        "description": "Generate SEO-optimized blog posts, landing pages, emails, and more.",
+        "contentTypesHeading": "Content Types",
+        "contentTypesTable": {
+          "headers": [
+            "Type",
+            "Best For",
+            "Typical Length"
+          ],
+          "rows": [
+            [
+              "Blog Article",
+              "Organic traffic and thought leadership",
+              "1,000-2,500 words"
+            ],
+            [
+              "Landing Page",
+              "Conversions and lead generation",
+              "500-1,500 words"
+            ],
+            [
+              "Email Campaign",
+              "Nurturing leads and driving action",
+              "200-500 words"
+            ],
+            [
+              "Ad Copy",
+              "Paid advertising across platforms",
+              "50-150 words"
+            ],
+            [
+              "Social Post",
+              "Social media engagement",
+              "50-280 characters"
+            ]
+          ]
+        },
+        "howToGenerateHeading": "How to Generate Content",
+        "howToGenerateSteps": [
+          "Go to AI Content Studio from the sidebar.",
+          "Select the content type you want to create.",
+          "Enter your topic or headline idea.",
+          "Set target keywords (these will be woven into the content naturally).",
+          "Choose a tone of voice that matches your brand.",
+          "Set the desired word count or length.",
+          "Click \"Generate\" and wait a few seconds.",
+          "Review the output, make edits, then publish or save as draft."
+        ],
+        "toneHeading": "Tone Options",
+        "toneTable": {
+          "headers": [
+            "Tone",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "Professional",
+              "B2B content, whitepapers, corporate blogs"
+            ],
+            [
+              "Casual",
+              "Lifestyle brands, personal blogs, social media"
+            ],
+            [
+              "Persuasive",
+              "Landing pages, ad copy, sales emails"
+            ],
+            [
+              "Educational",
+              "How-to guides, tutorials, documentation"
+            ],
+            [
+              "Humorous",
+              "Social media, brand-personality-driven content"
+            ]
+          ]
+        },
+        "seoPanelHeading": "SEO Optimization Panel",
+        "seoPanelText": "Every piece of generated content includes an SEO score breakdown with a checklist: keyword usage, heading structure, meta title length (aim for 50-60 characters), meta description length (aim for 150-160 characters), internal linking suggestions, and readability grade.",
+        "workflowHeading": "Content Workflow",
+        "workflowDraftBadge": "Draft",
+        "workflowReviewBadge": "Review",
+        "workflowPublishedBadge": "Published",
+        "protip": "AI-generated content is a starting point, not a finished product. Always review, fact-check, and add your unique perspective. The best content combines AI efficiency with human expertise."
+      },
+      "image-studio": {
+        "title": "AI Image Studio",
+        "description": "Create stunning visuals for social media, ads, blogs, and more.",
+        "typesHeading": "Image Types and Dimensions",
+        "typesTable": {
+          "headers": [
+            "Type",
+            "Dimensions",
+            "Use Case"
+          ],
+          "rows": [
+            [
+              "Instagram Post",
+              "1080 x 1080 px",
+              "Square format for Instagram feed"
+            ],
+            [
+              "Facebook Ad",
+              "1200 x 628 px",
+              "Landscape format for Facebook ads"
+            ],
+            [
+              "LinkedIn Banner",
+              "1584 x 396 px",
+              "Wide banner for LinkedIn profiles/pages"
+            ],
+            [
+              "Blog Thumbnail",
+              "1200 x 630 px",
+              "Featured image for blog posts"
+            ],
+            [
+              "Website Banner",
+              "1920 x 600 px",
+              "Hero section banner for websites"
+            ],
+            [
+              "YouTube Thumbnail",
+              "1280 x 720 px",
+              "Video thumbnail for YouTube"
+            ]
+          ]
+        },
+        "howToGenerateHeading": "How to Generate Images",
+        "howToGenerateSteps": [
+          "Go to AI Image Studio from the sidebar.",
+          "Select the image type (this sets the correct dimensions).",
+          "Write a detailed description of what you want in the image.",
+          "Choose a visual style from the options.",
+          "Optionally set brand colors for consistency.",
+          "Click \"Generate\" and wait for the image to render.",
+          "Download the image or use it directly in content."
+        ],
+        "styleHeading": "Style Options",
+        "styleTable": {
+          "headers": [
+            "Style",
+            "Description"
+          ],
+          "rows": [
+            [
+              "Photorealistic",
+              "Looks like a real photograph"
+            ],
+            [
+              "Illustration",
+              "Hand-drawn or digital art look"
+            ],
+            [
+              "Minimal",
+              "Clean, simple, lots of white space"
+            ],
+            [
+              "Abstract",
+              "Artistic shapes and patterns"
+            ],
+            [
+              "Corporate",
+              "Professional, business-appropriate"
+            ],
+            [
+              "Vibrant",
+              "Bold colors, eye-catching and energetic"
+            ]
+          ]
+        },
+        "protip": "Be as descriptive as possible in your prompt. Instead of \"office photo,\" try \"modern open-plan office with natural light, wooden desks, green plants, and a team of diverse professionals collaborating around a whiteboard.\" Mention what NOT to include too."
+      },
+      "social-media": {
+        "title": "Social Media Management",
+        "description": "Schedule posts, manage accounts, and track social media performance.",
+        "connectingHeading": "Connecting Accounts",
+        "connectingText": "MarketingOS supports Instagram, Facebook, LinkedIn, and Twitter/X. Connect accounts through Settings > Integrations, or when prompted in the Social Media module.",
+        "connectingSteps": [
+          "Click \"Connect Account\" and select the platform.",
+          "Authorize MarketingOS to manage your account.",
+          "Choose which client this account belongs to.",
+          "Your account is now ready for posting and analytics."
+        ],
+        "creatingHeading": "Creating Posts",
+        "creatingSteps": [
+          "Click \"Create Post\" in the Social Media module.",
+          "Write your content or click \"AI Generate\" for an AI caption.",
+          "Add images or videos by uploading or selecting from Image Studio.",
+          "Select which platforms to post to (multi-select supported).",
+          "Choose \"Post Now\" for immediate publishing, or \"Schedule\" to pick a date and time.",
+          "Review and confirm."
+        ],
+        "captionHeading": "AI Caption Generator",
+        "captionText": "Enter a topic and select a tone, and the AI will generate platform-optimized captions. It automatically adjusts length and style for each platform (e.g., shorter for Twitter, more hashtags for Instagram).",
+        "calendarHeading": "Content Calendar",
+        "calendarText": "The monthly calendar view shows all scheduled and published posts. Drag and drop to reschedule. Color-coded by platform for easy scanning. Click any post to edit or cancel.",
+        "frequencyHeading": "Recommended Posting Frequency",
+        "frequencyTable": {
+          "headers": [
+            "Platform",
+            "Frequency",
+            "Best Times"
+          ],
+          "rows": [
+            [
+              "Instagram",
+              "3-5 posts/week",
+              "Tue-Fri, 10 AM - 2 PM"
+            ],
+            [
+              "Facebook",
+              "3-5 posts/week",
+              "Wed-Fri, 1 PM - 4 PM"
+            ],
+            [
+              "LinkedIn",
+              "2-3 posts/week",
+              "Tue-Thu, 8 AM - 10 AM"
+            ],
+            [
+              "Twitter/X",
+              "1-3 posts/day",
+              "Mon-Fri, 9 AM - 3 PM"
+            ]
+          ]
+        },
+        "protip": "Consistency beats frequency. It is better to post 3 high-quality posts per week than 3 mediocre posts per day. Use the calendar to plan at least 2 weeks ahead."
+      },
+      "ads-manager": {
+        "title": "Ads Manager",
+        "description": "Manage paid advertising campaigns across Google, Facebook, and LinkedIn.",
+        "platformsHeading": "Supported Platforms",
+        "platformsList": [
+          [
+            "Google Ads",
+            "Search, Display, YouTube, Shopping"
+          ],
+          [
+            "Facebook Ads",
+            "Feed, Stories, Reels, Messenger"
+          ],
+          [
+            "LinkedIn Ads",
+            "Sponsored Content, InMail, Text Ads"
+          ]
+        ],
+        "connectingHeading": "Connecting Ad Accounts",
+        "connectingSteps": [
+          "Go to Settings > Integrations.",
+          "Click \"Connect\" next to the ad platform.",
+          "Sign in to your ad account and authorize access.",
+          "Select the specific ad account(s) to import.",
+          "Your campaigns will sync automatically."
+        ],
+        "metricsHeading": "Key Metrics Explained",
+        "metricsTable": {
+          "headers": [
+            "Metric",
+            "What It Means",
+            "Good Benchmark"
+          ],
+          "rows": [
+            [
+              "Impressions",
+              "Number of times your ad was shown",
+              "Depends on budget"
+            ],
+            [
+              "Clicks",
+              "Number of times users clicked your ad",
+              "Higher is better"
+            ],
+            [
+              "CTR (Click-Through Rate)",
+              "Clicks / Impressions * 100",
+              "> 2% is good"
+            ],
+            [
+              "Conversions",
+              "Completed desired actions (purchases, signups)",
+              "Depends on goals"
+            ],
+            [
+              "CPC (Cost Per Click)",
+              "Average cost for each click",
+              "Lower is better"
+            ],
+            [
+              "Cost Per Lead",
+              "Total spend / Number of leads",
+              "Varies by industry"
+            ],
+            [
+              "ROAS",
+              "Revenue generated / Ad spend",
+              "> 3x is good"
+            ]
+          ]
+        },
+        "funnelHeading": "Conversion Funnel",
+        "funnelImpressionsBadge": "Impressions",
+        "funnelClicksBadge": "Clicks",
+        "funnelConversionsBadge": "Conversions",
+        "funnelText": "Each stage narrows. If your impressions are high but clicks are low, improve your ad creative. If clicks are high but conversions are low, optimize your landing page.",
+        "protip": "Start with a small daily budget and scale what works. Never increase budget by more than 20% at a time, as sudden jumps can reset ad platform learning algorithms."
+      },
+      "campaigns": {
+        "title": "Campaign Planner",
+        "description": "Plan and manage multi-channel marketing campaigns with goals and budgets.",
+        "whatIsHeading": "What Is a Campaign?",
+        "whatIsText": "A campaign is a coordinated, multi-channel marketing effort with defined goals, budget, timeline, and deliverables. It brings together content, ads, social posts, and SEO efforts under one umbrella for tracking and optimization.",
+        "typesHeading": "Campaign Types",
+        "typesTable": {
+          "headers": [
+            "Type",
+            "Primary Channel",
+            "Goal"
+          ],
+          "rows": [
+            [
+              "SEO",
+              "Organic search",
+              "Improve rankings and organic traffic"
+            ],
+            [
+              "Content",
+              "Blog/website",
+              "Build authority and attract visitors"
+            ],
+            [
+              "Ads",
+              "Paid platforms",
+              "Drive targeted traffic and conversions"
+            ],
+            [
+              "Social",
+              "Social media",
+              "Build brand awareness and engagement"
+            ],
+            [
+              "Email",
+              "Email lists",
+              "Nurture leads and drive repeat business"
+            ]
+          ]
+        },
+        "howToCreateHeading": "How to Create a Campaign",
+        "howToCreateSteps": [
+          "Go to Campaign Planner from the sidebar.",
+          "Click \"Create Campaign.\"",
+          "Enter a campaign name and select the type.",
+          "Set start and end dates.",
+          "Define the budget allocation.",
+          "Set measurable goals (e.g., 500 new leads, 10,000 visits).",
+          "Select the channels and platforms involved.",
+          "Add campaign components: content, ads, social posts, landing pages.",
+          "Click \"Launch\" when ready or save as Draft."
+        ],
+        "lifecycleHeading": "Campaign Lifecycle",
+        "lifecycleDraftBadge": "Draft",
+        "lifecycleActiveBadge": "Active",
+        "lifecyclePausedBadge": "Paused",
+        "lifecycleCompletedBadge": "Completed",
+        "trackingHeading": "Tracking Metrics",
+        "trackingText": "Each campaign tracks budget progress (spent vs. allocated), impressions, clicks, conversions, and custom goal metrics. The progress bar shows how close you are to your targets.",
+        "protip": "Set SMART goals for every campaign: Specific, Measurable, Achievable, Relevant, and Time-bound. \"Increase blog traffic by 30% in 90 days\" is much better than \"get more traffic.\""
+      },
+      "reports": {
+        "title": "Reports",
+        "description": "Generate beautiful, client-ready reports with charts and insights.",
+        "typesHeading": "Report Types",
+        "typesTable": {
+          "headers": [
+            "Type",
+            "What It Covers"
+          ],
+          "rows": [
+            [
+              "SEO Report",
+              "Rankings, organic traffic, technical health, backlinks"
+            ],
+            [
+              "Ads Report",
+              "Ad spend, ROAS, conversions, top campaigns"
+            ],
+            [
+              "Content Report",
+              "Published content, traffic, engagement, SEO scores"
+            ],
+            [
+              "Competitor Report",
+              "Competitive benchmarking, keyword/content/backlink gaps"
+            ],
+            [
+              "Comprehensive",
+              "All of the above combined into one executive report"
+            ]
+          ]
+        },
+        "howToGenerateHeading": "How to Generate a Report",
+        "howToGenerateSteps": [
+          "Go to Reports from the sidebar.",
+          "Select a client from the dropdown.",
+          "Choose the report type.",
+          "Set the date range (last 7 days, 30 days, 90 days, or custom).",
+          "Click \"Generate Report.\"",
+          "Review the report with executive summary, key metrics, charts, and recommendations."
+        ],
+        "sharingHeading": "Sharing and Scheduling",
+        "sharingList": [
+          [
+            "Download PDF:",
+            "Export a beautifully formatted PDF for offline sharing."
+          ],
+          [
+            "Email to Client:",
+            "Send the report directly to your client's inbox."
+          ],
+          [
+            "Schedule:",
+            "Set up automated weekly or monthly reports so you never forget."
+          ]
+        ],
+        "protip": "Schedule monthly comprehensive reports for every client. Automated reports save you hours and ensure clients always feel informed, even when you are busy."
+      },
+      "knowledge-brain": {
+        "title": "Knowledge Brain",
+        "description": "A per-client knowledge base that grounds AI-generated content and strategy in your client's real brand voice and business context.",
+        "whatIsHeading": "What Is the Knowledge Brain?",
+        "whatIsText": "The Knowledge Brain is a per-client knowledge base. Documents you add here — brand guidelines, product details, past campaign notes, FAQs — are automatically split into chunks and embedded, so other AI features can semantically search them and ground their output in your client's real business context instead of generic advice.",
+        "howToAddHeading": "How to Add a Document",
+        "howToAddSteps": [
+          "Go to Knowledge Brain from the sidebar.",
+          "Select a client from the dropdown.",
+          "Click \"Add Document.\"",
+          "Give it a descriptive title and paste or write the content.",
+          "Save — the document is automatically chunked and embedded in the background."
+        ],
+        "searchHeading": "Semantic Search",
+        "searchText": "The search bar at the top uses semantic (meaning-based) search, not keyword matching. Type a natural-language question and you'll get back the most relevant chunks from your documents, each with a relevance score, even if they don't contain your exact words.",
+        "whatToAddHeading": "What to Add",
+        "whatToAddTable": {
+          "headers": [
+            "Content Type",
+            "Why It Helps"
+          ],
+          "rows": [
+            [
+              "Brand guidelines",
+              "Keeps AI-generated content on-voice and on-brand"
+            ],
+            [
+              "Product/service details",
+              "Lets AI reference real offerings instead of guessing"
+            ],
+            [
+              "Past campaign learnings",
+              "Helps the AI avoid repeating what didn't work"
+            ],
+            [
+              "FAQs and objection handling",
+              "Improves AI Assistant answers for this client"
+            ],
+            [
+              "Competitor positioning notes",
+              "Sharpens Marketing Brain's strategic recommendations"
+            ]
+          ]
+        },
+        "usedByHeading": "Who Uses This Knowledge",
+        "usedByText": "Marketing Brain, AI Assistant, Content Studio, and Campaigns all automatically pull relevant chunks from this knowledge base when generating strategy, answers, or content for this client — you don't need to attach documents manually each time.",
+        "protip": "Add a few core documents (brand voice guide, product overview, ideal customer profile) for every client as soon as you onboard them. The Knowledge Brain only helps once there's something in it to search."
+      },
+      "marketing-brain": {
+        "title": "Marketing Brain",
+        "description": "An AI fractional CMO that analyzes all of a client's cross-channel data and produces a prioritized strategic assessment.",
+        "whatIsHeading": "What Is the Marketing Brain?",
+        "whatIsText": "The Marketing Brain acts as an AI fractional CMO for each client. When you click Generate, it pulls together real, current data from every connected engine — SEO, content, backlinks, campaigns, ads, social, and competitors — plus relevant notes from the client's Knowledge Brain, and asks the AI Gateway to analyze it holistically and produce a strategic assessment grounded strictly in that data.",
+        "howToGenerateHeading": "How to Generate a Strategy",
+        "howToGenerateSteps": [
+          "Go to Marketing Brain from the sidebar.",
+          "Select a client from the dropdown.",
+          "Click \"Generate.\"",
+          "Wait while the AI Gateway aggregates the client's data and produces the assessment.",
+          "Review the results, or click \"Regenerate\" any time you want a fresh read on the latest data."
+        ],
+        "reportSectionsHeading": "Reading the Report",
+        "reportSectionsTable": {
+          "headers": [
+            "Section",
+            "What It Shows"
+          ],
+          "rows": [
+            [
+              "Situation Overview",
+              "A 2-4 sentence honest summary of where the client stands right now"
+            ],
+            [
+              "Issues Found",
+              "Problems detected in the data, tagged by category and severity"
+            ],
+            [
+              "Opportunities",
+              "Specific, prioritized opportunities with estimated impact"
+            ],
+            [
+              "Channel Recommendations",
+              "Concrete next actions per channel (SEO, ads, content, social...)"
+            ],
+            [
+              "Budget Allocation",
+              "Suggested percentage split of budget across channels"
+            ],
+            [
+              "KPI Forecast",
+              "2-4 key metrics with a realistic 90-day target"
+            ]
+          ]
+        },
+        "severityHeading": "Issue Severity",
+        "severityCriticalBadge": "Critical",
+        "severityCriticalText": "Actively hurting the client's results right now — address this first.",
+        "severityHighBadge": "High",
+        "severityHighText": "Meaningful negative impact. Next in line after critical issues.",
+        "severityMediumBadge": "Medium",
+        "severityMediumText": "Worth fixing, but not urgent.",
+        "severityLowBadge": "Low",
+        "severityLowText": "Minor. Fine to defer.",
+        "priorityHeading": "Opportunity & Recommendation Priority",
+        "priorityText": "Opportunities and channel recommendations are each tagged High, Medium, or Low priority based on expected impact — use this to decide what to act on first.",
+        "historyHeading": "Strategy History",
+        "historyText": "Every time you generate a strategy, it's saved to that client's history. Click \"History\" to browse past reports and click any of them to view it again — generating a new one doesn't overwrite the old ones.",
+        "protip": "Regenerate the strategy monthly, or right after a big change (new campaign launched, SEO audit run, competitor analysis updated) so the recommendations stay based on current data, not a stale snapshot."
+      },
+      "ai-assistant": {
+        "title": "AI Assistant",
+        "description": "Your intelligent marketing copilot that answers questions and suggests strategies.",
+        "whatItCanDoHeading": "What It Can Do",
+        "whatItCanDoText": "The AI Assistant is a conversational interface that can answer marketing questions, suggest strategies, analyze your data, explain metrics, help troubleshoot issues, and generate action plans.",
+        "examplesHeading": "Example Questions by Category",
+        "categories": [
+          {
+            "heading": "SEO Questions",
+            "questions": [
+              "Why did my rankings drop this week?",
+              "What keywords should I focus on next?",
+              "How do I fix the Core Web Vitals issues from my audit?"
+            ]
+          },
+          {
+            "heading": "Content Questions",
+            "questions": [
+              "Suggest 10 blog topic ideas for a SaaS company.",
+              "How often should I publish blog posts?",
+              "What content format works best for lead generation?"
+            ]
+          },
+          {
+            "heading": "Ads Questions",
+            "questions": [
+              "How can I improve my Google Ads CTR?",
+              "What budget should I allocate for Facebook Ads?",
+              "Why is my cost per lead so high?"
+            ]
+          },
+          {
+            "heading": "Strategy Questions",
+            "questions": [
+              "Create a 90-day SEO action plan for my client.",
+              "What marketing channels should I prioritize with a $5,000/month budget?",
+              "How do I measure marketing ROI?"
+            ]
+          }
+        ],
+        "tipsHeading": "Tips for Better Responses",
+        "tipsSteps": [
+          "\"How do I improve my landing page conversion rate?\" is better than \"Help with marketing.\"",
+          "Provide context: \"My client is a B2B SaaS company selling project management tools.\"",
+          "Select a client in the dropdown so the AI can access that client's data.",
+          "Ask follow-up questions to go deeper into any topic."
+        ],
+        "tipsSpecificLabel": "Be specific:",
+        "protip": "Select a client before asking questions. The AI Assistant will reference that client's actual data (rankings, traffic, backlinks) to give you personalized, data-driven answers instead of generic advice."
+      },
+      "seo-by-ai": {
+        "title": "SEO By AI (Atlas)",
+        "description": "Fully autonomous AI agent that manages your SEO strategy 24/7.",
+        "whatIsHeading": "What Is Atlas?",
+        "whatIsText": "Atlas is MarketingOS's autonomous AI agent. Once enabled, it continuously monitors your SEO performance, identifies opportunities and issues, creates action plans, and can execute changes automatically - all without you lifting a finger.",
+        "howItWorksHeading": "How It Works",
+        "cycleMonitorBadge": "Monitor",
+        "cycleAnalyzeBadge": "Analyze",
+        "cyclePlanBadge": "Plan",
+        "cycleExecuteBadge": "Execute",
+        "cycleLearnBadge": "Learn",
+        "howItWorksText": "Atlas runs this cycle continuously, learning from results to make better decisions over time.",
+        "actionTypesHeading": "Action Types",
+        "actionTypesTable": {
+          "headers": [
+            "Type",
+            "Description",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Auto-executable",
+              "Atlas performs these automatically",
+              "Update meta descriptions, fix broken links"
+            ],
+            [
+              "Needs Approval",
+              "Atlas proposes these and waits for you",
+              "Publish new content, start ad campaigns"
+            ]
+          ]
+        },
+        "actionCategoriesHeading": "Action Categories",
+        "actionCategoriesTable": {
+          "headers": [
+            "Category",
+            "Examples"
+          ],
+          "rows": [
+            [
+              "Technical SEO",
+              "Fix crawl errors, optimize page speed, add schema markup"
+            ],
+            [
+              "Content",
+              "Create new articles, update existing content, optimize headings"
+            ],
+            [
+              "Keywords",
+              "Add new keywords to track, adjust targeting strategy"
+            ],
+            [
+              "Backlinks",
+              "Identify link opportunities, flag toxic links for disavowal"
+            ],
+            [
+              "Social",
+              "Schedule posts, optimize posting times"
+            ],
+            [
+              "Ads",
+              "Adjust bids, pause underperforming ads, suggest new campaigns"
+            ],
+            [
+              "Competitors",
+              "Alert to competitor changes, identify new gaps"
+            ],
+            [
+              "Reporting",
+              "Generate and send reports on schedule"
+            ]
+          ]
+        },
+        "autopilotHeading": "Autopilot Modes",
+        "autopilotTable": {
+          "headers": [
+            "Mode",
+            "What Atlas Can Do",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "Full Auto",
+              "Executes all actions automatically",
+              "Experienced users who trust the AI"
+            ],
+            [
+              "Semi-Auto",
+              "Auto-executes safe actions, asks for approval on major ones",
+              "Most users (recommended)"
+            ],
+            [
+              "Manual Review",
+              "Proposes all actions but executes none without approval",
+              "New users learning the platform"
+            ]
+          ]
+        },
+        "strategyTabHeading": "Strategy Tab",
+        "strategyTabText": "The Strategy tab shows Atlas's current SEO strategy: what it is focusing on, why, and what results it expects. It includes traffic and ranking forecasts with confidence intervals.",
+        "chattingHeading": "Chatting with Atlas",
+        "chattingText": "You can talk directly to Atlas to ask about its strategy, current status, or performance. Examples:",
+        "chattingExamples": [
+          "Atlas, what are you working on right now?",
+          "Why did you prioritize fixing meta descriptions?",
+          "What results do you predict for next month?",
+          "Pause all content creation actions."
+        ],
+        "protip": "Start with Semi-Auto mode to build trust. Once you see Atlas making good decisions consistently, switch to Full Auto for maximum efficiency. Review the activity log weekly to stay informed."
+      },
+      "alerts": {
+        "title": "Alerts & Monitoring",
+        "description": "Real-time alerts for ranking drops, backlink changes, and campaign issues.",
+        "typesHeading": "Alert Types",
+        "typesTable": {
+          "headers": [
+            "Alert",
+            "Trigger",
+            "Action to Take"
+          ],
+          "rows": [
+            [
+              "Ranking Drop",
+              "Keyword drops 5+ positions",
+              "Check page for issues, review competitor changes"
+            ],
+            [
+              "Backlink Loss",
+              "High-value backlink removed",
+              "Contact webmaster, find replacement links"
+            ],
+            [
+              "Traffic Drop",
+              "Organic traffic drops 20%+",
+              "Check for algorithm updates, technical issues"
+            ],
+            [
+              "Campaign Issue",
+              "Campaign metrics below threshold",
+              "Review campaign settings, adjust targeting"
+            ]
+          ]
+        },
+        "severityHeading": "Severity Levels",
+        "severityCriticalBadge": "Critical",
+        "severityCriticalText": "Requires immediate attention. Significant impact on performance.",
+        "severityWarningBadge": "Warning",
+        "severityWarningText": "Should be addressed soon. May worsen if ignored.",
+        "severityInfoBadge": "Info",
+        "severityInfoText": "For your awareness. No immediate action needed.",
+        "managingHeading": "Managing Alerts",
+        "managingSteps": [
+          "Review new alerts in the Alerts page or the notification bell in the header.",
+          "Click an alert to see full details and recommended actions.",
+          "Mark as read or take action directly from the alert card.",
+          "Configure alert thresholds in Settings > Notifications."
+        ],
+        "channelsHeading": "Notification Channels",
+        "channelsTable": {
+          "headers": [
+            "Channel",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "In-App",
+              "Always on - see alerts when you log in"
+            ],
+            [
+              "Email",
+              "Daily digests or real-time critical alerts"
+            ],
+            [
+              "Slack",
+              "Team notifications in your workspace channel"
+            ]
+          ]
+        },
+        "frequencyHeading": "Alert Frequency Options",
+        "frequencyList": [
+          [
+            "Real-time:",
+            "Get notified instantly (recommended for critical alerts)"
+          ],
+          [
+            "Hourly:",
+            "Batched summary every hour"
+          ],
+          [
+            "Daily Digest:",
+            "One summary email per day (recommended for info alerts)"
+          ]
+        ],
+        "protip": "Set critical alerts to real-time and info alerts to daily digest. This way, you are notified immediately when something important happens without being overwhelmed by minor updates."
+      },
+      "settings": {
+        "title": "Settings",
+        "description": "Configure your profile, agency, integrations, notifications, and API keys.",
+        "profileHeading": "Profile Settings",
+        "profileList": [
+          [
+            "Name:",
+            "Your display name across the platform."
+          ],
+          [
+            "Email:",
+            "Used for login and notifications."
+          ],
+          [
+            "Password:",
+            "Change your password (must be 8+ characters with a mix of letters, numbers, and symbols)."
+          ]
+        ],
+        "agencyHeading": "Agency Settings",
+        "agencyList": [
+          [
+            "Agency Name:",
+            "Appears on reports and client-facing materials."
+          ],
+          [
+            "Logo:",
+            "Upload your logo for white-label reports."
+          ],
+          [
+            "Subscription Plan:",
+            "View and manage your current plan and billing."
+          ]
+        ],
+        "integrationsHeading": "Integrations",
+        "integrationsTable": {
+          "headers": [
+            "Integration",
+            "What It Connects",
+            "What It Enables"
+          ],
+          "rows": [
+            [
+              "Google Ads",
+              "Your Google Ads account",
+              "Import campaigns, track ad performance"
+            ],
+            [
+              "Facebook Ads",
+              "Your Facebook Business account",
+              "Import campaigns, track ad performance"
+            ],
+            [
+              "LinkedIn Ads",
+              "Your LinkedIn Campaign Manager",
+              "Import campaigns, track ad performance"
+            ],
+            [
+              "Google Analytics",
+              "Your GA4 property",
+              "Import traffic data, user behavior analytics"
+            ],
+            [
+              "Search Console",
+              "Your GSC property",
+              "Import search performance, indexing data"
+            ]
+          ]
+        },
+        "notificationsHeading": "Notification Preferences",
+        "notificationsText": "Configure which alert types you receive, through which channels (email, Slack, in-app), and at what frequency. You can set different preferences for each severity level.",
+        "apiKeysHeading": "API Keys",
+        "apiKeysSteps": [
+          "Go to Settings > API Keys.",
+          "Click \"Generate New Key.\"",
+          "Give the key a descriptive name (e.g., \"Zapier Integration\").",
+          "Copy the key immediately - it will not be shown again.",
+          "Use the key in the Authorization header: Bearer YOUR_API_KEY."
+        ],
+        "protip": "Connect Google Search Console and Google Analytics first - they provide the most valuable data for SEO tracking and are completely free to use."
+      },
+      "glossary": {
+        "title": "SEO Glossary",
+        "description": "Essential SEO and digital marketing terms explained in plain English.",
+        "intro": "A comprehensive reference of SEO and digital marketing terms. Bookmark this page and come back whenever you encounter an unfamiliar term.",
+        "terms": [
+          [
+            "A/B Testing",
+            "Comparing two versions of a page or ad to see which performs better. Half your visitors see version A, half see version B, and you pick the winner."
+          ],
+          [
+            "Alt Text",
+            "A text description added to images that helps search engines understand what the image shows and improves accessibility for visually impaired users."
+          ],
+          [
+            "Anchor Text",
+            "The clickable text in a hyperlink. Descriptive anchor text helps search engines understand what the linked page is about."
+          ],
+          [
+            "Backlink",
+            "A link from another website to yours. Each quality backlink acts as a vote of confidence in Google's eyes."
+          ],
+          [
+            "Bounce Rate",
+            "The percentage of visitors who leave your site after viewing only one page. Lower is generally better."
+          ],
+          [
+            "Canonical URL",
+            "The preferred version of a page when multiple URLs have similar content. Prevents duplicate content issues."
+          ],
+          [
+            "Click-Through Rate (CTR)",
+            "The percentage of people who click your link after seeing it in search results. Calculated as Clicks / Impressions * 100."
+          ],
+          [
+            "Content Gap",
+            "Topics or keywords that your competitors cover but you do not. Filling content gaps is a key growth strategy."
+          ],
+          [
+            "Conversion",
+            "When a visitor completes a desired action: purchasing a product, signing up for a newsletter, filling out a form, etc."
+          ],
+          [
+            "Core Web Vitals",
+            "Google's metrics for measuring page experience: loading speed (LCP), interactivity (FID), and visual stability (CLS)."
+          ],
+          [
+            "Cost Per Click (CPC)",
+            "The average amount you pay each time someone clicks your ad. Varies by keyword competitiveness."
+          ],
+          [
+            "Crawl",
+            "When search engine bots visit and scan your website to discover and index your pages."
+          ],
+          [
+            "Domain Authority (DA)",
+            "A score from 0-100 predicting how likely a website is to rank in search results. Higher is better. Developed by Moz."
+          ],
+          [
+            "Dofollow",
+            "A type of link that passes SEO value (link juice) to the linked page. The default link type unless specified otherwise."
+          ],
+          [
+            "E-E-A-T",
+            "Experience, Expertise, Authoritativeness, Trustworthiness. Google's quality criteria for evaluating content creators and websites."
+          ],
+          [
+            "Featured Snippet",
+            "A highlighted answer box at the top of Google search results. Getting your content here means maximum visibility."
+          ],
+          [
+            "Google Algorithm",
+            "The complex system Google uses to retrieve and rank pages from its index. Updated thousands of times per year."
+          ],
+          [
+            "H1 Tag",
+            "The main heading of a page in HTML. Each page should have exactly one H1 that clearly describes the page content."
+          ],
+          [
+            "Impressions",
+            "The number of times your page or ad appeared in search results or on a platform, regardless of whether it was clicked."
+          ],
+          [
+            "Indexing",
+            "The process by which search engines store and organize web pages so they can be retrieved for relevant searches."
+          ],
+          [
+            "Internal Link",
+            "A link from one page on your website to another page on the same website. Helps distribute page authority and aids navigation."
+          ],
+          [
+            "Keyword",
+            "A word or phrase that people type into search engines. Your content targets specific keywords to attract relevant visitors."
+          ],
+          [
+            "Keyword Difficulty",
+            "A score (0-100) indicating how hard it is to rank on the first page for a particular keyword. Higher means more competition."
+          ],
+          [
+            "Landing Page",
+            "A standalone web page designed for a specific marketing campaign, optimized to convert visitors into leads or customers."
+          ],
+          [
+            "Link Building",
+            "The process of getting other websites to link to yours. Strategies include guest posting, content marketing, and outreach."
+          ],
+          [
+            "Long-tail Keyword",
+            "A longer, more specific search phrase (3+ words). Lower search volume but higher conversion rates and less competition."
+          ],
+          [
+            "Meta Description",
+            "A brief summary (150-160 characters) of a page's content that appears under the title in search results. Influences CTR."
+          ],
+          [
+            "Meta Title",
+            "The title of a page as it appears in search results and browser tabs. Should be 50-60 characters and include the target keyword."
+          ],
+          [
+            "Nofollow",
+            "A link attribute that tells search engines not to pass ranking value to the linked page. Used for ads, user-generated content, etc."
+          ],
+          [
+            "Organic Traffic",
+            "Visitors who find your website through unpaid search results, as opposed to paid ads, social media, or direct visits."
+          ],
+          [
+            "Page Authority",
+            "A score (0-100) predicting how well a specific page will rank. Similar to Domain Authority but for individual pages."
+          ],
+          [
+            "People Also Ask",
+            "A Google SERP feature showing related questions that users commonly search for. Great source for content ideas."
+          ],
+          [
+            "Position/Ranking",
+            "Where your page appears in search results for a given keyword. Position 1 is the top result."
+          ],
+          [
+            "Referring Domain",
+            "A unique website that links to yours. 10 links from 10 different domains is more valuable than 10 links from 1 domain."
+          ],
+          [
+            "ROAS",
+            "Return on Ad Spend. Revenue generated divided by ad spend. A ROAS of 3x means you earn $3 for every $1 spent on ads."
+          ],
+          [
+            "Schema Markup",
+            "Structured data code added to pages that helps search engines understand your content and can trigger rich results."
+          ],
+          [
+            "Search Volume",
+            "The average number of times a keyword is searched per month. Higher volume means more potential traffic."
+          ],
+          [
+            "SERP",
+            "Search Engine Results Page. The page you see after entering a query into Google."
+          ],
+          [
+            "SERP Features",
+            "Special result types beyond regular blue links: featured snippets, image packs, video carousels, knowledge panels, etc."
+          ],
+          [
+            "Sitemap",
+            "An XML file listing all pages on your website, helping search engines discover and crawl your content efficiently."
+          ],
+          [
+            "Spam Score",
+            "A metric (0-100%) indicating how likely a site or link is to be penalized by search engines. Higher is worse."
+          ],
+          [
+            "Technical SEO",
+            "Optimizations to your website's infrastructure (speed, crawlability, mobile-friendliness, security) that help search engines access and index your content."
+          ],
+          [
+            "Title Tag",
+            "Same as Meta Title. The HTML element that specifies the title of a web page, displayed in search results and browser tabs."
+          ]
+        ],
+        "protip": "Bookmark this glossary and revisit it whenever you encounter an unfamiliar term elsewhere in the platform. Understanding these concepts is the foundation of effective SEO."
+      }
+    }
+  }
+}
